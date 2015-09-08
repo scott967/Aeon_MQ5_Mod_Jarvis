@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="resource.uisounds.aeonmq5" version="7.1.8" name="Aeon MQ5 Isengard UI" provider-name="Marcos Qui">
+<addon id="resource.uisounds.aeonmq5" version="8.1.12" name="Aeon MQ5 Jarvis UI" provider-name="Marcos Qui">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
   <extension point="kodi.resource.uisounds"/>
   <extension point="kodi.addon.metadata">
-    <summary lang="en">Aeon MQ5 Isengard GUI sounds</summary>
-    <description lang="en">Aeon MQ5 Isengard GUI sounds</description>
+    <summary lang="en">Aeon MQ5 Jarvis GUI sounds</summary>
+    <description lang="en">Aeon MQ5 Jarvis GUI sounds</description>
     <platform>all</platform>
   </extension>
 </addon>
 
-	<addon id="skin.aeonmq5" version="7.1.11" name="Aeon MQ 5 Isengard" provider-name="MarcosQui">
+	<addon id="skin.aeonmq5" version="8.1.12" name="Aeon MQ 5 Jarvis" provider-name="MarcosQui">
 	<requires>
 	<import addon="xbmc.gui" version="5.9.0"/>
 	<import addon="script.aeonmq5.extrapack" version="1.0.1"/>

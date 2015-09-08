@@ -4,7 +4,7 @@
 <includes>
 	<!-- ################################################ Value/General ################################################ -->
 	<variable name="SkinVersion">
-		<value>7.1.12 Isengard[COLOR=80FFFFFF] | [/COLOR]09/01/2015</value>
+		<value>8.1.12 Jarvis[COLOR=80FFFFFF] | [/COLOR]09/01/2015</value>
 	</variable>
 	<variable name="Sub_GoTo">
 		<value condition="StringCompare(Container(9000).ListItem.Property(subid),movies)">6001</value>

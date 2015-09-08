@@ -1,3 +1,6 @@
+[B][COLOR=FFFF8C00]BUILD 8.1.12 - RELEASE DATE 09/08/2015[/COLOR][/B]
+Initial Jarvis release
+
 [B][COLOR=FFFF8C00]BUILD 7.1.12 - RELEASE DATE 09/01/2015[/COLOR][/B]
 Fix:  Low List view options missing for videos
 Fix:  Music video poster when opening from music library

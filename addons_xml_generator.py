@@ -56,7 +56,7 @@ class Generator:
         for addon in addons:
             try:
                 # skip any file or .svn folder or .git folder
-                if ( not os.path.isdir( addon ) or addon == "repository.aeon-mq5-mod-isengard" or addon == "service.skin.widgets" or addon == ".git" ): continue
+                if ( not os.path.isdir( addon ) or addon == "repository.aeon-mq5-mod-jarvis" or addon == "service.skin.widgets" or addon == ".git" ): continue
                 # create path
                 _path = os.path.join( addon, "addon.xml" )
                 # split lines for stripping
