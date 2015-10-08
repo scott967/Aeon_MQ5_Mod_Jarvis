@@ -1672,6 +1672,14 @@
 					<include>DefaultReset</include>
 				</item>
 				<item>
+					<label>$LOCALIZE[31003]-CINEMAVISION</label><!-- Filme cinema ex --><!-- no customsub yet -->
+					<label2>$LOCALIZE[31003]-CINEMAVISION</label2>
+					<property name="id">movies</property>
+					<onclick>Skin.SetString($INFO[skin.string(custom_master)],moviecinemaviz)</onclick>
+					<onclick>Skin.SetString($INFO[skin.string(custom_action)],RunScript(script.cinemavision,experience))</onclick>
+					<include>DefaultReset</include>
+				</item>
+				<item>
 					<label>$LOCALIZE[31003]-$LOCALIZE[31091]</label><!-- Filme generos --><!-- 6036 -->
 					<label2>$LOCALIZE[31003]-$LOCALIZE[31091]</label2>
 					<property name="id">movies</property>

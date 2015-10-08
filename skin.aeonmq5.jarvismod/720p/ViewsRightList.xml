@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.1/6.1.2 by lizard/6.1.6 -->
 <!-- Isengard 7.1.12 -->
+<!-- Jarvis 8.1.13 -->
 
 <includes>
 	<!--##################################################################################   VISTA RIGHT LIST - ID 59   ##################################################################################-->
@@ -213,7 +214,7 @@
 					<animation effect="slide" start="0,0" end="-30,0" time="200" easing="inout" tween="cubic" condition="Control.HasFocus(80)">Conditional</animation>
 					<animation effect="fade" start="100" end="20" time="200" condition="Window.IsVisible(621)">Conditional</animation>
 					<visible>!Container.Content(years)</visible>
-					<itemlayout condition="Window.IsActive(25) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)" height="30">
+					<itemlayout condition="Window.IsActive(25) | Window.IsActive(28) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)" height="30">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -242,7 +243,7 @@
 							<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout condition="IsEmpty(Control.GetLabel(5902)) | [Window.IsActive(25) + Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(slimrightlistmusic)]" height="30">
+					<focusedlayout condition="IsEmpty(Control.GetLabel(5902)) | [[Window.IsActive(25)  | Window.IsActive(28)]+ Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(slimrightlistmusic)]" height="30">
 						<control type="image">
 							<posx>50</posx>
 							<posy>0</posy>
@@ -271,7 +272,7 @@
 							<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 					</focusedlayout>
-					<focusedlayout condition="!IsEmpty(Control.GetLabel(5902)) + [Window.IsActive(25) + !Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(slimrightlistmusic)]" height="50">
+					<focusedlayout condition="!IsEmpty(Control.GetLabel(5902)) + [[Window.IsActive(25) | Window.IsActive(28)] + !Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(slimrightlistmusic)]" height="50">
 						<control type="image">
 							<animation effect="fade" start="100" end="60" time="0" condition="!Control.Hasfocus(51)">conditional</animation>
 							<posx>0</posx>
@@ -466,6 +467,31 @@
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 						<bordertexture border="-2">black.png</bordertexture>
+					</control>
+					<control type="label">
+						<width>245</width>
+						<height>20</height>
+						<textcolor>FFFFFAF0</textcolor>
+						<textoffsetx>0</textoffsetx>
+						<scroll>true</scroll>
+						<left>-5</left>
+						<top>425</top>
+						<label>$INFO[Player.Title]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>Player.HasMedia + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)</visible>
+					</control>
+					<control type="label">
+						<width>245</width>
+						<height>20</height>
+						<textcolor>FFFFFAF0</textcolor>
+						<textoffsetx>0</textoffsetx>
+						<left>-5</left>
+						<top>447</top>
+						<label>($INFO[Player.Time] / $INFO[Player.Duration,])</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>Player.HasMedia + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)</visible>
 					</control>
 				</control>
 
