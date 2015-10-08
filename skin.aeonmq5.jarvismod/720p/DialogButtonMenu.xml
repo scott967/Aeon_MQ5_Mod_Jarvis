@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 	<!-- Aeon MQ 5 Helix 6.1.0 6.1.1 -->
+	<!-- Jarvis 8.1.13 -->
 
 <window id="111" type="dialog">
 	<defaultcontrol always="true">4112</defaultcontrol>
@@ -57,8 +59,7 @@
 						<texture>dialogs_context_nofocus.png</texture>
 					</control>
 					<control type="label">
-						<left>0</left>
-						<posx>227</posx>
+						<posx>12</posx>
 						<posy>0</posy>
 						<height>39</height>
 						<width>430</width>
@@ -78,7 +79,7 @@
 						<texture>dialogs_context_focus.png</texture>
 					</control>
 					<control type="label">
-						<left>0</left>
+						<left>12</left>
 						<posx>227</posx>
 						<posy>0</posy>
 						<height>39</height>
@@ -118,8 +119,10 @@
 					</item>
 					<item id="5"><!-- Now Playing - Playlist -->
 						<label>31035</label>
-						<icon>icon_button_nowplaying.png</icon>
-						<onclick>ActivateWindow(500)</onclick>
+						<!-- <icon>icon_button_nowplaying.png</icon> -->
+						<onclick>Dialog.Close(111)</onclick>
+						<onclick condition="Player.HasAudio">ActivateWindow(500)</onclick>
+						<onclick condition="Player.HasVideo">ActivateWindow(28)</onclick>
 					</item>
 					<item id="12"><!-- Eject Tray -->
 						<label>31742</label>
