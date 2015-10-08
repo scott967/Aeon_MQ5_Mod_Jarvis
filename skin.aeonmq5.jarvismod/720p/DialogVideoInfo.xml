@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 	<!-- Aeon MQ 5 Helix 6.1.0  -->
+<!-- Isengard 7.1.13 -->
 
 	<window id="2003">
 	<defaultcontrol always="true">149</defaultcontrol>
@@ -765,6 +767,12 @@
 	<onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
 	<visible>Container.Content(Movies) + !Skin.HasSetting(trailers) + System.HasAddon(script.cinema.experience)</visible>
 	</item>
+						<item id="24"> <!-- CinemaVision -->
+							<label>CinemaVision</label>
+							<onclick>Dialog.Close(MovieInformation)</onclick>
+							<onclick>RunScript(script.cinemavision,experience)</onclick>
+							<visible>System.HasAddon(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+						</item>
 	<item id="23"><!-- Extras -->
 	<label>31416</label>
 	<onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
