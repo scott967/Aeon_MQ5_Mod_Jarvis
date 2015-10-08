@@ -1,3 +1,11 @@
+[B][COLOR=FFFF8C00]BUILD 8.1.13 - RELEASE DATE 10/15/2015[/COLOR][/B]
+New:  Events window (Jarvis addition)
+New:  PVRInfo (Jarvis addition)
+New: Support for Cinema Vision add-on
+Improved:  Video playlist for party mode music video
+Improved:  Music playlist for party mode
+Fixed:  SmartPlaylistEditor filename case  
+
 [B][COLOR=FFFF8C00]BUILD 8.1.12 - RELEASE DATE 09/08/2015[/COLOR][/B]
 Initial Jarvis release
 
