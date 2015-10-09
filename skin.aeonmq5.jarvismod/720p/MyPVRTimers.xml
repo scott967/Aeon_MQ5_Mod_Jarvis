@@ -6,7 +6,7 @@
 	<defaultcontrol always="true">14</defaultcontrol>
 	<menucontrol>9000</menucontrol>
 	<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset($INFO[skin.string(custom_code)])</onunload>
-	<allowoverlay>no</allowoverlay>
+	<!-- <allowoverlay>no</allowoverlay> -->
 	<views>14</views>
 	<controls>
 		<control type="multiimage"><!-- Fanart -->

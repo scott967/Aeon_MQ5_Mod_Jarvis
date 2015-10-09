@@ -1,9 +1,11 @@
-	<!-- Aeon MQ 5 Helix 6.1.0/6.1.2 /6.1.3/6.1.8 -->
-	<!-- Isengard 7.1.11 -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Aeon MQ 5 Helix 6.1.0/6.1.2 /6.1.3/6.1.8 -->
+<!-- Isengard 7.1.11 -->
+<!-- Jarvis 8.1.13 -->
 
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- <allowoverlay>no</allowoverlay> -->
 	<include condition="!Skin.HasSetting(fix3)">Quickfix</include>
 	<onload condition="!StringCompare(skin.string(defaultsettings),2)">SetFocus(900)</onload>
 	<onload condition="Player.HasAudio + System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>

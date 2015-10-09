@@ -1,9 +1,11 @@
-	<!-- Aeon MQ 5 Helix 6.1.0/Orby/6.1.4 -->
-	<!-- Isengard 7.1.9 -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Aeon MQ 5 Helix 6.1.0/Orby/6.1.4 -->
+<!-- Isengard 7.1.9 -->
+<!-- Jarvis 8.1.13 -->
 
 <window id="12">
 	<defaultcontrol>3</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- <allowoverlay>no</allowoverlay> -->
 	<onload condition="!StringCompare(skin.string(defaultsettings),2)">AlarmClock(firstfocus,SetFocus(900),0:10,true)</onload>
 	<controls>
 		<control type="multiimage">

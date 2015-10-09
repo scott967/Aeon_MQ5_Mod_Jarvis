@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<!-- Aeon MQ 5 -->
+<!-- Aeon MQ 5 -->
+<!-- Jarvis 8.1.13 -->
 
 <window id="4">
 	<defaultcontrol always="true">9000</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- <allowoverlay>no</allowoverlay> -->
 	<controls>
 		<control type="multiimage">
 			<include>WindowBG</include>
