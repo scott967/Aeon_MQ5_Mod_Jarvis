@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.7 -->
 <!-- Isengard 7.1.11 Mid List -->
+<!-- Jarvis 8.1.13 -->
 
 <includes>
 	<!-- ######################################################################### Music Window #########################################################################-->
 	<include name="MusicWindow">
 		<defaultcontrol always="true">51</defaultcontrol>
+		<menucontrol>9000</menucontrol>
 		<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset($INFO[skin.string(custom_code)])</onunload>
 		<allowoverlay>no</allowoverlay>
 		<views>51,54,55,56,58,59,62,70</views>

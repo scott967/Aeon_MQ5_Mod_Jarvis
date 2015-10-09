@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.2/6.1.3 -->
 <!-- Isengard 7.1.9 ShelfCase/7.1.11 MidList -->
+<!-- Jarvis 8.1.13 -->
 
 <window id="25">
 	<defaultcontrol always="true">51</defaultcontrol>
+	<menucontrol>9000</menucontrol>
 	<onload condition="Skin.HasSetting(ontvtunes) + System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
 	<onload condition="System.HasAddon(script.videolanguage)">RunScript(script.videolanguage,backend=True)</onload> 
 	<!-- <onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,backend=true)</onload> -->

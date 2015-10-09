@@ -1,7 +1,10 @@
-﻿	<!-- Aeon MQ 5 Helix 6.1.0/6.1.4/6.1.5 -->
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aeon MQ 5 Helix 6.1.0/6.1.4/6.1.5 -->
+<!-- Jarvis 8.1.13 -->
 
 <window>
 	<defaultcontrol always="false">9901</defaultcontrol>
+	<menucontrol>9000</menucontrol>
 	<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset($INFO[skin.string(custom_code)])</onunload>
 	<allowoverlay>no</allowoverlay>
 	<views>10,11,12,13</views>
@@ -124,19 +127,19 @@
 				<visible>false</visible>
 			</control>
 
-		<!-- ViewTypes -->
-		<control type="group" id="50">
-			<include>ViewEPGTimeline</include>  <!-- view 10 -->
-			<include condition="Skin.HasSetting(viewnow_epg)">ViewLiveTVGuideNow</include> <!-- view 11 -->
-			<include condition="Skin.HasSetting(viewnext_epg)">ViewLiveTVGuideNext</include> <!-- view 12 -->
-			<include condition="Skin.HasSetting(viewchannel_epg)">ViewLiveTVGuideChannel</include> <!-- view 13 -->
-		</control>
+			<!-- ViewTypes -->
+			<control type="group" id="50">
+				<include>ViewEPGTimeline</include>  <!-- view 10 -->
+				<include condition="Skin.HasSetting(viewnow_epg)">ViewLiveTVGuideNow</include> <!-- view 11 -->
+				<include condition="Skin.HasSetting(viewnext_epg)">ViewLiveTVGuideNext</include> <!-- view 12 -->
+				<include condition="Skin.HasSetting(viewchannel_epg)">ViewLiveTVGuideChannel</include> <!-- view 13 -->
+			</control>
 
-		<!-- Furniture -->
-		<include>TopMenu_PVR</include>
-		<include>TouchScreen</include>
-		<include condition="Skin.HasSetting(pvrdate)">TopDate</include>
-		<include>BGBlack</include>
-	</control>
-</controls>
+			<!-- Furniture -->
+			<include>TopMenu_PVR</include>
+			<include>TouchScreen</include>
+			<include condition="Skin.HasSetting(pvrdate)">TopDate</include>
+			<include>BGBlack</include>
+		</control>
+	</controls>
 </window>

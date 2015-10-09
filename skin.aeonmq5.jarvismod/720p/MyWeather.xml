@@ -1,7 +1,10 @@
-	<!-- Aeon MQ 5 Helix 6.1.7 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aeon MQ 5 Helix 6.1.7 -->
+<!-- Jarvis 8.1.13 -->
 
 <window id="2600">
 	<defaultcontrol always="true">51</defaultcontrol>
+	<menucontrol>9000</menucontrol>
 	<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset($INFO[skin.string(custom_code)])</onunload>
 	<allowoverlay>no</allowoverlay>
 	<controls>

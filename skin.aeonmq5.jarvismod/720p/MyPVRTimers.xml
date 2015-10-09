@@ -1,7 +1,10 @@
-﻿	<!-- Aeon MQ 5 Helix 6.1.4 -->
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aeon MQ 5 Helix 6.1.4 -->
+<!-- Jarvis 8.1.13 -->
 
 <window>
 	<defaultcontrol always="true">14</defaultcontrol>
+	<menucontrol>9000</menucontrol>
 	<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset($INFO[skin.string(custom_code)])</onunload>
 	<allowoverlay>no</allowoverlay>
 	<views>14</views>
@@ -119,188 +122,188 @@
 				<visible>false</visible>
 			</control>
 
-		<!-- ViewTypes -->
-		<control type="group">
-			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
-			<!-- <visible>Control.IsVisible(14)</visible> -->
-			<include>EPGMenu</include>
-			<control type="image">
-				<posx>240</posx>
-				<posy>131</posy>
-				<width>315</width>
-				<height>439</height>
-				<texture>grey.png</texture>
-				<colordiffuse>20FFFFFF</colordiffuse>
-			</control>
-			<control type="image">
-				<posx>1060</posx>
-				<posy>131</posy>
-				<width>180</width>
-				<height>439</height>
-				<texture>grey.png</texture>
-				<colordiffuse>20FFFFFF</colordiffuse>
-			</control>
-			<control type="panel" id="14">
-				<posx>0</posx>
-				<posy>130</posy>
-				<width>1280</width>
-				<height>440</height>
-				<onup>14</onup>
-				<ondown>14</ondown>
-				<onleft>9900</onleft>
-				<onright>73</onright>
-				<pagecontrol>73</pagecontrol>
-				<scrolltime>350</scrolltime>
-				<itemlayout height="40" width="1280">
-					<control type="label">
-						<include>SettingsLabel</include>
-						<label>$INFO[ListItem.ChannelName]</label>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>240</width>
-						<height>3</height>
-						<texture>divider.png</texture>
-						<colordiffuse>90FFFFFF</colordiffuse>
-					</control>
-					<control type="image">
-						<posx>240</posx>
-						<posy>1</posy>
-						<width>1040</width>
-						<height>38</height>
-						<aspectratio>stretch</aspectratio>
-						<colordiffuse>50FFFAF0</colordiffuse>
-						<texture>settings_button_focus.png</texture>
-					</control>
-					<control type="label">
-						<!-- 	<posx>400</posx> -->
-						<posx>230</posx>
-						<posy>0</posy>
-						<width>350</width>
-						<height>40</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Font_20</font>
-						<include>listcolor</include>
-						<info>ListItem.Date</info>
-					</control>
-					<control type="label">
-						<posx>590</posx>
-						<posy>1</posy>
-						<width>590</width>
-						<height>38</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font_18A</font>
-						<include>listcolor</include>
-						<info>ListItem.Label</info>
-					</control>
-					<control type="image">
-						<posx>1080</posx>
-						<posy>10</posy>
-						<width>30</width>
-						<height>20</height>
-						<texture>pvr_isrecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="label">
-						<posx>1120</posx>
-						<posy>1</posy>
-						<width>110</width>
-						<height>38</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font_18A</font>
-						<include>listcolorfocus</include>
-						<info>ListItem.Comment</info>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="1280">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>238</width>
-						<height>40</height>
-						<texture>settings_button.png</texture>
-						<animation effect="fade" start="100" end="50" time="50" condition="!Control.Hasfocus(14)">conditional</animation>
-					</control>
-					<control type="image">
-						<posx>240</posx>
-						<posy>1</posy>
-						<width>1040</width>
-						<height>38</height>
-						<aspectratio>stretch</aspectratio>
-						<colordiffuse>FFFFFAF0</colordiffuse>
-						<texture>settings_button_focus.png</texture>
-					</control>
-					<control type="label">
-						<include>SettingsLabelFocus</include>
-						<label>$INFO[ListItem.ChannelName]</label>
-					</control>
-					<control type="label">
-						<!-- 	<posx>400</posx> -->
-						<posx>230</posx>
-						<posy>0</posy>
-						<width>350</width>
-						<height>40</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Font_20</font>
-						<textcolor>$VAR[value_headercolor]</textcolor>
-						<info>ListItem.Date</info>
-					</control>
-					<control type="label">
-						<posx>590</posx>
-						<posy>1</posy>
-						<width>590</width>
-						<height>38</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font_18A</font>
-						<include>listcolorfocus</include>
-						<info>ListItem.Label</info>
-					</control>
-					<control type="image">
-						<posx>1080</posx>
-						<posy>10</posy>
-						<width>30</width>
-						<height>20</height>
-						<texture>pvr_isrecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="label">
-						<posx>1120</posx>
-						<posy>1</posy>
-						<width>110</width>
-						<height>38</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font_18A</font>
-						<include>listcolorfocus</include>
-						<info>ListItem.Comment</info>
-					</control>
-				</focusedlayout>
-			</control>
-			<control type="scrollbar" id="73">
-				<include>ScrollBar_Vertical</include>
-				<posx>1245</posx>
-				<posy>135</posy>
-				<height>430</height>
-				<onleft>11</onleft>
-				<onright>9900</onright>
-				<ondown>73</ondown>
-				<onup>73</onup>
+			<!-- ViewTypes -->
+			<control type="group">
+				<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 				<!-- <visible>Control.IsVisible(14)</visible> -->
+				<include>EPGMenu</include>
+				<control type="image">
+					<posx>240</posx>
+					<posy>131</posy>
+					<width>315</width>
+					<height>439</height>
+					<texture>grey.png</texture>
+					<colordiffuse>20FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1060</posx>
+					<posy>131</posy>
+					<width>180</width>
+					<height>439</height>
+					<texture>grey.png</texture>
+					<colordiffuse>20FFFFFF</colordiffuse>
+				</control>
+				<control type="panel" id="14">
+					<posx>0</posx>
+					<posy>130</posy>
+					<width>1280</width>
+					<height>440</height>
+					<onup>14</onup>
+					<ondown>14</ondown>
+					<onleft>9900</onleft>
+					<onright>73</onright>
+					<pagecontrol>73</pagecontrol>
+					<scrolltime>350</scrolltime>
+					<itemlayout height="40" width="1280">
+						<control type="label">
+							<include>SettingsLabel</include>
+							<label>$INFO[ListItem.ChannelName]</label>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>240</width>
+							<height>3</height>
+							<texture>divider.png</texture>
+							<colordiffuse>90FFFFFF</colordiffuse>
+						</control>
+						<control type="image">
+							<posx>240</posx>
+							<posy>1</posy>
+							<width>1040</width>
+							<height>38</height>
+							<aspectratio>stretch</aspectratio>
+							<colordiffuse>50FFFAF0</colordiffuse>
+							<texture>settings_button_focus.png</texture>
+						</control>
+						<control type="label">
+							<!-- 	<posx>400</posx> -->
+							<posx>230</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>Font_20</font>
+							<include>listcolor</include>
+							<info>ListItem.Date</info>
+						</control>
+						<control type="label">
+							<posx>590</posx>
+							<posy>1</posy>
+							<width>590</width>
+							<height>38</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Font_18A</font>
+							<include>listcolor</include>
+							<info>ListItem.Label</info>
+						</control>
+						<control type="image">
+							<posx>1080</posx>
+							<posy>10</posy>
+							<width>30</width>
+							<height>20</height>
+							<texture>pvr_isrecording.png</texture>
+							<visible>ListItem.IsRecording</visible>
+						</control>
+						<control type="label">
+							<posx>1120</posx>
+							<posy>1</posy>
+							<width>110</width>
+							<height>38</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Font_18A</font>
+							<include>listcolorfocus</include>
+							<info>ListItem.Comment</info>
+						</control>
+					</itemlayout>
+					<focusedlayout height="40" width="1280">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>238</width>
+							<height>40</height>
+							<texture>settings_button.png</texture>
+							<animation effect="fade" start="100" end="50" time="50" condition="!Control.Hasfocus(14)">conditional</animation>
+						</control>
+						<control type="image">
+							<posx>240</posx>
+							<posy>1</posy>
+							<width>1040</width>
+							<height>38</height>
+							<aspectratio>stretch</aspectratio>
+							<colordiffuse>FFFFFAF0</colordiffuse>
+							<texture>settings_button_focus.png</texture>
+						</control>
+						<control type="label">
+							<include>SettingsLabelFocus</include>
+							<label>$INFO[ListItem.ChannelName]</label>
+						</control>
+						<control type="label">
+							<!-- 	<posx>400</posx> -->
+							<posx>230</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>Font_20</font>
+							<textcolor>$VAR[value_headercolor]</textcolor>
+							<info>ListItem.Date</info>
+						</control>
+						<control type="label">
+							<posx>590</posx>
+							<posy>1</posy>
+							<width>590</width>
+							<height>38</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Font_18A</font>
+							<include>listcolorfocus</include>
+							<info>ListItem.Label</info>
+						</control>
+						<control type="image">
+							<posx>1080</posx>
+							<posy>10</posy>
+							<width>30</width>
+							<height>20</height>
+							<texture>pvr_isrecording.png</texture>
+							<visible>ListItem.IsRecording</visible>
+						</control>
+						<control type="label">
+							<posx>1120</posx>
+							<posy>1</posy>
+							<width>110</width>
+							<height>38</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Font_18A</font>
+							<include>listcolorfocus</include>
+							<info>ListItem.Comment</info>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="scrollbar" id="73">
+					<include>ScrollBar_Vertical</include>
+					<posx>1245</posx>
+					<posy>135</posy>
+					<height>430</height>
+					<onleft>11</onleft>
+					<onright>9900</onright>
+					<ondown>73</ondown>
+					<onup>73</onup>
+					<!-- <visible>Control.IsVisible(14)</visible> -->
+				</control>
+				<include>PVRCommonInfo</include>
 			</control>
-			<include>PVRCommonInfo</include>
-		</control>
 
-		<!-- Furniture -->
-		<include>TouchScreen</include>
-		<include condition="Skin.HasSetting(pvrdate)">TopDate</include>
-		<include>TopMenu_PVR</include>
-		<include>BGBlack</include>
-	</control>
-</controls>
+			<!-- Furniture -->
+			<include>TouchScreen</include>
+			<include condition="Skin.HasSetting(pvrdate)">TopDate</include>
+			<include>TopMenu_PVR</include>
+			<include>BGBlack</include>
+		</control>
+	</controls>
 </window>
