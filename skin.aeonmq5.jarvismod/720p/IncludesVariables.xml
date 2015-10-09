@@ -2350,15 +2350,15 @@
 		<value condition="[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + SubString(skin.string(musicfanart),fallback)">$INFO[Skin.String(CustomFallbackMusicBG)]</value>
 		<value condition="[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + SubString(skin.string(musicfanart),musiccurtains)">special://skin/backgrounds/extras/curtains.jpg</value>
 		<value condition="[Container.Content(artists) | Container.Content(albums)]+ SubString(skin.string(musicfanart),extra)">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[ListItem.Artist,,/extrafanart/]</value>
-		<value condition="Container.Content(songs) + SubString(skin.string(musicfanart),extra)">$INFO[ListItem.Path]extrafanart/</value>
+		<value condition="[Container.Content(songs) | Container.Content(playlists)] + SubString(skin.string(musicfanart),extra)">$INFO[ListItem.Path]extrafanart/</value>
 		<value condition="Container.Content(files) + Skin.HasSetting(fallbackaudioimage)">$INFO[Skin.String(CustomFallbackMoviesBG)]</value>
 		<value condition="Container.Content(files) + Skin.HasSetting(musiccurtains)">special://skin/backgrounds/extras/curtains.jpg</value>
 		<value condition="Container.Content(files) + Skin.HasSetting(extrafanartaudio)">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[ListItem.Artist,,/extrafanart/]</value>
 	</variable>
 	<variable name="value_defaultmusicfanart">
 		<value condition="IsEmpty(ListItem.Art(fanart)) + !Container.Content(genres)">special://skin/backgrounds/music.jpg</value>
-		<value condition="![Container.Content(songs) | Container.Content(genres)] + [SubString(skin.string(musicfanart),fanart) | SubString(skin.string(musicfanart),extra) + IsEmpty(Control.GetLabel(5032))]">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(songs) + [SubString(skin.string(musicfanart),fanart) | SubString(skin.string(musicfanart),extra) + IsEmpty(Control.GetLabel(5033))]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="![Container.Content(songs) | Container.Content(playlists) | Container.Content(genres)] + [SubString(skin.string(musicfanart),fanart) | SubString(skin.string(musicfanart),extra) + IsEmpty(Control.GetLabel(5032))]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="[Container.Content(songs) | Container.Content(playlists)] + [SubString(skin.string(musicfanart),fanart) | SubString(skin.string(musicfanart),extra) + IsEmpty(Control.GetLabel(5033))]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(genres) + SubString(skin.string(musicgenrefanart),genre) + !Skin.HasSetting(externalmusicgenrefanart)">special://userdata/addon_data/skin.aeonmq5.extrapack/backgrounds_musicgenre/$INFO[ListItem.Label,,.jpg]</value>
 		<value condition="Container.Content(genres) + SubString(skin.string(musicgenrefanart),genre) + Skin.HasSetting(externalmusicgenrefanart)">$INFO[Skin.String(CustomMusicGenreFanart)]$INFO[ListItem.Label,,.jpg]</value>
 		<value condition="Container.Content(genres) + SubString(skin.string(musicgenrefanart),curtains)">special://skin/backgrounds/extras/curtains.jpg</value>

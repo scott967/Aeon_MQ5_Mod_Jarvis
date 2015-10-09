@@ -35,7 +35,7 @@
 			<control type="multiimage" id="5033"><!-- Extra Fanart Song -->
 				<include>WindowBG</include>
 				<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
-				<visible>Container.Content(songs) + SubString(skin.string(musicfanart),extra)</visible>
+				<visible>[Container.Content(songs) | Container.Content(playlists)] + SubString(skin.string(musicfanart),extra)</visible>
 			</control>
 			<control type="group"><!-- default group -->
 				<include>Animation_Window</include>
