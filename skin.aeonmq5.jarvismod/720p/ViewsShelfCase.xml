@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!-- Aeon MQ 5 Isengard 7.1.9 ShelfCase/7.1.10 -->
+<!-- Jarvis 8.1.13 -->
 
 <includes>
 	<!--##################################################################################   VISTA SHELFCASE - ID 69   ##################################################################################-->
@@ -185,7 +186,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<itemlayout width="176" height="245" condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">
+					<itemlayout width="176" height="245" condition="Window.IsActive(500) | Window.IsActive(502)">
 						<control type="group">
 							<posx>150</posx>
 							<posy>60</posy>
@@ -229,7 +230,7 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout width="220" height="515" condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">
+					<focusedlayout width="220" height="515" condition="Window.IsActive(500) | Window.IsActive(502)">
 						<control type="group">
 							<posx>140</posx>
 							<posy>60</posy>

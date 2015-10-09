@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<!-- Aeon MQ 5 Helix 6.1.6 /6.1.9 wall audiocase -->
-	<!-- Isengard 7.1.10/7.1.11 -->
+<!-- Aeon MQ 5 Helix 6.1.6 /6.1.9 wall audiocase -->
+<!-- Isengard 7.1.10/7.1.11 -->
+<!-- Jarvis 8.1.13 -->
 <includes>
 	<!--##################################################################################   VISTA WALL - ID 56   ##################################################################################-->
 	<include name="Wall_Dimmer">
@@ -905,7 +906,7 @@
 				<ondown>9920</ondown>
 				<orientation>vertical</orientation>
 				<pagecontrol>-</pagecontrol>
-				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
+				<visible>Window.IsActive(500) | Window.IsActive(502)</visible>
 				<itemlayout condition="SubString(skin.string(wallmusicgrid),default) + ![Container.Content(albums) + !Skin.HasSetting(nowallaudiocase)]" width="106.5" height="106.5"><!-- tamanho normal -->
 					<control type="image">
 						<posx>2</posx>
@@ -1128,7 +1129,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				</control>
+			</control>
 		</control>
 	</include>
 	<include name="ViewWallPrograms">

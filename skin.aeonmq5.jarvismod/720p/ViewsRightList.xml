@@ -9,7 +9,6 @@
 		<posx>0</posx>
 		<height>20</height>
 		<width>400</width>
-
 		<aligny>top</aligny>
 		<align>left</align>
 		<textcolor>FFFFFAF0</textcolor>
@@ -56,7 +55,7 @@
 					<texture background="true">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
 					<aspectratio align="right" aligny="bottom">keep</aspectratio>
 					<fadetime>FanartCrossFadeTime</fadetime>
-					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
+					<visible>Window.IsActive(500) | Window.IsActive(502)</visible>
 				</control>
 				<control type="image"><!-- clearlogo e clearart -->
 					<posx>360</posx>
@@ -214,7 +213,7 @@
 					<animation effect="slide" start="0,0" end="-30,0" time="200" easing="inout" tween="cubic" condition="Control.HasFocus(80)">Conditional</animation>
 					<animation effect="fade" start="100" end="20" time="200" condition="Window.IsVisible(621)">Conditional</animation>
 					<visible>!Container.Content(years)</visible>
-					<itemlayout condition="Window.IsActive(25) | Window.IsActive(28) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)" height="30">
+					<itemlayout condition="Window.IsActive(25) | Window.IsActive(28) | Window.IsActive(500) | Window.IsActive(502)" height="30">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -243,7 +242,7 @@
 							<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout condition="IsEmpty(Control.GetLabel(5902)) | [[Window.IsActive(25)  | Window.IsActive(28)]+ Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(slimrightlistmusic)]" height="30">
+					<focusedlayout condition="IsEmpty(Control.GetLabel(5902)) | [[Window.IsActive(25)  | Window.IsActive(28)]+ Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(slimrightlistmusic)]" height="30">
 						<control type="image">
 							<posx>50</posx>
 							<posy>0</posy>
@@ -272,7 +271,7 @@
 							<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 					</focusedlayout>
-					<focusedlayout condition="!IsEmpty(Control.GetLabel(5902)) + [[Window.IsActive(25) | Window.IsActive(28)] + !Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(slimrightlistmusic)]" height="50">
+					<focusedlayout condition="!IsEmpty(Control.GetLabel(5902)) + [[Window.IsActive(25) | Window.IsActive(28)] + !Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(502)] + !Skin.HasSetting(slimrightlistmusic)]" height="50">
 						<control type="image">
 							<animation effect="fade" start="100" end="60" time="0" condition="!Control.Hasfocus(51)">conditional</animation>
 							<posx>0</posx>
@@ -447,7 +446,7 @@
 
 				<control type="group"><!-- VIDEO SEM ESTOJO -->
 					<include>Animation_Fade</include>
-					<visible>![!Skin.HasSetting(norightlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>![!Skin.HasSetting(norightlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] | Window.IsActive(500) | Window.IsActive(502)]</visible>
 					<control type="image"><!-- Filmes/Fotos/Arquivos reflexo -->
 						<posx>-5</posx>
 						<posy>419</posy>
@@ -497,7 +496,7 @@
 
 				<control type="group"><!-- FILMES ESTOJO -->
 					<include>Animation_Fade</include>
-					<visible>!Skin.HasSetting(norightlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] + ![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>!Skin.HasSetting(norightlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] + ![Window.IsActive(500) | Window.IsActive(502)]</visible>
 					<control type="image"><!-- Poster reflexo -->
 						<posx>-5</posx>
 						<posy>436</posy>
@@ -547,7 +546,7 @@
 
 				<control type="group"><!-- MUSICA -->
 					<include>Animation_Fade</include>
-					<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + [Skin.HasSetting(norightlistaudiocase) | Container.Content(genres)]</visible>
+					<visible>[Window.IsActive(500) | Window.IsActive(502)] + [Skin.HasSetting(norightlistaudiocase) | Container.Content(genres)]</visible>
 					<control type="image"><!-- Musica reflexo -->
 						<posx>-5</posx>
 						<posy>420</posy>
@@ -572,7 +571,7 @@
 
 				<control type="group"><!-- MUSICA ESTOJO -->
 					<include>Animation_Fade</include>
-					<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + ![Skin.HasSetting(norightlistaudiocase) | Container.Content(genres)]</visible>
+					<visible>[Window.IsActive(500) | Window.IsActive(502)] + ![Skin.HasSetting(norightlistaudiocase) | Container.Content(genres)]</visible>
 					<control type="image"><!-- Musica/Estojo reflexo-->
 						<posx>18</posx>
 						<posy>420</posy>

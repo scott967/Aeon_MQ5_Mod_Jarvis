@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-	<!-- Aeon MQ 5 Helix 6.1.6 -->
-	<!-- Isengard 7.1.10 -->
+<!-- Aeon MQ 5 Helix 6.1.6 -->
+<!-- Isengard 7.1.10 -->
+<!-- Jarvis 8.1.13 -->
 
 <includes>
 	<!--##################################################################################   VISTA POSTER - ID 54   #############################################################################-->
@@ -43,7 +44,7 @@
 		<pagecontrol>80</pagecontrol>
 		<animation effect="fade" start="100" end="20" time="200" condition="Window.IsVisible(621)">Conditional</animation>
 		<visible>!Container.Content(years)</visible>
-		<itemlayout condition="![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]" width="298" height="360">
+		<itemlayout condition="![Window.IsActive(500) | Window.IsActive(502)]" width="298" height="360">
 			<control type="image">
 				<posx>0</posx>
 				<posy>6</posy>
@@ -74,7 +75,7 @@
 				<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + Control.HasFocus(54)</visible>
 			</control>
 		</itemlayout>
-		<itemlayout condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)" width="298" height="360">
+		<itemlayout condition="Window.IsActive(500) | Window.IsActive(502)" width="298" height="360">
 			<control type="image">
 				<posx>0</posx>
 				<posy>6</posy>
@@ -105,7 +106,7 @@
 				<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + Control.HasFocus(54)</visible>
 			</control>
 		</itemlayout>
-		<focusedlayout condition="![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]" width="298" height="360">
+		<focusedlayout condition="![Window.IsActive(500) | Window.IsActive(502)]" width="298" height="360">
 			<control type="image">
 				<posx>0</posx>
 				<posy>6</posy>
@@ -141,7 +142,7 @@
 				<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + Control.HasFocus(54)</visible>
 			</control>	
 		</focusedlayout>
-		<focusedlayout condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)" width="298" height="360">
+		<focusedlayout condition="Window.IsActive(500) | Window.IsActive(502)" width="298" height="360">
 			<control type="image">
 				<posx>0</posx>
 				<posy>6</posy>

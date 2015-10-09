@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<!-- Aeon MQ 5 Helix 6.1.0/6.1.2/6.1.3/6.1.4/6.1.5/6.1.6/6.1.7/6.1.8 -->
-	<!-- Aeon MQ5 Isengard 7.1.8/7.1.9/7.1.10/7.1.11/7.1.12 -->
-	<!-- Aeon MQ5 Jarvis 8.1.13 -->
+<!-- Aeon MQ 5 Helix 6.1.0/6.1.2/6.1.3/6.1.4/6.1.5/6.1.6/6.1.7/6.1.8 -->
+<!-- Aeon MQ5 Isengard 7.1.8/7.1.9/7.1.10/7.1.11/7.1.12 -->
+<!-- Aeon MQ5 Jarvis 8.1.13 -->
 <includes>
 	<!-- ################################################ Value/General ################################################ -->
 	<variable name="SkinVersion">
@@ -3045,8 +3045,8 @@
 		<value condition="IsEmpty(ListItem.Art(poster)) + !Container.Content(genres)">$INFO[ListItem.Icon]</value>
 		<value condition="Window.IsActive(25) + Container.Content(genres) + !Skin.HasSetting(externalvideogenreicon)">special://userdata/addon_data/skin.aeonmq5.extrapack/icons_videogenre/$INFO[ListItem.Label].jpg</value>
 		<value condition="Window.IsActive(25) + Container.Content(genres) + Skin.HasSetting(externalvideogenreicon)">$INFO[Skin.String(CustomVideoGenreIcon)]$INFO[ListItem.Label].jpg</value>
-		<value condition="[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Container.Content(genres) + !Skin.HasSetting(externalmusicgenreicon)">special://userdata/addon_data/skin.aeonmq5.extrapack/icons_musicgenre/$INFO[ListItem.Label].jpg</value>
-		<value condition="[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Container.Content(genres) + Skin.HasSetting(externalmusicgenreicon)">$INFO[Skin.String(CustomMusicGenreIcon)]$INFO[ListItem.Label].jpg</value>
+		<value condition="[Window.IsActive(500) | Window.IsActive(502)] + Container.Content(genres) + !Skin.HasSetting(externalmusicgenreicon)">special://userdata/addon_data/skin.aeonmq5.extrapack/icons_musicgenre/$INFO[ListItem.Label].jpg</value>
+		<value condition="[Window.IsActive(500) | Window.IsActive(502)] + Container.Content(genres) + Skin.HasSetting(externalmusicgenreicon)">$INFO[Skin.String(CustomMusicGenreIcon)]$INFO[ListItem.Label].jpg</value>
 	</variable>
 
 	<variable name="value_poster-11">
@@ -3155,7 +3155,7 @@
 	</variable>
 
 	<variable name="value_plot">
-		<value condition="![Container.Content(files) | Container.Content(addons) | Window.IsActive(pictures) | SubString(ListItem.Path,videodb://movies/sets,left) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) + [Container.Content(albums) | Container.Content(artists)]]">$INFO[ListItem.Plot]</value>
+		<value condition="![Container.Content(files) | Container.Content(addons) | Window.IsActive(pictures) | SubString(ListItem.Path,videodb://movies/sets,left) | Window.IsActive(500) | Window.IsActive(502) + [Container.Content(albums) | Container.Content(artists)]]">$INFO[ListItem.Plot]</value>
 		<!-- <value condition="SubString(ListItem.Path,videodb://movies/sets,left) + System.HasAddon(script.extendedinfo)">$INFO[Window(0).Property(Set.Movies.Plot)]</value>
 	<value condition="SubString(ListItem.Path,videodb://movies/sets,left) + !System.HasAddon(script.extendedinfo)">[COLOR=FFB20000]$LOCALIZE[20457] | $LOCALIZE[31435]:[/COLOR] ExtendedInfo Script</value> -->
 		<value condition="SubString(ListItem.Path,videodb://movies/sets,left) + System.HasAddon(script.skin.info.service)">$INFO[Window(0).Property(Set.Movies.Plot)]</value>
@@ -3184,12 +3184,12 @@
 	<variable name="value_pvrstatus">
 		<value condition="PVR.IsRecording">[COLOR=$VAR[value_headercolor]]$LOCALIZE[19158]:[/COLOR] - $INFO[PVR.NowRecordingDateTime] - $INFO[PVR.NowRecordingTitle] - $INFO[PVR.NowRecordingChannel]</value>
 		<value condition="PVR.HasNonRecordingTimer">[COLOR=$VAR[value_headercolor]]$LOCALIZE[19157]:[/COLOR] - $INFO[PVR.NextRecordingDateTime] - $INFO[PVR.NextRecordingTitle] - $INFO[PVR.NextRecordingChannel]</value>
-		
+
 	</variable>
 	<variable name="value_pvrcurrenticon">
 		<value condition="PVR.IsRecording">$INFO[Pvr.NowRecordingChannelIcon]</value>
 		<value condition="PVR.HasNonRecordingTimer">$INFO[Pvr.NextRecordingChannelIcon]</value>
-		
+
 	</variable>
 
 	<variable name="value_librarystatus">
@@ -3999,7 +3999,7 @@
 		<value condition="SubString(skin.string(theme),mytheme)">$INFO[Skin.String(CustomMyTheme),,addons]</value>
 	</variable>
 	<variable name="SeekLabel">
-        <value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[31997][COLOR=$VAR[value_headercolor]] $INFO[Player.SeekStepSize][/COLOR]</value>
+		<value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[31997][COLOR=$VAR[value_headercolor]] $INFO[Player.SeekStepSize][/COLOR]</value>
 		<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[31997][COLOR=$VAR[value_headercolor]] $INFO[Player.SeekOffset][/COLOR]</value>
 		<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[31997]</value>
 	</variable>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.0  -->
 <!-- Isengard 7.1.11/7.1.12 -->
+<!-- Jarvis 8.1.13 -->
 
 <includes>
 	<!--##################################################################################   VISTA LOW LIST - ID 70   ##################################################################################-->
@@ -162,7 +163,7 @@
 				<animation effect="slide" time="500" start="0,400" end="0,0" tween="cubic" easing="out">Visible</animation>
 				<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
 				<control type="group">
-					<animation effect="slide" time="600" start="0,0" end="-400,0" tween="cubic" easing="inout" condition="[Control.HasFocus(9915) | Window.IsVisible(621) | Window.IsActive(25) + Skin.HasSetting(midlistplotvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(midlistplotaudio)] + !IsEmpty(Control.GetLabel(7011))">Conditional</animation>
+					<animation effect="slide" time="600" start="0,0" end="-400,0" tween="cubic" easing="inout" condition="[Control.HasFocus(9915) | Window.IsVisible(621) | Window.IsActive(25) + Skin.HasSetting(midlistplotvideo) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(midlistplotaudio)] + !IsEmpty(Control.GetLabel(7011))">Conditional</animation>
 					<animation effect="slide" time="400" start="-400,0" end="0,0" tween="cubic" easing="inout">Hidden</animation>
 					<control type="image">
 						<description>MUSIC LOGO?</description>
@@ -173,14 +174,14 @@
 						<texture background="true">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
 						<aspectratio align="right" aligny="bottom">keep</aspectratio>
 						<fadetime>FanartCrossFadeTime</fadetime>
-						<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
+						<visible>Window.IsActive(500) | Window.IsActive(502)</visible>
 					</control>
 				</control>
 				<control type="group">
 					<description>INFO PANEL SLIDE OUT</description>
 					<animation effect="slide" time="600" start="370,0" end="0,0" tween="cubic" easing="inout">Visible</animation>
 					<animation effect="slide" time="400" start="0,0" end="370,0" tween="cubic" easing="inout">Hidden</animation>
-					<visible>Control.HasFocus(9915) | Window.IsVisible(621) | Window.IsActive(25) + Skin.HasSetting(midlistplotvideo) + !IsEmpty(Control.GetLabel(7011)) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(midlistplotaudio) + !IsEmpty(Control.GetLabel(7011))</visible>
+					<visible>Control.HasFocus(9915) | Window.IsVisible(621) | Window.IsActive(25) + Skin.HasSetting(midlistplotvideo) + !IsEmpty(Control.GetLabel(7011)) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(midlistplotaudio) + !IsEmpty(Control.GetLabel(7011))</visible>
 					<control type="image">
 						<description>INFO PANEL SHADOW/BEVEL EFFECT</description>
 						<posx>934</posx>
@@ -564,7 +565,7 @@
 				<description>CLEARART/FANART GROUP</description>
 				<animation effect="slide" time="600" start="370,0" end="0,0" tween="cubic" easing="inout">Visible</animation>
 				<animation effect="slide" time="400" start="0,0" end="370,0" tween="cubic" easing="inout">Hidden</animation>
-				<visible>Container.content(genres) + [Window.IsActive(501) | Window.IsActive(502) | Windows.IsActive(500)]</visible>
+				<visible>Container.content(genres) + [Window.IsActive(502) | Windows.IsActive(500)]</visible>
 				<control type="image">
 					<description>FANART WINDOW BACKGROUND</description>
 					<posx>935</posx>
@@ -727,8 +728,8 @@
 				<height>355</height>
 				<pagecontrol>80</pagecontrol>
 				<onright>80</onright>
-				<onleft condition="![IsEmpty(Control.GetLabel(7011)) | Window.IsActive(25) + Skin.HasSetting(midlistplotvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(midlistplotaudio)]">9915</onleft>
-				<onleft condition="IsEmpty(Control.GetLabel(7011)) | Window.IsActive(25) + Skin.HasSetting(midlistplotvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(midlistplotaudio)">9920</onleft>
+				<onleft condition="![IsEmpty(Control.GetLabel(7011)) | Window.IsActive(25) + Skin.HasSetting(midlistplotvideo) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(midlistplotaudio)]">9915</onleft>
+				<onleft condition="IsEmpty(Control.GetLabel(7011)) | Window.IsActive(25) + Skin.HasSetting(midlistplotvideo) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(midlistplotaudio)">9920</onleft>
 				<onup>70</onup>
 				<ondown>70</ondown>
 				<focusposition>1</focusposition>
@@ -737,7 +738,7 @@
 				<preloaditems>2</preloaditems>
 				<animation effect="fade" start="100" end="20" time="200" condition="Window.IsVisible(621)">Conditional</animation>
 
-				<itemlayout condition="[Window.IsActive(25) + !Skin.HasSetting(slimmidlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(slimmidlistmusic)]" height="30">
+				<itemlayout condition="[Window.IsActive(25) + !Skin.HasSetting(slimmidlistvideo) | [Window.IsActive(500) | Window.IsActive(502)] + !Skin.HasSetting(slimmidlistmusic)]" height="30">
 					<description>DESELECTED LIST ITEMS WITH SLIM LIST DEACTIVED</description>
 
 					<control type="image">
@@ -774,7 +775,7 @@
 
 				</itemlayout>
 
-				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(slimmidlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(slimmidlistmusic)]" height="27">
+				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(slimmidlistvideo) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(slimmidlistmusic)]" height="27">
 					<description>DESELECTED LIST ITEMS WITH SLIM LIST ACTIVATED</description>
 
 					<control type="image">
@@ -811,7 +812,7 @@
 
 				</itemlayout>
 
-				<focusedlayout condition="IsEmpty(Control.GetLabel(7012)) | [Window.IsActive(25) + Skin.HasSetting(slimmidlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(slimmidlistmusic)]" height="30">
+				<focusedlayout condition="IsEmpty(Control.GetLabel(7012)) | [Window.IsActive(25) + Skin.HasSetting(slimmidlistvideo) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(slimmidlistmusic)]" height="30">
 					<description>SELECTED LIST ITEMS WITH SLIM LIST ACTIVATED</description>
 
 					<control type="image">
@@ -848,7 +849,7 @@
 
 				</focusedlayout>
 
-				<focusedlayout condition="!IsEmpty(Control.GetLabel(7012)) + [Window.IsActive(25) + !Skin.HasSetting(slimmidlistvideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(slimmidlistmusic)]" height="50">
+				<focusedlayout condition="!IsEmpty(Control.GetLabel(7012)) + [Window.IsActive(25) + !Skin.HasSetting(slimmidlistvideo) | [Window.IsActive(500) | Window.IsActive(502)] + !Skin.HasSetting(slimmidlistmusic)]" height="50">
 					<description>SELECTED LIST ITEMS WITH SLIM LIST DEACTIVATED</description>
 
 					<control type="image">
@@ -1190,7 +1191,7 @@
 				<control type="group">
 					<description>VIDEO WITHOUT COVER</description>
 					<include>Animation_Fade</include>
-					<visible>![!Skin.HasSetting(nomidlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>![!Skin.HasSetting(nomidlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] | Window.IsActive(500) | Window.IsActive(502)]</visible>
 					<control type="image">
 						<description>MOVIS / PHOTOS / FILES REFLECTION</description>
 						<posx>-5</posx>
@@ -1219,7 +1220,7 @@
 				<control type="group">
 					<description>MOVIE CASE</description>
 					<include>Animation_Fade</include>
-					<visible>!Skin.HasSetting(nomidlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] + ![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>!Skin.HasSetting(nomidlistvideocase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)] + ![Window.IsActive(500) | Window.IsActive(502)]</visible>
 					<control type="image">
 						<description>MOVIE POSTER REFLECTION</description>
 						<posx>-5</posx>
@@ -1274,7 +1275,7 @@
 
 				<control type="group"><!-- MUSICA -->
 					<include>Animation_Fade</include>
-					<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + [Skin.HasSetting(nomidlistaudiocase) | Container.Content(genres)]</visible>
+					<visible>[Window.IsActive(500) | Window.IsActive(502)] + [Skin.HasSetting(nomidlistaudiocase) | Container.Content(genres)]</visible>
 					<control type="image"><!-- Musica reflexo -->
 						<posx>-5</posx>
 						<posy>420</posy>
@@ -1299,7 +1300,7 @@
 
 				<control type="group"><!-- MUSICA ESTOJO -->
 					<include>Animation_Fade</include>
-					<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(nomidlistaudiocase) + !Container.Content(genres)</visible>
+					<visible>[Window.IsActive(500) | Window.IsActive(502)] + !Skin.HasSetting(nomidlistaudiocase) + !Container.Content(genres)</visible>
 					<control type="image"><!-- Musica/Estojo reflexo-->
 						<posx>18</posx>
 						<posy>420</posy>

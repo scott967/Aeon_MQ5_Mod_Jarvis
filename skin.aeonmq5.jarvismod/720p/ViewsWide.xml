@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.0 / 6.1.2 -->
 <!-- Isengardmod 7.1.11/7/1/12 -->
+<!-- Jarvis 8.1.3 -->
 
 <includes>
 	<!--##################################################################################   VISTA WIDE - 51   ##################################################################################-->
@@ -168,7 +169,7 @@
 							<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout condition="IsEmpty(Control.GetLabel(5101)) | [Window.IsActive(25) + Skin.HasSetting(slimwidevideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(slimwidemusic)]" height="40">
+					<focusedlayout condition="IsEmpty(Control.GetLabel(5101)) | [Window.IsActive(25) + Skin.HasSetting(slimwidevideo) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(slimwidemusic)]" height="40">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -218,7 +219,7 @@
 							<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 					</focusedlayout>
-					<focusedlayout condition="!IsEmpty(Control.GetLabel(5101)) + [Window.IsActive(25) + !Skin.HasSetting(slimwidevideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(slimwidemusic)]" height="63">
+					<focusedlayout condition="!IsEmpty(Control.GetLabel(5101)) + [Window.IsActive(25) + !Skin.HasSetting(slimwidevideo) | [Window.IsActive(500) | Window.IsActive(502)] + !Skin.HasSetting(slimwidemusic)]" height="63">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -506,7 +507,7 @@
 
 					<control type="group"><!-- EPISODIOS -->
 						<include>Animation_Fade</include>
-						<visible>![Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+						<visible>![Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(genres) | Window.IsActive(500) | Window.IsActive(502)]</visible>
 						<control type="image"><!-- episodios reflexo -->
 							<posx>20</posx>
 							<posy>401</posy>
@@ -558,7 +559,7 @@
 					<control type="group"><!-- FILMES ESTOJO -->
 						<include>Animation_Fade</include>
 						<animation effect="slide" start="0,0" end="-33,0" time="500" delay="50" tween="cubic" easing="in" condition="!Skin.HasSetting(nowidediscart) + !IsEmpty(ListItem.Art(discart)) + Control.IsVisible(9923)">Conditional</animation>
-						<visible>!Skin.HasSetting(nowidevideocase) + Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | !Skin.HasSetting(nowidevideocase) + [Container.Content(musicvideos) | Container.Content(sets)] + ![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+						<visible>!Skin.HasSetting(nowidevideocase) + Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | !Skin.HasSetting(nowidevideocase) + [Container.Content(musicvideos) | Container.Content(sets)] + ![Window.IsActive(500) | Window.IsActive(502)]</visible>
 						<control type="image"><!-- Poster reflexo -->
 							<posx>205</posx>
 							<posy>416</posy>
@@ -608,7 +609,7 @@
 
 					<control type="group"><!-- MUSICA -->
 						<include>Animation_Fade</include>
-						<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + [Skin.HasSetting(nowideaudiocase) | Container.Content(genres)]</visible>
+						<visible>[Window.IsActive(500) | Window.IsActive(502)] + [Skin.HasSetting(nowideaudiocase) | Container.Content(genres)]</visible>
 						<control type="image"><!-- Musica reflexo -->
 							<posx>20</posx>
 							<posy>400</posy>
@@ -633,7 +634,7 @@
 
 					<control type="group"><!-- MUSICA ESTOJO -->
 						<include>Animation_Fade</include>
-						<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + ![Skin.HasSetting(nowideaudiocase) | Container.Content(genres)]</visible>
+						<visible>[Window.IsActive(500) | Window.IsActive(502)] + ![Skin.HasSetting(nowideaudiocase) | Container.Content(genres)]</visible>
 						<control type="image"><!-- Musica reflexo-->
 							<posx>170</posx>
 							<posy>404</posy>
@@ -679,7 +680,7 @@
 					<label>$VAR[value_plot]</label>
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					<include>Animation_Fade</include>
-					<visible>![Control.HasFocus(562) | IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))] + Window.IsActive(25) | ![Control.HasFocus(562) | IsEmpty(Control.GetLabel(1017))] + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>![Control.HasFocus(562) | IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))] + Window.IsActive(25) | ![Control.HasFocus(562) | IsEmpty(Control.GetLabel(1017))] + [Window.IsActive(500) | Window.IsActive(502)]</visible>
 				</control>
 				<control type="textbox"><!-- Video e audio para quando nao tem logo -->
 					<posx>20</posx>
@@ -690,7 +691,7 @@
 					<label>$VAR[value_plot]</label>
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					<include>Animation_Fade</include>
-					<visible>[!Control.HasFocus(562) + [IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))]] + Window.IsActive(25) | [!Control.HasFocus(562) + IsEmpty(Control.GetLabel(1017))] + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>[!Control.HasFocus(562) + [IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))]] + Window.IsActive(25) | [!Control.HasFocus(562) + IsEmpty(Control.GetLabel(1017))] + [Window.IsActive(500) | Window.IsActive(502)]</visible>
 				</control>
 				<control type="textbox"><!-- Video e audio para quando tem logo + foco no painel -->
 					<posx>20</posx>
@@ -701,7 +702,7 @@
 					<label>$VAR[value_plot]</label>
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					<include>Animation_Fade</include>
-					<visible>[Control.HasFocus(562) + ![IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))]] + Window.IsActive(25) | [Control.HasFocus(562) + !IsEmpty(Control.GetLabel(1017))] + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>[Control.HasFocus(562) + ![IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))]] + Window.IsActive(25) | [Control.HasFocus(562) + !IsEmpty(Control.GetLabel(1017))] + [Window.IsActive(500) | Window.IsActive(502)]</visible>
 				</control>
 				<control type="textbox"><!-- Video e audio para quando nao tem logo + foco no painel -->
 					<posx>20</posx>
@@ -712,7 +713,7 @@
 					<label>$VAR[value_plot]</label>
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					<include>Animation_Fade</include>
-					<visible>[Control.HasFocus(562) + [IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))]] + Window.IsActive(25) | [Control.HasFocus(562) + IsEmpty(Control.GetLabel(1017))] + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>[Control.HasFocus(562) + [IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))]] + Window.IsActive(25) | [Control.HasFocus(562) + IsEmpty(Control.GetLabel(1017))] + [Window.IsActive(500) | Window.IsActive(502)]</visible>
 				</control>
 				<control type="textbox"><!-- Addons -->
 					<posx>20</posx>
@@ -723,7 +724,7 @@
 					<label>$VAR[value_plot]</label>
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					<include>Animation_Fade</include>
-					<visible>![Control.HasFocus(562) | Window.IsActive(25) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>![Control.HasFocus(562) | Window.IsActive(25) | Window.IsActive(500) | Window.IsActive(502)]</visible>
 				</control>
 				<control type="textbox"><!-- Addons + foco no painel -->
 					<posx>20</posx>
@@ -734,7 +735,7 @@
 					<label>$VAR[value_plot]</label>
 					<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					<include>Animation_Fade</include>
-					<visible>Control.HasFocus(562) + ![Window.IsActive(25) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>Control.HasFocus(562) + ![Window.IsActive(25) | Window.IsActive(500) | Window.IsActive(502)]</visible>
 				</control>
 				<control type="image">
 					<posx>10</posx>
@@ -742,7 +743,7 @@
 					<width>620</width>
 					<height>1</height>
 					<texture>line.png</texture>
-					<visible>![IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))] + Window.IsActive(25) | !IsEmpty(Control.GetLabel(1017)) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+					<visible>![IsEmpty(Control.GetLabel(1018)) + IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1))] + Window.IsActive(25) | !IsEmpty(Control.GetLabel(1017)) + [Window.IsActive(500) | Window.IsActive(502)]</visible>
 				</control>
 				<control type="image" id="1017"><!-- Logo Musicas -->
 					<posx>420</posx>

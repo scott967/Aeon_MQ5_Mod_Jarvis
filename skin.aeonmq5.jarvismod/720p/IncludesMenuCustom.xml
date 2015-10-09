@@ -1,4 +1,6 @@
-	<!-- Aeon MQ 5 Helix 6.1.0 / 6.1.4 /6.1.7/6.1.8 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aeon MQ 5 Helix 6.1.0 / 6.1.4 /6.1.7/6.1.8 -->
+<!-- Jarvis 8.1.13 -->
 
 <includes>
 	<!-- ######################################################################### Presets para aplicar ######################################################################### -->
@@ -1932,7 +1934,7 @@
 					<label2>$LOCALIZE[31002]-$LOCALIZE[31033]</label2>
 					<property name="id">music</property>
 					<onclick>Skin.SetString($INFO[skin.string(custom_master)],musicfiles)</onclick>
-					<onclick>Skin.SetString($INFO[skin.string(custom_action)],ActivateWindow(musicfiles))</onclick>
+					<onclick>Skin.SetString($INFO[skin.string(custom_action)],ActivateWindow(music,files,return))</onclick>
 					<include>DefaultReset</include>
 				</item>
 				<item>

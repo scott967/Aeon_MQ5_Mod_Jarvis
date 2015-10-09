@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<!-- Aeon MQ 5 Helix 6.1.0/6.1.1/6.1.4/6.1.5/6.1.9 Shelfcase Mod -->
 	<!-- Isengard 7.1.9 Shelfcase/7.1.10/7.1.11 MidList/7.1.12 -->
+	<!-- Jarvis 8.1.13 -->
 <includes>
 	<include file="Defaults.xml"/>
 	<include file="IncludesVariables.xml"/>
@@ -806,7 +807,7 @@
 				<onfocus>Skin.SetString(menu0408.master,musicsongs)</onfocus><!-- Musica faixas -->
 				<onfocus>Skin.SetString(menu0408.action,ActivateWindow(musiclibrary,songs,return))</onfocus>
 				<onfocus>Skin.SetString(menu0409.master,musicfiles)</onfocus><!-- Musica arquivos -->
-				<onfocus>Skin.SetString(menu0409.action,ActivateWindow(musicfiles))</onfocus>
+				<onfocus>Skin.SetString(menu0409.action,ActivateWindow(music,files,return))</onfocus>
 				<onfocus>Skin.SetString(menu0410.master,musicpartymode)</onfocus><!-- Musica modo festa -->
 				<onfocus>Skin.SetString(menu0410.action,PlayerControl(Partymode(music)))</onfocus>
 				<onfocus>Skin.SetString(menu0411.master,musiccompilations)</onfocus><!-- Musica compilacoes -->
@@ -2393,20 +2394,22 @@
 			<altlabel>31480</altlabel>
 			<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 		</control>
-		<control type="radiobutton" id="299"><!-- Library -->
+		<!-- removed MyMusicSongs (files)
+		<control type="radiobutton" id="299">
 			<include>TopMenuRadioButton</include>
 			<label>29800</label>
 			<onclick>ReplaceWindow(MusicLibrary)</onclick>
 			<selected>Window.IsVisible(MusicLibrary)</selected>
 			<visible>Window.IsVisible(MusicFiles)</visible>
 		</control>
-		<control type="radiobutton" id="99"><!-- Files -->
+		<control type="radiobutton" id="99">
 			<include>TopMenuRadioButton</include>
 			<label>29800</label>
 			<onclick>ReplaceWindow(MusicFiles)</onclick>
 			<selected>Window.IsVisible(MusicLibrary)</selected>
 			<visible>Window.IsVisible(MusicLibrary)</visible>
 		</control>
+		-->
 		<control type="radiobutton" id="17"><!-- Flatten -->
 			<include>TopMenuRadioButton</include>
 			<label>20411</label>
@@ -2437,7 +2440,7 @@
 		<control type="radiobutton" id="16"><!-- PartyMode -->
 			<include>TopMenuRadioButton</include>
 			<label>589</label>
-			<visible>Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)</visible>
+			<visible>Window.IsActive(musiclibrary)</visible>
 		</control>
 	</include>
 	<include name="TopMenu_Playlist">

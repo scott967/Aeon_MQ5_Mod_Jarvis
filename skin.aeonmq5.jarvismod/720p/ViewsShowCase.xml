@@ -1,4 +1,6 @@
-	<!-- Aeon MQ 5 Helix 6.1.6 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aeon MQ 5 Helix 6.1.6 -->
+<!-- Jarvis 8.1.13 -->
 
 <includes>
 	<!--##################################################################################   VISTA ShowCase - ID 66   ##################################################################################-->
@@ -188,16 +190,16 @@
 				<control type="image"><!-- Poster reflexo -->
 					<include>ShowCasePosterReflect</include>
 					<texture flipy="true" diffuse="thumb_poster_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 				<control type="image"><!-- Poster -->
 					<include>ShowCasePoster</include>
 					<texture diffuse="thumb_poster_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 				<control type="image">
 					<include>WatchedShowCase</include>
-					<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -205,31 +207,31 @@
 				<control type="image"><!-- Poster reflexo -->	
 					<include>ShowCaseThumbReflectFlat</include>
 					<texture flipy="true" diffuse="thumb_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 				<control type="image"><!-- Poster + Estojo Reflexo -->
 					<include>ShowCaseThumbCaseReflectFlat</include>
 					<texture flipy="true" diffuse="thumb_box_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_videocase0]</texture>
-					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 				<control type="image"><!-- Poster + Estojo -->
 					<include>ShowCaseCaseFlat</include>
 					<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 				<control type="image">
 					<include>WatchedShowCaseCase</include>
-					<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 				<control type="image"><!-- Estojo -->
 					<include>ShowCaseThumbCaseFlat</include>
 					<texture>$VAR[value_videocase0]</texture>
-					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 				<control type="image"><!-- Codec -->
 					<include>ShowCaseCodecFlat</include>
 					<texture>$VAR[value_videocodec0]</texture>
-					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+					<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 				</control>
 			</control>
 		</itemlayout>
@@ -242,16 +244,16 @@
 					<control type="image"><!-- Poster reflexo -->
 						<include>ShowCasePosterReflect</include>
 						<texture flipy="true" diffuse="thumb_poster_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 					<control type="image"><!-- Poster -->
 						<include>ShowCasePoster</include>
 						<texture diffuse="thumb_poster_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 					<control type="image">
 						<include>WatchedShowCase</include>
-						<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -259,31 +261,31 @@
 					<control type="image"><!-- Poster reflexo -->	
 						<include>ShowCaseThumbReflectFlat</include>
 						<texture flipy="true" diffuse="thumb_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 					<control type="image"><!-- Poster + Estojo Reflexo -->
 						<include>ShowCaseThumbCaseReflectFlat</include>
 						<texture flipy="true" diffuse="thumb_box_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_videocase0]</texture>
-						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 					<control type="image"><!-- Poster + Estojo -->
 						<include>ShowCaseCaseFlat</include>
 						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 					<control type="image">
 						<include>WatchedShowCaseCase</include>
-						<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 					<control type="image"><!-- Estojo -->
 						<include>ShowCaseThumbCaseFlat</include>
 						<texture>$VAR[value_videocase0]</texture>
-						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 					<control type="image"><!-- Codec -->
 						<include>ShowCaseCodecFlat</include>
 						<texture>$VAR[value_videocodec0]</texture>
-						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+						<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 					</control>
 				</control>
 			</control>

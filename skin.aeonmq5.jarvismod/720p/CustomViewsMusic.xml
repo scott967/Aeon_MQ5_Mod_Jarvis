@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Isengard 7.1.11 Mid List -->
+<!-- Jarvis 8.1.13 -->
 
 <window id="626" type="dialog">
 	<defaultcontrol always="true">9030</defaultcontrol>
 	<onunload condition="Window.IsActive(500)">AlarmClock(refreshview,ActivateWindowAndFocus(500, 9940,0),0:01,true)</onunload>
-	<onunload condition="Window.IsActive(501)">AlarmClock(refreshview,ActivateWindowAndFocus(501, 9940,0),0:01,true)</onunload>
 	<onunload condition="Window.IsActive(502)">AlarmClock(refreshview,ActivateWindowAndFocus(502, 9940,0),0:01,true)</onunload>
 	<controls>
 		<control type="group">

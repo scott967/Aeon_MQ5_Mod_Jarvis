@@ -2,6 +2,8 @@
 New:  Events window (Jarvis addition)
 New:  PVRInfo (Jarvis addition)
 New: Support for Cinema Vision add-on
+New:  Add menucontrol for views (top menu)
+New: remove music files
 Improved:  Video playlist for party mode music video
 Improved:  Music playlist for party mode
 Fixed:  SmartPlaylistEditor filename case  

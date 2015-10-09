@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.0/6.1.1/6.1.2/6.1.3 /6.1.4/6.1.5/6.1.6/6.1.8/6.1.9 wall audiocover-->
 <!-- Isengard 7.1.10 wall audiocover/7.1.11/MidList mod/7.1.12 -->
+<!-- Jarvis 8.1.13 -->
 <includes>
 	<include name="TopMenuTopButton">
 		<posy>21</posy>
@@ -121,7 +122,7 @@
 				<onleft>SetFocus(9940)</onleft>
 				<onright>SetFocus(9940)</onright>
 				<onclick condition="Window.IsActive(25)">ActivateWindow(641)</onclick>
-				<onclick condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">ActivateWindow(626)</onclick>
+				<onclick condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(626)</onclick>
 				<onclick condition="Window.IsActive(1)">ActivateWindow(631)</onclick>
 				<ondown>SetFocus(51)</ondown>
 				<visible>![Skin.HasSetting(rcbgames) | Window.IsActive(2)]</visible>
@@ -197,7 +198,7 @@
 				<onleft>SetFocus(9941)</onleft>
 				<onright>SetFocus(9942)</onright>
 				<onup condition="Window.IsActive(25)">ActivateWindow(641)</onup>
-				<onup condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">ActivateWindow(626)</onup>
+				<onup condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(626)</onup>
 				<onup condition="Window.IsActive(1)">ActivateWindow(631)</onup>
 				<ondown>SetFocus(51)</ondown>
 			</control>
@@ -241,7 +242,7 @@
 				<onleft>SetFocus(2)</onleft>
 				<onright>SetFocus(2)</onright>
 				<onclick condition="Window.IsActive(25)">ActivateWindow(641)</onclick>
-				<onclick condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">ActivateWindow(626)</onclick>
+				<onclick condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(626)</onclick>
 				<!-- <onclick condition="Window.IsActive(617)">ActivateWindow(1101)</onup> -->
 				<onclick condition="Window.IsActive(1)">ActivateWindow(631)</onclick>
 				<!-- <ondown condition="Window.IsActive(626)">SetFocus(50)</ondown> -->
@@ -420,7 +421,7 @@
 					<include>TopMenuButton</include>
 					<label>31002</label>
 					<onclick>ActivateWindow(music)</onclick>
-					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="9111">
 					<include>TopMenuButton</include>
@@ -604,7 +605,7 @@
 					<selected>!Skin.HasSetting(noartpostervideo)</selected>
 					<visible>Control.IsVisible(54)</visible>
 				</control>
-				
+
 				<!-- Low List -->
 				<control type="radiobutton" id="9225">
 					<include>TopMenuRadioButton</include>
@@ -1815,7 +1816,7 @@
 					<include>TopMenuButton</include>
 					<label>31002</label>
 					<onclick>ActivateWindow(music)</onclick>
-					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="9110">
 					<include>TopMenuButton</include>
@@ -1827,7 +1828,7 @@
 					<include>TopMenuButton</include>
 					<label>31025</label>
 					<onclick>ActivateWindow(music,addons,return)</onclick>
-					<visible>![Skin.HasSetting(kiosksmart) + !SubString(skin.string(codestep),step3)] + [Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)]</visible>
+					<visible>![Skin.HasSetting(kiosksmart) + !SubString(skin.string(codestep),step3)] + [Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)]</visible>
 				</control>
 				<control type="button" id="9112"><!-- Programs addons -->
 					<include>TopMenuButton</include>
@@ -2382,7 +2383,7 @@
 					<include>TopMenuButton</include>
 					<label>31002</label>
 					<onclick>ActivateWindow(music)</onclick>
-					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="9112">
 					<include>TopMenuButton</include>
@@ -2595,7 +2596,7 @@
 					<include>TopMenuButton</include>
 					<label>31002</label>
 					<onclick>ActivateWindow(music)</onclick>
-					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="9112">
 					<include>TopMenuButton</include>
@@ -2820,7 +2821,7 @@
 					<include>TopMenuButton</include>
 					<label>31002</label>
 					<onclick>ActivateWindow(music)</onclick>
-					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="9112">
 					<include>TopMenuButton</include>
@@ -3178,7 +3179,7 @@
 					<include>TopMenuButton</include>
 					<label>31002</label>
 					<onclick>ActivateWindow(music)</onclick>
-					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="9112">
 					<include>TopMenuButton</include>
@@ -3468,7 +3469,7 @@
 					<include>TopMenuButton</include>
 					<label>31002</label>
 					<onclick>ActivateWindow(music)</onclick>
-					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="9112">
 					<include>TopMenuButton</include>
@@ -3796,7 +3797,7 @@
 					<include>TopMenuButton</include>
 					<label>31002</label>
 					<onclick>ActivateWindow(music)</onclick>
-					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
+					<visible>![Window.IsActive(musicplaylist) | Window.IsActive(musiclibrary)] + Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="9112">
 					<include>TopMenuButton</include>
