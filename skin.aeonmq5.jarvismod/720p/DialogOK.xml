@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!-- Aeon MQ 5 Isengard 7.1.10 -->
-
+<!-- Jarvis 8.1.13 -->
 <window id="2002">
 	<zorder>3</zorder>
 	<defaultcontrol>10</defaultcontrol>
@@ -21,7 +21,20 @@
 				<include>Dialogs_Label4</include>
 			</control>
 			<control type="button" id="10">
-				<include>InvisibleButton</include>
+				<!-- <include>InvisibleButton</include> -->
+				<posx>640</posx>
+				<posy>30</posy>
+				<height>29</height>
+				<width>150</width>
+				<align>center</align>
+				<textcolor>FFFFFAF0</textcolor>
+				<focusedcolor>FF101010</focusedcolor>
+				<font>Font_18A</font>
+				<label>107</label>
+				<textoffsetx>0</textoffsetx>
+				<textwidth>180</textwidth>
+				<texturefocus>settings_button_focus.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
 				<onleft>10</onleft>
 				<onright>10</onright>
 				<onup>10</onup>

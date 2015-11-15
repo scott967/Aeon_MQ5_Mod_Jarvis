@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.0/Orby/6.1.4 -->
+<!-- Jarvis 8.1.13 -->
 
 <window id="103">
 	<defaultcontrol always="true">300</defaultcontrol>
@@ -173,8 +174,8 @@
 						<ondown>303</ondown>
 						<texturenofocus>darkgrey.png</texturenofocus>
 						<texturefocus>grey.png</texturefocus>
-						<alttexturenofocus>grey.png</alttexturenofocus>
-						<alttexturefocus>grey.png</alttexturefocus>
+						<textureonnofocus>grey.png</textureonnofocus>
+						<textureonfocus>grey.png</textureonfocus>
 						<radioposy>5</radioposy>
 						<radioposx>120</radioposx>
 						<radiowidth>30</radiowidth>
@@ -271,8 +272,8 @@
 						<ondown>307</ondown>
 						<texturenofocus>darkgrey.png</texturenofocus>
 						<texturefocus>grey.png</texturefocus>
-						<alttexturenofocus>black.png</alttexturenofocus>
-						<alttexturefocus>grey.png</alttexturefocus>
+						<textureonnofocus>black.png</textureonnofocus>
+						<textureonfocus>grey.png</textureonfocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<radioposy>5</radioposy>

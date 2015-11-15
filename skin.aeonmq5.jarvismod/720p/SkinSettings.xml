@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!-- Aeon MQ 5 Helix 6.1.0 -->
 <!-- Isengard 7.1.10 -->
+<!-- Jarvis 8.1.13 -->
 
 <window>
 	<defaultcontrol always="true">9100</defaultcontrol>
@@ -22,8 +23,8 @@
 				<posy>120</posy>
 				<width>1040</width>
 				<height>600</height>
-				<timeperimage>6000</timeperimage>
-				<randomize>true</randomize>
+				<!-- <timeperimage>6000</timeperimage>
+				<randomize>true</randomize> -->
 				<aspectratio>stretch</aspectratio>
 				<fadetime>FanartCrossFadeTime</fadetime>
 				<texture>$VAR[value_menutheme_movies]</texture>

@@ -98,19 +98,19 @@
 				<control type="image"><!-- Icone do clima 1 -->
 					<width>180</width>
 					<height>90</height>
-					<aspectratio align="top">keep</aspectratio>
+					<aspectratio aligny="top">keep</aspectratio>
 					<texture background="true">$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
 				</control>
 				<control type="image"><!-- Icone do clima 2 -->
 					<width>180</width>
 					<height>90</height>
-					<aspectratio align="top">keep</aspectratio>
+					<aspectratio aligny="top">keep</aspectratio>
 					<texture background="true">$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
 				</control>
 				<control type="image"><!-- Icone do clima 3 -->
 					<width>180</width>
 					<height>90</height>
-					<aspectratio align="top">keep</aspectratio>
+					<aspectratio aligny="top">keep</aspectratio>
 					<texture background="true">$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
 				</control>
 			</control>
@@ -127,7 +127,7 @@
 				<control type="multiimage"><!-- Icone animado 1 -->
 					<width>180</width>
 					<height>90</height>
-					<aspectratio align="top">keep</aspectratio>
+					<aspectratio aligny="top">keep</aspectratio>
 					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
 					<timeperimage>175</timeperimage>
 					<randomize>false</randomize>
@@ -136,7 +136,7 @@
 				<control type="multiimage"><!-- Icone animado 2 -->
 					<width>180</width>
 					<height>90</height>
-					<aspectratio align="top">keep</aspectratio>
+					<aspectratio aligny="top">keep</aspectratio>
 					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
 					<timeperimage>175</timeperimage>
 					<randomize>false</randomize>
@@ -145,7 +145,7 @@
 				<control type="multiimage"><!-- Icone animado 3 -->
 					<width>180</width>
 					<height>90</height>
-					<aspectratio align="top">keep</aspectratio>
+					<aspectratio aligny="top">keep</aspectratio>
 					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
 					<timeperimage>175</timeperimage>
 					<randomize>false</randomize>

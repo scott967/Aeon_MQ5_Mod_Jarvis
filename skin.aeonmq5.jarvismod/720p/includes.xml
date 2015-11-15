@@ -325,11 +325,11 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>59</height>
+		<height>69</height>
 		<font>Font_60</font>
-		<textoffsety>-3</textoffsety>
+		<!-- <textoffsety>-10</textoffsety> -->
 		<align>center</align>
-		<aligny>top</aligny>
+		<aligny>center</aligny>
 		<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
 		<scroll>true</scroll>
 	</include>
@@ -337,11 +337,11 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>59</height>
+		<height>69</height>
 		<font>Font_60a</font>
 		<textoffsety>-3</textoffsety>
 		<align>center</align>
-		<aligny>top</aligny>
+		<aligny>center</aligny>
 		<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
 		<scroll>true</scroll>
 	</include>
@@ -349,9 +349,9 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>58</height>
+		<height>68</height>
 		<font>Font_60b</font>
-		<textoffsety>-4</textoffsety>
+		<textoffsety>1</textoffsety>
 		<align>center</align>
 		<aligny>top</aligny>
 		<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
@@ -361,11 +361,11 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>59</height>
+		<height>69</height>
 		<font>Font_60c</font>
-		<textoffsety>-6</textoffsety>
+		<!-- <textoffsety>-6</textoffsety> -->
 		<align>center</align>
-		<aligny>top</aligny>
+		<aligny>center</aligny>
 		<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
 		<scroll>true</scroll>
 	</include>
@@ -373,9 +373,9 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>59</height>
+		<height>69</height>
 		<font>Font_60d</font>
-		<textoffsety>-2</textoffsety>
+		<textoffsety>5</textoffsety>
 		<align>center</align>
 		<aligny>top</aligny>
 		<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
@@ -385,9 +385,9 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>59</height>
+		<height>69</height>
 		<font>Font_60e</font>
-		<textoffsety>0</textoffsety>
+		<textoffsety>6</textoffsety>
 		<align>center</align>
 		<aligny>top</aligny>
 		<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
@@ -397,9 +397,9 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>59</height>
+		<height>69</height>
 		<font>Font_60f</font>
-		<textoffsety>-3</textoffsety>
+		<textoffsety>3</textoffsety>
 		<align>center</align>
 		<aligny>top</aligny>
 		<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
@@ -409,11 +409,11 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
-		<height>58</height>
+		<height>68</height>
 		<font>Font_60g</font>
 		<textoffsety>-12</textoffsety>
 		<align>center</align>
-		<aligny>top</aligny>
+		<aligny>center</aligny>
 		<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
 		<scroll>true</scroll>
 	</include>	
@@ -1830,7 +1830,6 @@
 		<width>500</width>
 		<height>60</height>
 		<align>right</align>
-		<textcolor>FFFFFAF0</textcolor>
 		<font>Font_17</font>
 		<textcolor>FFFFFAF0</textcolor>
 		<scroll>true</scroll>
@@ -2452,6 +2451,10 @@
 			<include>TopMenuButton</include>
 			<label>-</label>
 		</control>
+		<control type="button" id="23"><!-- Play Playlist -->
+			<include>TopMenuButton</include>
+			<label>$LOCALIZE[208] $LOCALIZE[559]</label>
+		</control>
 		<control type="button" id="21"><!-- Save -->
 			<include>TopMenuButton</include>
 			<label>190</label>
@@ -2473,6 +2476,46 @@
 		<control type="button" id="8"><!-- Clear -->
 			<include>TopMenuButton</include>
 			<label>192</label>
+		</control>
+	</include>
+	<include name="TopMenu_VideoNoPlaylist">
+		<control type="button" id="3"><!-- Sort by -->
+			<include>TopMenuButton</include>
+			<label>103</label>
+		</control>
+		<control type="togglebutton" id="4"><!-- Sort asc -->
+			<include>TopMenuButton</include>
+			<label>31481</label>
+			<altlabel>31480</altlabel>
+			<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+		</control>
+		<control type="radiobutton" id="14"><!-- Watched Toggle -->
+			<include>TopMenuRadioButton</include>
+			<label>31491</label>
+			<visible>[[Container.Content(movies) + !Skin.HasSetting(trailers)] + !Window.IsActive(videofiles) + !Skin.HasSetting(nomenumoviewatched)] | [Container.Content(musicvideos) + !Window.IsActive(videofiles) + !Skin.HasSetting(nomenumoviewatched)] | [[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Window.IsActive(videofiles) + !Skin.HasSetting(nomenutvwatched)]</visible>
+		</control>
+		<control type="button" id="8"><!-- Search -->
+			<include>TopMenuButton</include>
+			<label>137</label>
+		</control>
+		<control type="button" id="19"><!-- Filter -->
+			<include>TopMenuButton</include>
+			<label>587</label>
+			<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+		</control>
+		<control type="radiobutton" id="98"><!-- Adv Filter -->
+			<include>TopMenuRadioButton</include>
+			<label>587</label>
+			<onclick>SetFocus(50)</onclick>
+			<onclick>Filter</onclick>
+			<selected>Container.Filtered</selected>
+			<visible>Container.CanFilterAdvanced</visible>
+		</control>
+		<control type="togglebutton" id="20"><!-- Update library -->
+			<include>TopMenuButton</include>
+			<label>653</label>
+			<altlabel>13353</altlabel>
+			<usealttexture>library.isscanningvideo</usealttexture>
 		</control>
 	</include>
 
@@ -2787,6 +2830,7 @@
 				<label>-</label>
 				<property name="condition">$INFO[skin.string(osd_video_playlist),disable)]</property>
 				<icon>osd_menu_playlist.png</icon>
+				<onclick condition="!Skin.HasSetting(customosd)">Dialog.Close(VideoOSD)</onclick>
 				<onclick condition="!Skin.HasSetting(customosd)">ActivateWindow(28)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + !SubString(skin.string(osd_video_playlist),disable)">Skin.SetString(osd_video_playlist,disable)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_video_playlist),disable)">Skin.Reset(osd_video_playlist,disable)</onclick>
@@ -3019,6 +3063,7 @@
 				<label>-</label>
 				<property name="condition">$INFO[skin.string(osd_audio_playlist),disable)]</property>
 				<icon>osd_menu_playlist.png</icon>
+				<onclick condition="!Skin.HasSetting(customosd)">Dialog.Close(MusicOSD)</onclick>
 				<onclick condition="!Skin.HasSetting(customosd)">ActivateWindow(500)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + !SubString(skin.string(osd_audio_playlist),disable)">Skin.SetString(osd_audio_playlist,disable)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_audio_playlist),disable)">Skin.Reset(osd_audio_playlist,disable)</onclick>

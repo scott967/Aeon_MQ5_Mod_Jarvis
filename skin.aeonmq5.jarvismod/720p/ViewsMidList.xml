@@ -284,6 +284,7 @@
 					<texture background="true">$INFO[ListItem.Art(clearart)]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<fadetime>FanartCrossFadeTime</fadetime>
+					<visible>!Skin.HasSetting(noartmidlistvideo)</visible>
 				</control>
 				<control type="image">
 					<description>CLEARART DISPLAY FOR TV SEASONS</description>
@@ -294,6 +295,7 @@
 					<texture background="true">$INFO[ListItem.Art(tvshow.clearart)]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<fadetime>FanartCrossFadeTime</fadetime>
+					<visible>!Skin.HasSetting(noartmidlistvideo)</visible>
 				</control>
 				<control type="image">
 					<description>MOVIE SHOW THUMB IF NO CLEAR ART</description>
@@ -304,7 +306,7 @@
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<animation effect="rotate" end="-15" center="auto" time="3000" loop="false" reversible="false" condition="true">Conditional</animation>
 					<texture>$INFO[ListItem.Art(landscape)]</texture>
-					<visible>[IsEmpty(ListItem.Art(clearart)) + Container.Content(movies)]</visible>
+					<visible>[IsEmpty(ListItem.Art(clearart)) + Container.Content(movies) + !Skin.HasSetting(noartmidlistvideo)]</visible>
 				</control>
 				<control type="image">
 					<description>FANART WINDOW BACKGROUND</description>

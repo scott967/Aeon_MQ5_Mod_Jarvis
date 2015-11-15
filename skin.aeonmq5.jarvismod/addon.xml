@@ -13,8 +13,6 @@
 	<import addon="script.cu.lrclyrics" version="1.0.1"/>
 	<import addon="script.videolanguage" version="0.0.6"/>
 	<import addon="script.globalsearch" version="1.1.1"/>
-	<import addon="service.subtitles.opensubtitles" version="5.0.1"/>
-	<import addon="script.cinema.experience" version="3.0.6"/>
 	<import addon="script.toolbox" version="1.0.1"/>
 	</requires>
 	<extension point="xbmc.gui.skin"  effectslowdown="0.75" debugging="false">

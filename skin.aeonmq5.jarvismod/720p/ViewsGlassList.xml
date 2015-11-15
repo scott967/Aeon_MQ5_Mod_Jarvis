@@ -578,7 +578,7 @@
 					<posy>335</posy>
 					<height>200</height>
 					<width>200</width>
-					<aspectratio align="bottom">keep</aspectratio>
+					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Art(clearart)]</texture>
 					<fadetime>FanartCrossFadeTime</fadetime>
 					<visible>!Skin.HasSetting(noartglasslistvideo)</visible>

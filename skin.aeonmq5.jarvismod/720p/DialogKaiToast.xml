@@ -1,17 +1,18 @@
 	<!-- Aeon MQ 5 Helix 6.1.1-->
+<!--  Jarvis 8.1.13  -->
 
-	<window id="107">
+<window id="107">
 	<zorder>3</zorder>
 	<controls>
-	<control type="group">
-	<include>Animation_TopDialogPopup</include>
-	<include>Dialogs_Bar</include>
-	<control type="label" id="401">
-	<include>Dialogs_Label1</include>
-	</control>
-	<control type="label" id="402">
-	<include>Dialogs_Label2</include>
-	</control>
-	</control>
+		<control type="group">
+			<include>Animation_TopDialogPopup</include>
+			<include>Dialogs_Bar</include>
+			<control type="label" id="401">
+				<include>Dialogs_Label1</include>
+			</control>
+			<control type="label" id="402">
+				<include>Dialogs_Label2</include>
+			</control>
+		</control>
 	</controls>
-	</window>
+</window>

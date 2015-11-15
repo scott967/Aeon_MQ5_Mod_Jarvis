@@ -275,7 +275,7 @@
 					<width>400</width>
 					<height>24</height>
 					<align>left</align>
-					<aligny>-</aligny>
+					<aligny>center</aligny>
 					<textcolor>FFFFFAF0</textcolor>
 					<font>Font_17</font>
 					<label>$LOCALIZE[31333] $INFO[MusicPlayer.Channels][COLOR=50FFFAF0] | [/COLOR]$INFO[MusicPlayer.SampleRate,,KHZ][COLOR=50FFFAF0] | [/COLOR]$INFO[MusicPlayer.BitRate,,Kbps][COLOR=50FFFAF0] | [/COLOR]$INFO[MusicPlayer.BitsPerSample,,Bits]</label>
@@ -294,7 +294,7 @@
 					<width>400</width>
 					<height>24</height>
 					<align>left</align>
-					<aligny>0</aligny>
+					<aligny>center</aligny>
 					<textcolor>FFFFFAF0</textcolor>
 					<font>Font_17</font>
 					<label>$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration]</label>

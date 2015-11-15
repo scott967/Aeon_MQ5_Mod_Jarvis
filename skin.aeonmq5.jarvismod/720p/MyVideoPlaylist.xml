@@ -9,18 +9,20 @@
 	<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset($INFO[skin.string(custom_code)])</onunload>
 	<onunload condition="Skin.HasSetting(trailers)">Skin.Reset(trailers)</onunload>
 	<onunload condition="Skin.HasSetting(playlists)">Skin.Reset(playlists)</onunload>
-	<onload condition="Skin.HasSetting(ontvtunes) + System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+	<!-- <onload condition="Skin.HasSetting(ontvtunes) + System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload> -->
+	<onload condition="!Skin.HasSetting(ontvtunes) + System.HasAddon(script.tvtunes)">SetProperty("TvTunesBlocked", "true")</onload>
 	<onload condition="System.HasAddon(script.videolanguage)">RunScript(script.videolanguage,backend=True)</onload> 
 	<!-- <onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,backend=true)</onload> -->
+	<onunload condition="!Skin.HasSetting(ontvtunes) + System.HasAddon(script.tvtunes)">ClearProperty("TvTunesBlocked")</onunload>
 	<!-- <allowoverlay>no</allowoverlay> -->
 	<views>51,52,53,54,55,56,57,59,60,61,62,63,64,65,69</views>
 	<controls>
-		<control type="image"><!-- Imagem padrao -->
+		<control type="image"><!-- Imagem padrao (standard image) or livebg -->
 			<include>WindowBG</include>
 			<texture>special://skin/backgrounds/movies.jpg</texture>
 			<visible>Skin.HasSetting(noliveplaylistbg)</visible>
 		</control>
-		<include>LiveBG</include>
+		<include>LiveBG</include> <!-- video window on black -->
 		<control type="group"><!-- default group -->
 			<include>Animation_Window</include>
 
@@ -120,7 +122,7 @@
 				<posy>15</posy>
 				<include>AudioandSub</include>
 			</control>
-			<control type="group"><!-- Grupo ocultar flags ou fanart -->
+			<control type="group"><!-- Grupo ocultar flags ou fanart views -->
 				<include>Animation_HiddenView</include>
 
 				<control type="group">
@@ -128,7 +130,7 @@
 					<animation effect="slide" start="0,300" end="0,0"  time="500" tween="sine" easing="out">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 					<visible>![Skin.HasSetting(nomediaflags) | Control.IsVisible(57)]</visible>
-					<control type="image"><!-- Barra das etiquetas -->
+					<control type="image"><!-- Barra das etiquetas (flags) -->
 						<posx>0</posx>
 						<posy>610</posy>
 						<width>1280</width>
@@ -136,7 +138,7 @@
 						<colordiffuse>$VAR[value_flagsbar]</colordiffuse>
 						<texture>shadow_mask.png</texture>
 					</control>
-					<control type="grouplist"><!-- Etiquetas -->
+					<control type="grouplist"><!-- Etiquetas (flags)  -->
 						<posx>20</posx>
 						<posy>651</posy>
 						<orientation>horizontal</orientation>
@@ -249,9 +251,9 @@
 			<!-- Furniture -->
 			<include>TouchScreen</include>
 			<include>ScrollLabel</include>
-			<include>MultiData</include>
+			<include condition="Skin.HasSetting(vplaylistinfobar)">MultiData</include>
 			<include>TopMenu_Video</include>
-			<include>BGBlack</include>
+			<include>BGBlack</include>  <!-- sets default settings if not 2 -->
 			<include>TrailerWindow</include>
 		</control>
 	</controls>

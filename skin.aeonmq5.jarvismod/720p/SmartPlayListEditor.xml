@@ -101,7 +101,6 @@
 					<textoffsetx>20</textoffsetx>
 					<texturenofocus>-</texturenofocus>
 					<texturefocus>settings_button_focus.png</texturefocus>
-					<aligny>center</aligny>
 				</control>
 				<control type="label"><!-- find items where -->
 					<posx>240</posx>

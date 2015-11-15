@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 / Isengard mod 7.1.11 -->
+<!-- Jarvis 8.1.13 -->
 
 <window type="dialog">
 	<coordinates>
@@ -368,7 +369,7 @@
 					<textcolor>E4101010</textcolor>
 					<focusedcolor>FFFFFAF0</focusedcolor>
 					<font>Font_20</font>
-					<align>-</align>
+					<align>center</align>
 					<aligny>center</aligny>
 					<texturefocus>settings_button.png</texturefocus>
 					<onleft>120</onleft>

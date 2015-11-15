@@ -5,11 +5,17 @@ New: Support for Cinema Vision add-on
 New:  Add menucontrol for views (top menu)
 New: remove music files
 Improved:  Video playlist for party mode music video
-Improved:  Music playlist for party mode
-Fixed:  SmartPlaylistEditor filename case  
-
-[B][COLOR=FFFF8C00]BUILD 8.1.12 - RELEASE DATE 09/08/2015[/COLOR][/B]
-Initial Jarvis release
+Improved:  Video playlist buttons now available on top menu (like audio playlist)
+Improved:  Select dialog shows "now playing" video in background
+Improved:  Midlist view now allows optional use of clearart on right
+Improved:  Main menu label text vertical position
+Fixed:  Removed opensubtitles and cinema experience from rquired addons
+Improved:  Cinema Experience submenu item will now request user to install it (if not already installed)
+Improved:  OK dialog now has visible OK button to click/close dialog
+Fixed:  Vertical alignment of main menu items
+Fixed:  TVTunes interface for TVTunes 5.0 and up
+Fixed:  Tag cleanup
+Fixed:  English label translation musics -- music
 
 [B][COLOR=FFFF8C00]BUILD 7.1.12 - RELEASE DATE 09/01/2015[/COLOR][/B]
 Fix:  Low List view options missing for videos

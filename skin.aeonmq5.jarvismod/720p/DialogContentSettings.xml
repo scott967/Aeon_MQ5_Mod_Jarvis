@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 	<!-- Aeon MQ 5 Helix 6.1.0/6.1.4 -->
+<!-- Jarvis 8.1.13 -->
 
 <window id="132">
 	<defaultcontrol always="true">20</defaultcontrol>
@@ -56,7 +58,7 @@
 						<posy>5</posy>
 						<width>35</width>
 						<height>30</height>
-						<texture backgroun="true">$INFO[Listitem.Icon]</texture>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -86,7 +88,7 @@
 						<posy>5</posy>
 						<width>35</width>
 						<height>30</height>
-						<texture backgroun="true">$INFO[Listitem.Icon]</texture>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">
 						<posx>45</posx>

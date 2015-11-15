@@ -1,4 +1,6 @@
-	<!-- Aeon MQ 5 Helix 6.1.0/6.1.5/6.1.7/6.1.8  Isengard 7.1.11 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aeon MQ 5 Helix 6.1.0/6.1.5/6.1.7/6.1.8  Isengard 7.1.11 -->
+<!-- Jarvis 8.1.13 -->
 
 <includes>
 	<!-- ######################################################################### Widgets dos Recentes ######################################################################### -->
@@ -38172,7 +38174,7 @@
 				<posy>100</posy>
 				<width>280</width>
 				<height>280</height>
-				<aspectratio align="top">keep</aspectratio>
+				<aspectratio aligny="top">keep</aspectratio>
 				<texture background="true">$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
 				<colordiffuse>95FFFFFF</colordiffuse>
 				<visible>!Skin.HasSetting(weathericons)</visible>
@@ -38182,7 +38184,7 @@
 				<posy>100</posy>
 				<width>280</width>
 				<height>280</height>
-				<aspectratio align="top">keep</aspectratio>
+				<aspectratio aligny="top">keep</aspectratio>
 				<imagepath>$VAR[value_weathericons]$INFO[Weather.FanartCode]/</imagepath>
 				<timeperimage>175</timeperimage>
 				<randomize>false</randomize>
@@ -39074,7 +39076,7 @@
 					</control>
 				</control>
 			</control>
-			
+
 			<!-- Weekend-->
 			<control type="grouplist">
 				<posx>480</posx>
@@ -39189,12 +39191,12 @@
 						<include>Widget_WeatherPrecipitation36hour</include>
 						<label>$LOCALIZE[376]: [COLOR=FFFFFAF0]$INFO[Window(Weather).Property(36Hour.1.ChancePrecipitation)][/COLOR]</label>
 						<visible>!StringCompare(Window(Weather).Property(WeatherProvider),OpenWeatherMap Extended)</visible>
-						</control>
+					</control>
 					<control type="label">
 						<include>Widget_WeatherPrecipitation36hour</include>
 						<label>$LOCALIZE[376]: [COLOR=FFFFFAF0]$INFO[Window(Weather).Property(36Hour.1.Precipitation)][/COLOR]</label>
 						<visible>StringCompare(Window(Weather).Property(WeatherProvider),OpenWeatherMap Extended)</visible>
-						</control>
+					</control>
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
 						<texture>$INFO[Window(Weather).Property(36Hour.1.OutlookIcon)]</texture>	
@@ -39227,12 +39229,12 @@
 						<include>Widget_WeatherPrecipitation36hour</include>
 						<label>$LOCALIZE[376]: [COLOR=FFFFFAF0]$INFO[Window(Weather).Property(36Hour.2.ChancePrecipitation)][/COLOR]</label>
 						<visible>!StringCompare(Window(Weather).Property(WeatherProvider),OpenWeatherMap Extended)</visible>
-						</control>
+					</control>
 					<control type="label">
 						<include>Widget_WeatherPrecipitation36hour</include>
 						<label>$LOCALIZE[376]: [COLOR=FFFFFAF0]$INFO[Window(Weather).Property(36Hour.2.Precipitation)][/COLOR]</label>
 						<visible>StringCompare(Window(Weather).Property(WeatherProvider),OpenWeatherMap Extended)</visible>
-						</control>
+					</control>
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
 						<texture>$INFO[Window(Weather).Property(36Hour.2.OutlookIcon)]</texture>	
@@ -39265,12 +39267,12 @@
 						<include>Widget_WeatherPrecipitation36hour</include>
 						<label>$LOCALIZE[376]: [COLOR=FFFFFAF0]$INFO[Window(Weather).Property(36Hour.3.ChancePrecipitation)][/COLOR]</label>
 						<visible>!StringCompare(Window(Weather).Property(WeatherProvider),OpenWeatherMap Extended)</visible>
-						</control>
+					</control>
 					<control type="label">
 						<include>Widget_WeatherPrecipitation36hour</include>
 						<label>$LOCALIZE[376]: [COLOR=FFFFFAF0]$INFO[Window(Weather).Property(36Hour.3.Precipitation)][/COLOR]</label>
 						<visible>StringCompare(Window(Weather).Property(WeatherProvider),OpenWeatherMap Extended)</visible>
-						</control>
+					</control>
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
 						<texture>$INFO[Window(Weather).Property(36Hour.3.OutlookIcon)]</texture>	
@@ -39429,7 +39431,6 @@
 					<scrolltime>200</scrolltime>
 					<align>left</align>
 					<aligny>top</aligny>
-					<spinheight>-5</spinheight>
 					<info>Window(Weather).Property(Alerts)</info>
 					<autoscroll time="2000" delay="10000" repeat="15000">VisibleChange</autoscroll>
 					<animation effect="fade" start="0" end="100" delay="1600" time="400">Visible</animation>
