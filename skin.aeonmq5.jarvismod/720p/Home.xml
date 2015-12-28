@@ -75,7 +75,7 @@
 				<animation effect="slide" start="-500,0" end="0,0" time="1000" delay="3000" tween="cubic" easing="inout">Visible</animation>
 				<animation effect="slide" start="0,0" end="-500,0" time="400" tween="cubic" easing="inout">WindowClose</animation>
 				<animation effect="slide" start="0,0" end="-500,0" time="400" tween="cubic" easing="inout">Hidden</animation>
-				<visible>Player.HasMedia + ![Skin.HasSetting(nohomecdart) | Skin.HasSetting(submode) | Control.IsVisible(606)]</visible>
+				<visible>Player.HasMedia + ![PVR.IsPlayingTv | PVR.IsPlayingRadio | PVR.IsPlayingRecording] + ![Skin.HasSetting(nohomecdart) | Skin.HasSetting(submode) | Control.IsVisible(606)]</visible>
 				<control type="image">
 					<posx>60</posx>
 					<posy>694</posy>
