@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<!-- Aeon MQ 5 Helix 6.1.0/6.1.1/6.1.4/6.1.5/6.1.9 Shelfcase Mod -->
 	<!-- Isengard 7.1.9 Shelfcase/7.1.10/7.1.11 MidList/7.1.12 -->
-	<!-- Jarvis 8.1.13 -->
+	<!-- Jarvis 8.1.13/8.1.14 -->
 <includes>
 	<include file="Defaults.xml"/>
 	<include file="IncludesVariables.xml"/>
@@ -1298,6 +1298,26 @@
 		<include>Animation_DefaultGlass</include>
 		<pulseonselect>no</pulseonselect>
 	</include>
+		<include name="SettingsButton2">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>239</width>
+		<height>40</height>
+		<textoffsety>0</textoffsety>
+		<textoffsetx>20</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Font_24A</font>
+		<texture>settings_button.png</texture>
+		<texturefocus>settings_button.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<textcolor>E4101010</textcolor>
+		<focusedcolor>FFFFFAF0</focusedcolor>
+		<selectedcolor>FFFFFAF0</selectedcolor>
+		<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
+		<include>Animation_DefaultGlass</include>
+		<pulseonselect>no</pulseonselect>
+	</include>
 	<include name="SettingsBottomButton">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -1814,7 +1834,7 @@
 		<onleft>Close</onleft>
 		<onright>Close</onright>
 		<align>center</align>
-		<aligny>top</aligny>
+		<aligny>center</aligny>
 		<font>Font_18</font>
 		<textoffsety>8</textoffsety>
 		<textcolor>FFFFFAF0</textcolor>
@@ -2249,7 +2269,8 @@
 			</control>
 			<control type="rss" id="1">
 				<posx>245</posx>
-				<posy>695</posy>
+				<posy>692</posy>
+				<aligny>top</aligny>
 				<width>1030</width>
 				<height>20</height>
 				<font>Font_18A</font>
@@ -2284,11 +2305,11 @@
 			</control>
 			<control type="rss" id="1">
 				<posx>127</posx>
-				<posy>695</posy>
+				<posy>690</posy>
 				<width>1140</width>
 				<height>20</height>
 				<urlset>1</urlset>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<font>Font_18A</font>
 				<textcolor>FFFFFAF0</textcolor>
 				<headlinecolor>FFFFFAF0</headlinecolor>
@@ -2391,7 +2412,7 @@
 			<include>TopMenuButton</include>
 			<label>31481</label>
 			<altlabel>31480</altlabel>
-			<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+			<!-- <usealttexture>Container.SortDirection(Ascending)</usealttexture> -->
 		</control>
 		<!-- removed MyMusicSongs (files)
 		<control type="radiobutton" id="299">
@@ -2487,7 +2508,6 @@
 			<include>TopMenuButton</include>
 			<label>31481</label>
 			<altlabel>31480</altlabel>
-			<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 		</control>
 		<control type="radiobutton" id="14"><!-- Watched Toggle -->
 			<include>TopMenuRadioButton</include>
