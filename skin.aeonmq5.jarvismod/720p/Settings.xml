@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8/1/14 -->
 
 <window id="4">
 	<defaultcontrol always="true">9000</defaultcontrol>
@@ -211,11 +211,11 @@
 					</control>
 					<control type="label">
 						<posx>20</posx>
-						<posy>5</posy>
+						<posy>-17</posy>
 						<width>200</width>
 						<height>60</height>
 						<align>left</align>
-						<aligny>top</aligny>
+						<aligny>center</aligny>
 						<font>Font_22</font>
 						<textoffsetx>0</textoffsetx>
 						<label>$INFO[ListItem.Label]</label>
@@ -223,11 +223,11 @@
 					</control>
 					<control type="label">
 						<posx>20</posx>
-						<posy>29</posy>
+						<posy>11</posy>
 						<width>200</width>
 						<height>60</height>
 						<align>left</align>
-						<aligny>top</aligny>
+						<aligny>center</aligny>
 						<font>Font_18</font>
 						<textoffsetx>0</textoffsetx>
 						<label>$INFO[ListItem.Label2]</label>
@@ -247,11 +247,11 @@
 					</control>
 					<control type="label">
 						<posx>20</posx>
-						<posy>5</posy>
+						<posy>-17</posy>
 						<width>200</width>
 						<height>60</height>
 						<align>left</align>
-						<aligny>top</aligny>
+						<aligny>center</aligny>
 						<font>Font_22</font>
 						<textoffsetx>0</textoffsetx>
 						<label>$INFO[ListItem.Label]</label>
@@ -259,11 +259,11 @@
 					</control>
 					<control type="label">
 						<posx>20</posx>
-						<posy>29</posy>
+						<posy>11</posy>
 						<width>200</width>
 						<height>60</height>
 						<align>left</align>
-						<aligny>top</aligny>
+						<aligny>center</aligny>
 						<font>Font_18</font>
 						<textoffsetx>0</textoffsetx>
 						<label>$INFO[ListItem.Label2]</label>

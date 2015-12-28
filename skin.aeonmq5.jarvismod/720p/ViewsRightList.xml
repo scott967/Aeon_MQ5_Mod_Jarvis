@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.1/6.1.2 by lizard/6.1.6 -->
 <!-- Isengard 7.1.12 -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.1.14 -->
 
 <includes>
 	<!--##################################################################################   VISTA RIGHT LIST - ID 59   ##################################################################################-->
@@ -124,7 +124,7 @@
 				</control>
 				<control type="label"><!-- Year/Publisher -->
 					<posx>320</posx>
-					<posy>548</posy>
+					<posy>544</posy>
 					<width>380</width>
 					<height>13</height>
 					<font>Font_22</font>
@@ -136,9 +136,9 @@
 
 				<control type="grouplist"><!-- Painel de info -->
 					<posx>320</posx>
-					<posy>580</posy>
+					<posy>572</posy>
 					<orientation>vertical</orientation>
-					<itemgap>0</itemgap>
+					<itemgap>4</itemgap>
 					<control type="label">
 						<include>RightListLabel</include>
 						<label>$VAR[value_ground11_label]: [COLOR=FFFFFAF0]$VAR[value_ground11_value][/COLOR]</label>
@@ -228,7 +228,7 @@
 						</control>
 						<control type="label">
 							<posx>20</posx>
-							<posy>1</posy>
+							<posy>0</posy>
 							<width>480</width>
 							<height>30</height>
 							<font>Font_20</font>
@@ -257,7 +257,7 @@
 						</control>
 						<control type="label">
 							<posx>20</posx>
-							<posy>2</posy>
+							<posy>-3</posy>
 							<width>480</width>
 							<height>30</height>
 							<font>Font_22</font>
@@ -268,7 +268,7 @@
 						</control>
 						<control type="image">
 							<posx>510</posx>
-							<posy>0</posy>
+							<posy>-3</posy>
 							<width>30</width>
 							<height>30</height>
 							<texture>$VAR[value_watchedstyle]</texture>
@@ -287,7 +287,7 @@
 						</control>
 						<control type="label">
 							<posx>20</posx>
-							<posy>2</posy>
+							<posy>-1</posy>
 							<width>480</width>
 							<height>30</height>
 							<font>Font_22</font>
@@ -298,7 +298,7 @@
 						</control>
 						<control type="label">
 							<posx>20</posx>
-							<posy>27</posy>
+							<posy>30</posy>
 							<width>480</width>
 							<height>16</height>
 							<font>Font_18A</font>

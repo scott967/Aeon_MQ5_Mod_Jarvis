@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!-- Aeon MQ 5 Helix 6.1.0/Orby/6.1.4 -->
 <!-- Isengard 7.1.9 -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.1.14 -->
 
-<window id="12">
+<window>
 	<defaultcontrol>3</defaultcontrol>
 	<!-- <allowoverlay>no</allowoverlay> -->
 	<onload condition="!StringCompare(skin.string(defaultsettings),2)">AlarmClock(firstfocus,SetFocus(900),0:10,true)</onload>
@@ -134,25 +134,27 @@
 			</control>
 			<control type="group"><!-- Menu de nivel -->
 				<posx>-300</posx>
-				<animation effect="slide" start="0,0" end="300,0" time="300" easing="out" tween="cubic" condition="ControlGroup(9000).HasFocus">Conditional</animation>
-				<control type="grouplist" id="9000">
+				<animation effect="slide" start="0,0" end="300,0" time="300" easing="out" tween="cubic" condition="ControlGroup(9900).HasFocus">Conditional</animation>
+				<control type="grouplist" id="9900">
 					<posx>0</posx>
 					<posy>120</posy>
 					<width>240</width>
 					<height>660</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<onleft>9000</onleft>
+					<onleft>9900</onleft>
 					<onright>3</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
+					<onup>9900</onup>
+					<ondown>9900</ondown>
 					<onback>3</onback>	
 					<control type="button" id="20"><!-- Setting level -->
+						<aligny>center</aligny>
 						<include>SettingsButton</include>
 						<label>10037</label>
 						<onclick>SettingsLevelChange</onclick>
 					</control>
 					<control type="button" id="21"><!-- Reset level -->
+						<aligny>center</aligny>
 						<include>SettingsButton</include>
 						<label>10035</label>
 						<onclick>SettingsReset</onclick>
@@ -166,11 +168,11 @@
 				<height>660</height>
 				<orientation>vertical</orientation>
 				<itemgap>0</itemgap>
-				<onleft>9000</onleft>
+				<onleft>9900</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
-				<animation effect="slide" start="0,0" end="-300,0" time="300" easing="out" tween="cubic" condition="ControlGroup(9000).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-300,0" time="300" easing="out" tween="cubic" condition="ControlGroup(9900).HasFocus">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -181,7 +183,7 @@
 				<colordiffuse>70FFFAF0</colordiffuse>
 			</control>
 			<control type="button" id="10"><!-- Default category button-->
-				<include>SettingsButton</include>
+				<include>SettingsButton2</include>
 				<onclick>SetFocus(800)</onclick>
 			</control>
 			<include>BGBlack</include>

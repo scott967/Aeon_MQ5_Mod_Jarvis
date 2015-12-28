@@ -1,3 +1,7 @@
+[B][COLOR=FFFF8C00]BUILD 8.1.14 - RELEASE DATE 12/31/2015[/COLOR][/B]
+Improved:  Adjust text postino for Massive font
+Fixed:  OSD audio settings now allow dialog select
+
 [B][COLOR=FFFF8C00]BUILD 8.1.13 - RELEASE DATE 10/15/2015[/COLOR][/B]
 New:  Events window (Jarvis addition)
 New:  PVRInfo (Jarvis addition)
