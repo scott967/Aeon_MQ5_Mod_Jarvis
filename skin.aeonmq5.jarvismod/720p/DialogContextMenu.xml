@@ -4,7 +4,7 @@
 	
 <window id="106">
 	<defaultcontrol>1000</defaultcontrol>
-	<zorder>4</zorder>
+	<!-- <zorder>4</zorder> -->
 	<coordinates>
 		<system>1</system>
 	</coordinates>

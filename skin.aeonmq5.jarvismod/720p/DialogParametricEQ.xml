@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Jarvis 8.1.14 -->
 <window>
 	<defaultcontrol always="true">8000</defaultcontrol>
@@ -7,40 +7,40 @@
 		<posx>240</posx>
 		<posy>10</posy>
 	</coordinates>
-	<include>Animation_DialogPopup</include>
-<!-- 	<control type="image">
+	<controls>
+		<include>Animation_DialogPopup</include>
+			<control type="image">
 		<posx>171</posx>
 		<posy>40</posy>
 		<width>30</width>
 		<height>481</height>
 		<texture flipx="true">shadow.png</texture>
 		<colordiffuse>C3FFFFFF</colordiffuse>
-	</control> -->
-	<control type="image"><!-- Fundo -->
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>800</width>
-		<height>700</height>
-		<texture>darkgrey.png</texture>
-		<!-- <colordiffuse>00FFFFFFFF</colordiffuse> -->
 	</control>
-	<control type="image"><!-- Fundo do titulo -->
-		<posx>200</posx>
-		<posy>40</posy>
-		<width>925</width>
-		<height>50</height>
-		<texture>black.png</texture>
-		<colordiffuse>FFFFFFFF</colordiffuse>
-	</control>
-	<controls>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>800</width>
+			<height>700</height>
+			<texture>darkgrey.png</texture> -->
+			<!-- <colordiffuse>90FFFFFF</colordiffuse -->>
+		</control>
+<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>800</width>
+			<height>50</height>
+			<texture>black.png</texture>
+			<colordiffuse>90FFFFFF</colordiffuse>
+		</control>
 		<control type="label">
 			<description>header label</description>
 			<posx>40</posx>
-			<posy>20</posy>
+			<posy>10</posy>
 			<width>720</width>
 			<height>30</height>
 			<font>Font_23</font>
-			<label>$ADDON[adsp.parametric.eq 30100]</label>
+			<label>$ADDON[adsp.biquad.filters 30100]</label>
 			<align>center</align>
 			<aligny>center</aligny>
 			<textcolor>80FFFAF0</textcolor>
@@ -58,11 +58,11 @@
 			<textureslidernib>slidernub.png</textureslidernib>
 			<textureslidernibfocus>slidernubf.png</textureslidernibfocus>
 			<font>Font_20</font>
-					<textcolor>FFFFFAF0</textcolor>
-		<focusedcolor>E4101010</focusedcolor>
-		<colordiffuse>FFFFFAF0</colordiffuse>
-		<disabledcolor>FF505050</disabledcolor>
-		<textoffsetx>50</textoffsetx>
+			<textcolor>FFFFFAF0</textcolor>
+			<focusedcolor>E4101010</focusedcolor>
+			<colordiffuse>FFFFFFAF0</colordiffuse>
+			<disabledcolor>FF505050</disabledcolor>
+			<textoffsetx>50</textoffsetx>
 			<info></info>
 			<action></action>
 			<controloffsetx></controloffsetx>
@@ -130,11 +130,11 @@
 			<textureslidernib>slidernub.png</textureslidernib>
 			<textureslidernibfocus>slidernubf.png</textureslidernibfocus>
 			<font>Font_20</font>
-					<textcolor>FFFFFAF0</textcolor>
-		<focusedcolor>E4101010</focusedcolor>
-		<colordiffuse>FFFFFAF0</colordiffuse>
-		<disabledcolor>FF505050</disabledcolor>
-		<textoffsetx>50</textoffsetx>
+			<textcolor>FFFFFAF0</textcolor>
+			<focusedcolor>E4101010</focusedcolor>
+			<colordiffuse>FFFFFAF0</colordiffuse>
+			<disabledcolor>FF505050</disabledcolor>
+			<textoffsetx>50</textoffsetx>
 			<info></info>
 			<action></action>
 			<controloffsetx></controloffsetx>
@@ -202,11 +202,11 @@
 			<textureslidernib>slidernub.png</textureslidernib>
 			<textureslidernibfocus>slidernubf.png</textureslidernibfocus>
 			<font>Font_20</font>
-					<textcolor>FFFFFAF0</textcolor>
-		<focusedcolor>E4101010</focusedcolor>
-		<colordiffuse>FFFFFAF0</colordiffuse>
-		<disabledcolor>FF505050</disabledcolor>
-		<textoffsetx>50</textoffsetx>
+			<textcolor>FFFFFAF0</textcolor>
+			<focusedcolor>E4101010</focusedcolor>
+			<colordiffuse>FFFFFAF0</colordiffuse>
+			<disabledcolor>FF505050</disabledcolor>
+			<textoffsetx>50</textoffsetx>
 			<info></info>
 			<action></action>
 			<controloffsetx></controloffsetx>
@@ -274,11 +274,11 @@
 			<textureslidernib>slidernub.png</textureslidernib>
 			<textureslidernibfocus>slidernubf.png</textureslidernibfocus>
 			<font>Font_20</font>
-					<textcolor>FFFFFAF0</textcolor>
-		<focusedcolor>E4101010</focusedcolor>
-		<colordiffuse>FFFFFAF0</colordiffuse>
-		<disabledcolor>FF505050</disabledcolor>
-		<textoffsetx>50</textoffsetx>
+			<textcolor>FFFFFAF0</textcolor>
+			<focusedcolor>E4101010</focusedcolor>
+			<colordiffuse>FFFFFAF0</colordiffuse>
+			<disabledcolor>FF505050</disabledcolor>
+			<textoffsetx>50</textoffsetx>
 			<info></info>
 			<action></action>
 			<controloffsetx></controloffsetx>
@@ -346,11 +346,11 @@
 			<textureslidernib>slidernub.png</textureslidernib>
 			<textureslidernibfocus>slidernubf.png</textureslidernibfocus>
 			<font>Font_20</font>
-					<textcolor>FFFFFAF0</textcolor>
-		<focusedcolor>E4101010</focusedcolor>
-		<colordiffuse>FFFFFAF0</colordiffuse>
-		<disabledcolor>FF505050</disabledcolor>
-		<textoffsetx>50</textoffsetx>
+			<textcolor>FFFFFAF0</textcolor>
+			<focusedcolor>E4101010</focusedcolor>
+			<colordiffuse>FFFFFAF0</colordiffuse>
+			<disabledcolor>FF505050</disabledcolor>
+			<textoffsetx>50</textoffsetx>
 			<info></info>
 			<action></action>
 			<controloffsetx></controloffsetx>
@@ -418,11 +418,11 @@
 			<textureslidernib>slidernub.png</textureslidernib>
 			<textureslidernibfocus>slidernubf.png</textureslidernibfocus>
 			<font>Font_20</font>
-					<textcolor>FFFFFAF0</textcolor>
-		<focusedcolor>E4101010</focusedcolor>
-		<colordiffuse>FFFFFAF0</colordiffuse>
-		<disabledcolor>FF505050</disabledcolor>
-		<textoffsetx>50</textoffsetx>
+			<textcolor>FFFFFAF0</textcolor>
+			<focusedcolor>E4101010</focusedcolor>
+			<colordiffuse>FFFFFAF0</colordiffuse>
+			<disabledcolor>FF505050</disabledcolor>
+			<textoffsetx>50</textoffsetx>
 			<info></info>
 			<action></action>
 			<controloffsetx></controloffsetx>
@@ -812,63 +812,40 @@
 			<scrollspeed>50</scrollspeed>
 			<scrollsuffix> - </scrollsuffix>
 		</control>
-		<control type="group" id="10000">
-			<posx>95</posx>
+		<control type="image">
+			<posx>0</posx>
+			<posy>630</posy>
+			<height>40</height>
+			<width>800</width>
+			<aligny>top</aligny>
+			<texture>black.png</texture>
+			<colordiffuse>C0FFFFF</colordiffuse>
+		</control>
+		<control type="grouplist" id="10000">
+			<posx>0</posx>
 			<posy>630</posy>
 			<onup>8010</onup>
 			<ondown>10000</ondown>
 			<onleft>10000</onleft>
 			<onright>10000</onright>
+			<orientation>horizontal</orientation>
 			<control type="button" id="10050">
 				<description>Ok Button</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>40</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<width>264</width>
+				<include>SettingsBottomButton</include>
 				<label>186</label>
-				<font>font12_title</font>
-				<onup>8010</onup>
-				<onleft>10052</onleft>
-				<onright>10051</onright>
-				<ondown>10000</ondown>
 			</control>
 			<control type="button" id="10051">
 				<description>Cancel Button</description>
-				<posx>210</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>40</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<width>264</width>
+				<include>SettingsBottomButton</include>
 				<label>222</label>
-				<font>font12_title</font>
-				<onup>8010</onup>
-				<onleft>10050</onleft>
-				<onright>10052</onright>
-				<ondown>10000</ondown>
 			</control>
 			<control type="button" id="10052">
 				<description>Default Button</description>
-				<posx>420</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>40</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<width>264</width>
+				<include>SettingsBottomButton</include>
 				<label>409</label>
-				<font>font12_title</font>
-				<onup>8010</onup>
-				<onleft>10051</onleft>
-				<onright>10052</onright>
-				<ondown>10000</ondown>
 			</control>
 		</control>
 	</controls>

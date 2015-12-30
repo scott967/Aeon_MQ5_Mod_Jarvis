@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 	<!-- Aeon MQ 5 Helix 6.1.0/6.1.3 -->
+	<!-- Jarvis 8.1.14 -->
 
 <window id="638" type="dialog">
 	<defaultcontrol>-</defaultcontrol>
@@ -7,7 +9,7 @@
 	<onload condition="SubString(skin.string(panel_seconds),3)">SetFocus(9063)</onload>
 	<onload condition="SubString(skin.string(panel_seconds),4)">SetFocus(9064)</onload>
 	<onload condition="SubString(skin.string(panel_seconds),5)">SetFocus(9065)</onload>
-	<zorder>3</zorder>
+	<!-- <zorder>3</zorder> -->
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>

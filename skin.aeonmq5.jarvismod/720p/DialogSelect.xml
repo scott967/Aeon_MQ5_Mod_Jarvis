@@ -4,7 +4,7 @@
 
 <window type="dialog" id="2000">
 	<defaultcontrol>3</defaultcontrol>
-	<zorder>3</zorder>
+	<!-- <zorder>3</zorder> -->
 	<!-- <onload condition="Player.HasVideo">Dialog.Close(124)</onload> -->
 	<onload condition="Player.HasVideo">Dialog.Close(VideoOSD)</onload>
 	<coordinates>
