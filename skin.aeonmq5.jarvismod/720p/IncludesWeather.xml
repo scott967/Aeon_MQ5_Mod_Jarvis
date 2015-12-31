@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 	<!-- Aeon MQ 5  Helix 6.1.0/6.1.7 -->
+	<!-- Jarvis 8.1.14 -->
 
 <includes>
 	<!-- ######################################################################### Current #########################################################################-->
@@ -350,7 +352,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -396,7 +398,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
@@ -443,7 +445,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -489,7 +491,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -535,7 +537,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -581,7 +583,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -627,7 +629,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -675,7 +677,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -715,7 +717,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -755,7 +757,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -795,7 +797,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -835,7 +837,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -875,7 +877,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -915,7 +917,7 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>

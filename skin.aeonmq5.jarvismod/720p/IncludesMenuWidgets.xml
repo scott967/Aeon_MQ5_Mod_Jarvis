@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.0/6.1.5/6.1.7/6.1.8  Isengard 7.1.11 -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.1.14 -->
 
 <includes>
 	<!-- ######################################################################### Widgets dos Recentes ######################################################################### -->
@@ -38534,7 +38534,7 @@
 						<label>$INFO[Window(Weather).Property(Daily.1.LowTemperature)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38576,7 +38576,7 @@
 						<label>$INFO[Window(Weather).Property(Daily.2.LowTemperature)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38618,7 +38618,7 @@
 						<label>$INFO[Window(Weather).Property(Daily.3.LowTemperature)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38660,7 +38660,7 @@
 						<label>$INFO[Window(Weather).Property(Daily.4.LowTemperature)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38702,7 +38702,7 @@
 						<label>$INFO[Window(Weather).Property(Daily.5.LowTemperature)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38744,7 +38744,7 @@
 						<label>$INFO[Window(Weather).Property(Daily.6.LowTemperature)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38786,7 +38786,7 @@
 						<label>$INFO[Window(Weather).Property(Daily.7.LowTemperature)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38827,7 +38827,7 @@
 						<label>$INFO[Window(Weather).Property(Day1.LowTemp)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38865,7 +38865,7 @@
 						<label>$INFO[Window(Weather).Property(Day2.LowTemp)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38903,7 +38903,7 @@
 						<label>$INFO[Window(Weather).Property(Day3.LowTemp)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -38981,7 +38981,7 @@
 						<label>$INFO[Window(Weather).Property(Day5.LowTemp)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Day5.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day5.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -39020,7 +39020,7 @@
 						<label>$INFO[Window(Weather).Property(Day6.LowTemp)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Day6.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day6.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -39059,7 +39059,7 @@
 						<label>$INFO[Window(Weather).Property(Day7.LowTemp)]</label>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Day7.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day7.OutlookIcon)]</texture>
 						<include>Widget_WeatherIcon7Day</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -39109,7 +39109,7 @@
 						</control>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Weekend.1.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Weekend.1.OutlookIcon)]</texture>
 						<include>Widget_WeatherIconWeekend</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -39154,7 +39154,7 @@
 						</control>
 					</control>
 					<control type="image">
-						<texture>$INFO[Window(Weather).Property(Weekend.2.OutlookIcon)]</texture>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Weekend.2.OutlookIcon)]</texture>
 						<include>Widget_WeatherIconWeekend</include>
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
@@ -39199,7 +39199,7 @@
 					</control>
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
-						<texture>$INFO[Window(Weather).Property(36Hour.1.OutlookIcon)]</texture>	
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(36Hour.1.OutlookIcon)]</texture>	
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
 					<control type="multiimage">	
@@ -39237,7 +39237,7 @@
 					</control>
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
-						<texture>$INFO[Window(Weather).Property(36Hour.2.OutlookIcon)]</texture>	
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(36Hour.2.OutlookIcon)]</texture>	
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
 					<control type="multiimage">	
@@ -39275,7 +39275,7 @@
 					</control>
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
-						<texture>$INFO[Window(Weather).Property(36Hour.3.OutlookIcon)]</texture>	
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(36Hour.3.OutlookIcon)]</texture>	
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
 					<control type="multiimage">	
@@ -39317,7 +39317,7 @@
 					</control>
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
-						<texture>$INFO[Window(Weather).Property(Day0.OutlookIcon)]</texture>	
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day0.OutlookIcon)]</texture>	
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
 					<control type="multiimage">	
@@ -39359,7 +39359,7 @@
 					</control>
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
-						<texture>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>	
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>	
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
 					<control type="multiimage">	
@@ -39401,7 +39401,7 @@
 						</control> -->
 					<control type="image">
 						<include>Widget_WeatherIcon36hour</include>
-						<texture>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>	
+						<texture>resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>	
 						<visible>!Skin.HasSetting(weathericons)</visible>
 					</control>
 					<control type="multiimage">	
