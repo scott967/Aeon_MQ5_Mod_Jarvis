@@ -6,7 +6,7 @@
 	<defaultcontrol>3</defaultcontrol>
 	<!-- <zorder>3</zorder> -->
 	<!-- <onload condition="Player.HasVideo">Dialog.Close(124)</onload> -->
-	<onload condition="Player.HasVideo">Dialog.Close(VideoOSD)</onload>
+	<!-- <onload condition="Player.HasVideo">Dialog.Close(VideoOSD)</onload> -->
 	<coordinates>
 		<posx>0</posx>
 		<posy>0</posy>
