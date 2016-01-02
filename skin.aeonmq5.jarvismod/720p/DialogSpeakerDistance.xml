@@ -30,7 +30,7 @@
 				<height>720</height>
 				<texture>darkgrey.png</texture>
 				<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
-				<include>Animation_DefaultGlass</include>
+				<include>Animation_DefaultGlass2</include>
 			</control>
 			<control type="image">
 				<posx>140</posx>
