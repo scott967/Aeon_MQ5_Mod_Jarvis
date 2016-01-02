@@ -3197,6 +3197,15 @@
 				<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_audio_mute),disable)">Skin.Reset(osd_audio_mute,disable)</onclick>
 				<visible>[!SubString(skin.string(osd_audio_mute),disable) | Skin.HasSetting(customosd)]</visible>
 			</item>
+			<item id="27"><!-- Audio DSP -->
+				<label>-</label>
+				<property name="condition">$INFO[skin.string(osd_audio_dsp),disable)]</property>
+				<icon>osd_menu_audio.png</icon>
+				<onclick condition="!Skin.HasSetting(customosd)">ActivateWindow(osdaudiodspsettings)</onclick>
+				<onclick condition="Skin.HasSetting(customosd) + !SubString(skin.string(osd_audio_dsp),disable)">Skin.SetString(osd_audio_dsp,disable)</onclick>
+				<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_audio_dsp),disable)">Skin.Reset(osd_audio_mute,dsp)</onclick>
+				<visible>[!SubString(skin.string(osd_audio_dsp),disable) | Skin.HasSetting(customosd)]</visible>
+			</item>
 			<item id="1"><!-- ajustes -->
 				<label>-</label>
 				<property name="condition">$INFO[skin.string(osd_audio_settings),disable)]</property>

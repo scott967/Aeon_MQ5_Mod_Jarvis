@@ -3588,8 +3588,7 @@
 		<value condition="Container(101).HasFocus(25) + Skin.HasSetting(customosd)">$LOCALIZE[31222]</value>
 		<value condition="Container(101).HasFocus(26) + !Skin.HasSetting(audioosdfixedlist)">$LOCALIZE[31234]</value>
 		<value condition="Container(101).HasFocus(26) + Skin.HasSetting(audioosdfixedlist)">$LOCALIZE[31235]</value>
-		<value condition="Container(101).HasFocus(27) + !Skin.HasSetting(karaokemode)">$LOCALIZE[31692]: $LOCALIZE[31711]</value>
-		<value condition="Container(101).HasFocus(27) + Skin.HasSetting(karaokemode)">$LOCALIZE[31692]: $LOCALIZE[31743]</value>
+		<value condition="Container(101).HasFocus(27)">$LOCALIZE[15047]</value>
 	</variable>
 	<variable name="value_button_playpause">
 		<value condition="[Player.Paused | Player.Forwarding | Player.Rewinding]">osd_menu_play.png</value>

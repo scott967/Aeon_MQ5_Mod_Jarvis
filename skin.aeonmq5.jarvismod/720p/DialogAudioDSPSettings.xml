@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Aeon MQ 5 Helix 6.1.0 -->
-<!-- Isengard 7.1.9 -->
+<!-- Aeon MQ 5 -->
 <!-- Jarvis 8.1.14 -->
 
-<!-- <window id="123"> -->
 <window>
 	<defaultcontrol>5</defaultcontrol>
 	<controls>
 		<control type="group">
-		<visible>!Window.IsVisible(osdaudiodspsettings)</visible>
 			<include>Animation_DialogPopup</include>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
 			<control type="image">
@@ -49,7 +46,7 @@
 				<posy>23</posy>
 				<width>852</width>
 				<height>30</height>
-				<!-- <label>31415</label> -->
+				<label>-</label>
 				<font>Font_32</font>
 				<textcolor>FFFFFAF0</textcolor>
 				<align>center</align>
@@ -58,14 +55,43 @@
 			</control>
 			<control type="grouplist" id="5">
 				<posx>140</posx>
-				<posy>100</posy>
+				<posy>80</posy>
 				<width>1000</width>
-				<height>600</height>
+				<height>500</height>
 				<itemgap>0</itemgap>
-				<onleft>5</onleft>
-				<onright>5</onright>
+				<pagecontrol>60</pagecontrol>
+				<onleft>60</onleft>
+				<onright>60</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
+			</control>
+			<control type="scrollbar" id="60">
+				<include>ScrollBar_Vertical</include>
+				<posx>1140</posx>
+				<posy>100</posy>
+				<height>600</height>
+				<onleft>5</onleft>
+				<onright>5</onright>
+			</control>
+			<control type="label">
+				<description>info label</description>
+				<left>140</left>
+				<top>605</top>
+				<width>720</width>
+				<height>30</height>
+				<label>$INFO[ADSP.MasterInfo]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="image">
+				<description>Audio DSP Image</description>
+				<left>1055</left>
+				<top>605</top>
+				<width>85</width>
+				<height>35</height>
+				<aspectratio align="center">keep</aspectratio>
+				<visible>!IsEmpty(ADSP.MasterOwnIcon)</visible>
+				<texture>$INFO[ADSP.MasterOwnIcon]</texture>
 			</control>
 			<control type="button" id="7">
 			</control>
@@ -76,6 +102,20 @@
 				<spinposx>26</spinposx>
 			</control>
 			<control type="sliderex" id="13">
+			</control>
+			<control type="edit" id="12">
+			</control>
+			<control type="label" id="14">
+			<height>40</height>
+			<width>1040</width>
+			<aligny>center</aligny>
+			<align>left</align>
+			<label></label>
+			</control>
+			<control type="image" id="11">
+			<height>40</height>
+			<width>40</width>
+			<texture></texture>
 			</control>
 		</control>
 	</controls>
