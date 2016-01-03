@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.0  -->
 <!-- Isengard 7.1.11/7.1.12 -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.1.14 -->
 
 <includes>
 	<!--##################################################################################   VISTA LOW LIST - ID 70   ##################################################################################-->
@@ -168,7 +168,7 @@
 					<control type="image">
 						<description>MUSIC LOGO?</description>
 						<posx>960</posx>
-						<posy>380</posy>
+						<posy>500</posy> <!-- was 380 -->
 						<width>300</width>
 						<height>130</height>
 						<texture background="true">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
