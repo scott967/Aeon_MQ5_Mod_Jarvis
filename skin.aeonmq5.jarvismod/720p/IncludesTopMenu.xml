@@ -3241,8 +3241,8 @@
 				</control>
 				<control type="togglebutton" id="4"> <!-- Sort asc -->
 					<include>TopMenuButton</include>
-					<label>31481</label>
-					<altlabel>31480</altlabel>
+					<label>31480</label>
+					<altlabel>31481</altlabel>
 				</control>
 				<control type="button" id="6"><!-- SlideShow -->
 					<include>TopMenuButton</include>
@@ -3554,8 +3554,8 @@
 				</control>
 				<control type="togglebutton" id="4"><!-- Sort asc -->
 					<include>TopMenuButton</include>
-					<label>31481</label>
-					<altlabel>31480</altlabel>
+					<label>31480</label>
+					<altlabel>31481</altlabel>
 				</control>
 				<control type="button" id="991"><!-- Global Search -->
 					<include>TopMenuButton</include>
@@ -3916,8 +3916,8 @@
 				</control>
 				<control type="togglebutton" id="4"><!-- Sort asc -->
 					<include>TopMenuButton</include>
-					<label>31481</label>
-					<altlabel>31480</altlabel>
+					<label>31480</label>
+					<altlabel>31481</altlabel>
 					<!-- <usealttexture>Container.SortDirection(Ascending)</usealttexture> -->
 				</control>
 				<control type="radiobutton" id="5">

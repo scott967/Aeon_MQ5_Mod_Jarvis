@@ -2410,26 +2410,10 @@
 		</control>
 		<control type="togglebutton" id="4"><!-- Sort asc -->
 			<include>TopMenuButton</include>
-			<label>31481</label>
-			<altlabel>31480</altlabel>
+			<label>31480</label>
+			<altlabel>31481</altlabel>
 			<!-- <usealttexture>Container.SortDirection(Ascending)</usealttexture> -->
 		</control>
-		<!-- removed MyMusicSongs (files)
-		<control type="radiobutton" id="299">
-			<include>TopMenuRadioButton</include>
-			<label>29800</label>
-			<onclick>ReplaceWindow(MusicLibrary)</onclick>
-			<selected>Window.IsVisible(MusicLibrary)</selected>
-			<visible>Window.IsVisible(MusicFiles)</visible>
-		</control>
-		<control type="radiobutton" id="99">
-			<include>TopMenuRadioButton</include>
-			<label>29800</label>
-			<onclick>ReplaceWindow(MusicFiles)</onclick>
-			<selected>Window.IsVisible(MusicLibrary)</selected>
-			<visible>Window.IsVisible(MusicLibrary)</visible>
-		</control>
-		-->
 		<control type="radiobutton" id="17"><!-- Flatten -->
 			<include>TopMenuRadioButton</include>
 			<label>20411</label>
@@ -2506,8 +2490,8 @@
 		</control>
 		<control type="togglebutton" id="4"><!-- Sort asc -->
 			<include>TopMenuButton</include>
-			<label>31481</label>
-			<altlabel>31480</altlabel>
+			<label>31480</label>
+			<altlabel>31481</altlabel>
 		</control>
 		<control type="radiobutton" id="14"><!-- Watched Toggle -->
 			<include>TopMenuRadioButton</include>
