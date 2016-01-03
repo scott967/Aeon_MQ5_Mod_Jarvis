@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.7 -->
 <!-- Isengard 7.1.11 Mid List -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.1.14 -->
 
 <includes>
 	<!-- ######################################################################### Music Window #########################################################################-->
@@ -82,7 +82,7 @@
 					</control>
 					<control type="label"><!-- Artist -->
 						<posx>30</posx>
-						<posy>8</posy>
+						<posy>18</posy>
 						<width>1100</width>
 						<height>40</height>
 						<font>Font_40</font>
@@ -94,7 +94,7 @@
 					</control>
 					<control type="label">
 						<posx>30</posx>
-						<posy>50</posy>
+						<posy>70</posy>
 						<width>1100</width>
 						<height>25</height>
 						<font>Font_18A</font>
