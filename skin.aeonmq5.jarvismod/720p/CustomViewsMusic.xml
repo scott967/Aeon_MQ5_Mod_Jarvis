@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Isengard 7.1.11 Mid List -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.1.14 -->
 
-<window id="626" type="dialog">
+<window id="1103" type="dialog"> <!-- was 626 -->
 	<defaultcontrol always="true">9030</defaultcontrol>
 	<onunload condition="Window.IsActive(500)">AlarmClock(refreshview,ActivateWindowAndFocus(500, 9940,0),0:01,true)</onunload>
 	<onunload condition="Window.IsActive(502)">AlarmClock(refreshview,ActivateWindowAndFocus(502, 9940,0),0:01,true)</onunload>
@@ -70,8 +70,8 @@
 				<width>1000</width>
 				<height>600</height>
 				<itemgap>0</itemgap>
-				<onleft>Dialog.Close(626)</onleft>
-				<onright>Dialog.Close(626)</onright>
+				<onleft>Dialog.Close(1103)</onleft>
+				<onright>Dialog.Close(1103)</onright>
 				<control type="radiobutton" id="19254"><!-- Poster --><!-- 54 -->
 					<radioposx>894</radioposx>
 					<label>31808</label>

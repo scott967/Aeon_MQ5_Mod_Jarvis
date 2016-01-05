@@ -39,7 +39,27 @@
 		<include>Animation_Fade</include>
 		<colordiffuse>FFFFFAF0</colordiffuse>
 	</include>
-
+	<include name="TopMenuToggleButton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<height>25</height>
+		<width>318</width>
+		<textwidth>297</textwidth>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Font_15</font>
+		<textcolor>FF101010</textcolor>
+		<focusedcolor>FFFFFAF0</focusedcolor>
+		<disabledcolor>80505050</disabledcolor>
+		<textoffsetx>10</textoffsetx>
+		<texturenofocus>topmenu_button_nofocus.png</texturenofocus>
+		<texturefocus>topmenu_button_focus.png</texturefocus>
+		<alttexturenofocus>topmenu_button_nofocus.png</alttexturenofocus>
+		<alttexturefocus>topmenu_button_focus.png</alttexturefocus>
+		<pulseonselect>false</pulseonselect>
+		<include>Animation_Fade_Togglebutton</include>
+		<colordiffuse>FFFFFAF0</colordiffuse>
+	</include>
 	<include name="TopMenuRadioButton">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -122,7 +142,7 @@
 				<onleft>SetFocus(9940)</onleft>
 				<onright>SetFocus(9940)</onright>
 				<onclick condition="Window.IsActive(25)">ActivateWindow(641)</onclick>
-				<onclick condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(626)</onclick>
+				<onclick condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(1103)</onclick>
 				<onclick condition="Window.IsActive(1)">ActivateWindow(631)</onclick>
 				<ondown>SetFocus(51)</ondown>
 				<visible>![Skin.HasSetting(rcbgames) | Window.IsActive(2)]</visible>
@@ -198,7 +218,7 @@
 				<onleft>SetFocus(9941)</onleft>
 				<onright>SetFocus(9942)</onright>
 				<onup condition="Window.IsActive(25)">ActivateWindow(641)</onup>
-				<onup condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(626)</onup>
+				<onup condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(1103)</onup>
 				<onup condition="Window.IsActive(1)">ActivateWindow(631)</onup>
 				<ondown>SetFocus(51)</ondown>
 			</control>
@@ -242,10 +262,10 @@
 				<onleft>SetFocus(2)</onleft>
 				<onright>SetFocus(2)</onright>
 				<onclick condition="Window.IsActive(25)">ActivateWindow(641)</onclick>
-				<onclick condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(626)</onclick>
+				<onclick condition="Window.IsActive(500) | Window.IsActive(502)">ActivateWindow(1103)</onclick>
 				<!-- <onclick condition="Window.IsActive(617)">ActivateWindow(1101)</onup> -->
 				<onclick condition="Window.IsActive(1)">ActivateWindow(631)</onclick>
-				<!-- <ondown condition="Window.IsActive(626)">SetFocus(50)</ondown> -->
+				<!-- <ondown condition="Window.IsActive(1103)">SetFocus(50)</ondown> -->
 				<ondown>SetFocus(51)</ondown>
 				<visible>![Skin.HasSetting(rcbgames) | Window.IsActive(2)]</visible>
 			</control>
@@ -1005,8 +1025,6 @@
 				</control>
 				<control type="togglebutton" id="9292"> <!-- poster / no poster (clearart/logo) -->
 					<!-- <include>TopMenuButton</include> -->
-					<!-- <posx>0</posx> -->
-					<!-- <posy>0</posy> -->
 					<height>25</height>
 					<width>318</width>
 					<textwidth>297</textwidth>
@@ -1022,9 +1040,8 @@
 					<alttexturenofocus>topmenu_button_nofocus.png</alttexturenofocus>
 					<alttexturefocus>topmenu_button_focus.png</alttexturefocus>
 					<pulseonselect>false</pulseonselect>
-					<include>Animation_Fade</include>
+					<include>Animation_Fade_Togglebutton</include>
 					<colordiffuse>FFFFFAF0</colordiffuse>
-					<!-- <include>TopMenuButton</include> -->
 					<label>$LOCALIZE[31320]: $LOCALIZE[31408]</label>
 					<altlabel>$LOCALIZE[31320]: $LOCALIZE[31317]</altlabel>
 					<onclick>Skin.ToggleSetting(noviewpanelposter)</onclick>
@@ -1138,7 +1155,7 @@
 
 				<!-- Global -->
 				<control type="togglebutton" id="92110">
-					<include>TopMenuRadioButton</include>
+					<include>TopMenuToggleButton</include>
 					<label>31495</label>
 					<altlabel>31494</altlabel>
 					<onclick>Skin.ToggleSetting(nopreferclearart)</onclick>
@@ -3240,9 +3257,10 @@
 					<label>103</label>
 				</control>
 				<control type="togglebutton" id="4"> <!-- Sort asc -->
-					<include>TopMenuButton</include>
-					<label>31480</label>
-					<altlabel>31481</altlabel>
+					<include>TopMenuToggleButton</include>
+					<label>31481</label>
+					<altlabel>31480</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 				</control>
 				<control type="button" id="6"><!-- SlideShow -->
 					<include>TopMenuButton</include>
@@ -3260,7 +3278,7 @@
 					<visible>Window.IsActive(pictures)</visible>
 				</control>
 				<control type="togglebutton" id="9331">
-					<include>TopMenuButton</include>
+					<include>TopMenuToggleButton</include>
 					<label>$LOCALIZE[31511]: $LOCALIZE[31512]</label>
 					<altlabel>$LOCALIZE[31511]: $LOCALIZE[31513]</altlabel>
 					<usealttexture>!Skin.HasSetting(smallmusicwall)</usealttexture>
@@ -3553,9 +3571,10 @@
 					<label>103</label>
 				</control>
 				<control type="togglebutton" id="4"><!-- Sort asc -->
-					<include>TopMenuButton</include>
-					<label>31480</label>
-					<altlabel>31481</altlabel>
+					<include>TopMenuToggleButton</include>
+					<label>31481</label>
+					<altlabel>31480</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 				</control>
 				<control type="button" id="991"><!-- Global Search -->
 					<include>TopMenuButton</include>
@@ -3915,10 +3934,10 @@
 					<label>103</label>
 				</control>
 				<control type="togglebutton" id="4"><!-- Sort asc -->
-					<include>TopMenuButton</include>
-					<label>31480</label>
-					<altlabel>31481</altlabel>
-					<!-- <usealttexture>Container.SortDirection(Ascending)</usealttexture> -->
+					<include>TopMenuToggleButton</include>
+					<label>31481</label>
+					<altlabel>31480</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Group recording items by folder structure</description>

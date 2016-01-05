@@ -64,7 +64,7 @@
 				<control type="button" id="9922"><!-- refresh das vistas -->
 					<include>InvisibleButton</include>
 					<animation effect="fade" start="0" end="100" time="150" delay="3000">Hidden</animation>
-					<visible>Window.IsVisible(626)</visible>
+					<visible>Window.IsVisible(1103)</visible>
 				</control>
 				<control type="group">
 					<animation effect="slide" time="400" start="0,-250" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
