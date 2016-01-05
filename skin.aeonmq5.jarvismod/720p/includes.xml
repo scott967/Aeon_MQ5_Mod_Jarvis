@@ -148,6 +148,12 @@
 		<animation effect="fade" time="200">WindowClose</animation>
 		<animation effect="fade" time="200">Hidden</animation>
 	</include>
+	<include name="Animation_Fade_Togglebutton">
+		<!-- <animation effect="fade" start="0" end="100" time="500">WindowOpen</animation> -->
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+	</include>
 	<include name="Animation_VisibleChange">
 		<animation effect="fade" time="400">Visible</animation>
 		<animation effect="fade" time="400">Hidden</animation>
@@ -241,7 +247,7 @@
 		<animation effect="slide" start="0,-70" end="0,0" time="500" easing="inout" tween="cubic">Visible</animation>
 		<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 		<animation effect="slide" start="0,0" end="0,-70" time="300" easing="inout" tween="cubic">Hidden</animation>
-		<animation effect="slide" end="0,-70" time="300" easing="inout" tween="cubic" condition="Window.IsVisible(100) | Window.IsVisible(104) | Window.IsVisible(107) | Window.IsVisible(112) | Window.IsVisible(133) | Window.IsVisible(614) | Window.IsVisible(2002)">Conditional</animation>
+		<animation effect="slide" end="0,-70" time="300" easing="inout" tween="cubic" condition="Window.IsVisible(100) | Window.IsVisible(104) | Window.IsVisible(107) | Window.IsVisible(112) | Window.IsVisible(133) | Window.IsVisible(151) | Window.IsVisible(2002)">Conditional</animation> <!-- 151 was 614 extendedprogress -->
 	</include>
 	<include name="Animation_TopDialogPopup">
 		<animation effect="slide" start="0,-100" end="0" time="500" easing="inout" tween="cubic">WindowOpen</animation>
@@ -2120,7 +2126,7 @@
 			<animation effect="slide" start="0,-70" end="0,0" time="500" delay="1000" easing="inout" tween="cubic">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,-70" time="300" easing="inout" tween="cubic">Hidden</animation>
 			<animation effect="slide" end="0,-70" time="500" tween="sine" easing="out" condition="Control.IsVisible(79)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-70" time="400" tween="cubic" easing="in" condition="Control.HasFocus(9920) | Control.IsVisible(608) | ControlGroup(9000).HasFocus | Window.IsVisible(104) | Window.IsVisible(107) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(614) | Window.IsVisible(621) | Window.IsVisible(625) | Window.IsVisible(626)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-70" time="400" tween="cubic" easing="in" condition="Control.HasFocus(9920) | Control.IsVisible(608) | ControlGroup(9000).HasFocus | Window.IsVisible(104) | Window.IsVisible(107) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(614) | Window.IsVisible(621) | Window.IsVisible(625) | Window.IsVisible(1103)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-70" time="50" tween="cubic" easing="in" condition="Control.HasFocus(160)">Conditional</animation>
 			<control type="image">
 				<posx>0</posx>
@@ -2153,7 +2159,7 @@
 			<animation effect="slide" start="0,-70" end="0,0" time="500" delay="1000" easing="inout" tween="cubic">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,-70" time="300" easing="inout" tween="cubic">Hidden</animation>
 			<animation effect="slide" end="0,-70" time="500" tween="sine" easing="out" condition="Control.IsVisible(79)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-70" time="400" tween="cubic" easing="in" condition="Control.HasFocus(9920) | Control.IsVisible(608) | ControlGroup(9000).HasFocus | Window.IsVisible(104) | Window.IsVisible(107) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(614) | Window.IsVisible(621) | Window.IsVisible(625) | Window.IsVisible(626) | Window.IsActive(tvchannels) | Window.IsActive(radiochannels) + [Player.HasMedia + System.IdleTime(8)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-70" time="400" tween="cubic" easing="in" condition="Control.HasFocus(9920) | Control.IsVisible(608) | ControlGroup(9000).HasFocus | Window.IsVisible(104) | Window.IsVisible(107) | Library.IsScanningVideo | Library.IsScanningMusic | Window.IsVisible(614) | Window.IsVisible(621) | Window.IsVisible(625) | Window.IsVisible(1103) | Window.IsActive(tvchannels) | Window.IsActive(radiochannels) + [Player.HasMedia + System.IdleTime(8)]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-70" time="50" tween="cubic" easing="in" condition="Control.HasFocus(160)">Conditional</animation>
 			<control type="image">
 				<posx>780</posx>
