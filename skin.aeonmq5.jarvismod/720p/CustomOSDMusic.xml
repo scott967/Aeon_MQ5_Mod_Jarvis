@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.1.14 -->
 
 <window id="627" type="dialog">
 	<defaultcontrol always="true">9030</defaultcontrol>
@@ -197,7 +197,9 @@
 				</control>
 				<control type="button" id="19"><!-- vis -->
 					<label>$LOCALIZE[457]</label>
-					<onclick>ActivateWindowAndFocus(musicsettings, -99,0, -72,0)</onclick>
+					<!-- <onclick>ActivateWindowAndFocus(musicsettings, -99,0, -72,0)</onclick> -->
+				<!-- 	<onclick>ActivateWindow(musicosd)</onclick> -->
+					<onclick>Control.Message(500,click,120)</onclick>
 					<enable>StringCompare(skin.string(vis_bg),fanartmix) | StringCompare(skin.string(vis_bg),slideshowmix) | StringCompare(skin.string(vis_bg),vis)</enable>
 				</control>
 				<control type="button" id="20"><!-- preset -->
