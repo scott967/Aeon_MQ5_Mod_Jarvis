@@ -264,7 +264,21 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<include>listcolorfocus</include>
+							<shadowcolor>FF000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
+							<visible>ListItem.IsPlaying</visible>
+						</control>
+						<control type="label">
+							<posx>20</posx>
+							<posy>-1</posy>
+							<width>480</width>
+							<height>30</height>
+							<font>Font_22</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<include>listcolorfocus</include>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>!ListItem.IsPlaying</visible>
 						</control>
 						<control type="image">
 							<posx>510</posx>
@@ -294,7 +308,34 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<include>listcolorfocus</include>
+							<shadowcolor>FF000000</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
+							<visible>ListItem.IsPlaying</visible>
+						</control>
+						<control type="label">
+							<posx>20</posx>
+							<posy>-1</posy>
+							<width>480</width>
+							<height>30</height>
+							<font>Font_22</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<include>listcolorfocus</include>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>!ListItem.IsPlaying</visible>
+						</control>
+						<control type="label">
+							<posx>20</posx>
+							<posy>30</posy>
+							<width>480</width>
+							<height>16</height>
+							<font>Font_18A</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<include>subcolorfocus</include>
+							<shadowcolor>FF000000</shadowcolor>
+							<label>$VAR[value_listinfofocus]</label>
+							<visible>!StringCompare(ListItem.Label,..) + ListItem.IsPlaying</visible>
 						</control>
 						<control type="label">
 							<posx>20</posx>
@@ -306,7 +347,7 @@
 							<aligny>center</aligny>
 							<include>subcolorfocus</include>
 							<label>$VAR[value_listinfofocus]</label>
-							<visible>!StringCompare(ListItem.Label,..)</visible>
+							<visible>!StringCompare(ListItem.Label,..) + !ListItem.IsPlaying</visible>
 						</control>
 						<control type="image">
 							<posx>510</posx>
