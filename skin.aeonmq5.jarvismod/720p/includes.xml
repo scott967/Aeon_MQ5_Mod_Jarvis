@@ -3061,7 +3061,7 @@
 			</control>
 		</focusedlayout>
 		<content>
-			<item id="16">
+			<item id="16"> <!-- song info -->
 				<label>-</label>
 				<property name="condition">$INFO[skin.string(osd_audio_info),disable)]</property>
 				<icon>osd_menu_info.png</icon>
@@ -3197,20 +3197,21 @@
 				<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_audio_dsp),disable)">Skin.Reset(osd_audio_mute,dsp)</onclick>
 				<visible>[!SubString(skin.string(osd_audio_dsp),disable) | Skin.HasSetting(customosd)]</visible>
 			</item>
-			<item id="1"><!-- ajustes -->
+			<item id="1"><!-- vis settings -->
 				<label>-</label>
 				<property name="condition">$INFO[skin.string(osd_audio_settings),disable)]</property>
 				<icon>osd_menu_settings.png</icon>
-				<onclick condition="!Skin.HasSetting(customosd)">Dialog.Close(all,true)</onclick>
+			<!-- 	<onclick condition="!Skin.HasSetting(customosd)">Dialog.Close(all,true)</onclick> -->
 				<onclick condition="!Skin.HasSetting(customosd)">AlarmClock(customosd,ActivateWindow(627),0:01,true)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + !SubString(skin.string(osd_audio_settings),disable)">Skin.SetString(osd_audio_settings,disable)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_audio_settings),disable)">Skin.Reset(osd_audio_settings,disable)</onclick>
 			</item>
-			<item id="4"><!-- sjustes gerais -->
+			<item id="4"><!-- general settings -->
 				<label>-</label>
 				<property name="condition">$INFO[skin.string(osd_audio_gsettings),disable)]</property>
 				<icon>osd_menu_gensettings.png</icon>
-				<onclick condition="!Skin.HasSetting(customosd)">ActivateWindow(4)</onclick>
+				<onclick condition="!Skin.HasSetting(customosd)">Close</onclick>
+				<onclick condition="!Skin.HasSetting(customosd)">ActivateWindow(musicsettings)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + !SubString(skin.string(osd_audio_gsettings),disable)">Skin.SetString(osd_audio_gsettings,disable)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_audio_gsettings),disable)">Skin.Reset(osd_audio_gsettings,disable)</onclick>
 				<visible>[!SubString(skin.string(osd_audio_gsettings),disable) | Skin.HasSetting(customosd)]</visible>
