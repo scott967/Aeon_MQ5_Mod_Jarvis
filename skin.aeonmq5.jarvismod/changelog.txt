@@ -3,6 +3,10 @@ Improved:  Adjust text postion for Massive font
 Fixed:  OSD audio settings now allow dialog select
 New:  Support for Audio DSP add-ons
 New:  Weather icons now come from resuorce add-on
+Fixed:  Opening music visualization select from music osd
+Fixed:  visualisationpresetlist no longer used
+Fixed:  Music OSD select Kodi music settings
+Improved:  Put 'profile in use" in place of "frame rate" on settings widgets (Home window)
 
 [B][COLOR=FFFF8C00]BUILD 8.1.13 - RELEASE DATE 10/15/2015[/COLOR][/B]
 New:  Events window (Jarvis addition)
