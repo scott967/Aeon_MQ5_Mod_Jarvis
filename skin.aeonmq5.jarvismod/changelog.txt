@@ -2,11 +2,15 @@
 Improved:  Adjust text postion for Massive font
 Fixed:  OSD audio settings now allow dialog select
 New:  Support for Audio DSP add-ons
-New:  Weather icons now come from resuorce add-on
+New:  Weather icons now come from resource add-on
 Fixed:  Opening music visualization select from music osd
 Fixed:  visualisationpresetlist no longer used
 Fixed:  Music OSD select Kodi music settings
 Improved:  Put 'profile in use" in place of "frame rate" on settings widgets (Home window)
+New:  Add-on script.image.resource.select is now a dependency to get icon packs
+New:  Animated weather icons now from resource add-ons
+New:  New skin setting to select icon packs
+Improved:  Aeon flags font has coverage for more languages (used in the flags bar) 
 
 [B][COLOR=FFFF8C00]BUILD 8.1.13 - RELEASE DATE 10/15/2015[/COLOR][/B]
 New:  Events window (Jarvis addition)
