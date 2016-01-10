@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!-- Aeon MQ 5 Helix 6.1.0 -->
 <!-- Isengard 7.1.10 -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.1.14 -->
 
 <window>
 	<defaultcontrol always="true">9100</defaultcontrol>
@@ -9,6 +9,8 @@
 	<onunload>Skin.Reset(customwindow)</onunload>
 	<onunload>Skin.Reset(resetmode)</onunload>
 	<onunload>Skin.Reset(fonte)</onunload>
+	<onunload>SetProperty(current_wxicon_path,$INFO[Skin.String(custom_wxicons.path)],0)</onunload>
+	<onunload condition="Skin.HasSetting(custom_wxicons.multi">SetProperty(current_wxicon_multi,"true",0)</onunload>
 	<controls>
 		<control type="multiimage">
 			<include>HomeBG</include>
@@ -2120,6 +2122,17 @@
 				<animation effect="fade" time="50">Hidden</animation>
 				<visible allowhiddenfocus="true">Container(9100).HasFocus(17)</visible>
 			</control>
+			<control type="scrollbar" id="84">
+				<include>ScrollBar_Vertical</include>
+				<posx>1240</posx>
+				<posy>135</posy>
+				<height>265</height>
+				<onleft>9011</onleft>
+				<onright>9100</onright>
+				<animation effect="fade" time="200">Visible</animation>
+				<animation effect="fade" time="50">Hidden</animation>
+				<visible allowhiddenfocus="true">Container(9100).HasFocus(35)</visible>
+			</control>
 			<control type="grouplist" id="9004"><!-- Temas -->
 				<visible>Container(9100).HasFocus(22)</visible>
 				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
@@ -2600,6 +2613,27 @@
 					<selected>StringCompare(skin.string(font),font8)</selected>
 				</control>
 			</control>
+
+			<control type="grouplist" id="9011"><!-- Icons -->
+				<visible>Container(9100).HasFocus(35)</visible>
+				<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+				<posx>240</posx>
+				<posy>120</posy>
+				<width>1040</width>
+				<height>594</height>
+				<onleft>9100</onleft>
+				<onright>9100</onright>
+				<onup>9011</onup>
+				<ondown>9011</ondown>
+				<itemgap>0</itemgap>
+				<pagecontrol>84</pagecontrol>
+				<control type="button" id="3501">
+					<label>$LOCALIZE[31009] $LOCALIZE[536]</label>
+					<label2>$INFO[Skin.String(custom_wxicons.name)]</label2>
+					<onclick>RunScript(script.image.resource.select,type=resource.images.weathericons&amp;property=custom_wxicons)</onclick>
+				</control>
+			</control>
+
 			<control type="group"><!-- Estilos -->
 				<visible>Container(9100).HasFocus(24) | ControlGroup(9008).HasFocus</visible>
 				<include>Animation_Fade</include>
@@ -3692,6 +3726,7 @@
 				<onright condition="Container(9100).HasFocus(32)">SetFocus(9003)</onright>
 				<onright condition="Container(9100).HasFocus(33)">SetFocus(200)</onright>
 				<onright condition="Container(9100).HasFocus(34)">SetFocus(404)</onright>
+				<onright condition="Container(9100).HasFocus(35)">SetFocus(9011)</onright>
 				<viewtype>list</viewtype>
 				<orientation>vertical</orientation>
 				<focusposition>1</focusposition>
@@ -3764,6 +3799,11 @@
 						<icon>-</icon>
 						<onclick>Skin.SetBool(fonte)</onclick>
 						<onclick>SetFocus(9008)</onclick>
+					</item>
+					<item id="35"><!-- Icons -->
+						<label>$LOCALIZE[536]</label>
+						<icon>-</icon>
+						<onclick>SetFocus(9011)</onclick>
 					</item>
 					<item id="16"><!-- Skin Geral -->
 						<label>31375</label>

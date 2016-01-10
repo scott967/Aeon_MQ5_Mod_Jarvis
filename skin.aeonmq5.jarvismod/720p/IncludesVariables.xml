@@ -2302,8 +2302,8 @@
 	</variable>
 
 	<variable name="value_weathericons">
-		<value condition="Skin.HasSetting(weathericons) + !Skin.HasSetting(weathericons_external)">special://userdata/addon_data/skin.aeonmq5.extrapack/icons_weather/</value>
-		<value condition="Skin.HasSetting(weathericons) + Skin.HasSetting(weathericons_external)">$INFO[Skin.String(CustomAnimatedIconFolder)]</value>
+		<value condition="Skin.HasSetting(custom_wxicons.multi) + !Skin.HasSetting(weathericons_external)">$INFO[Skin.String(custom_wxicons.path)]</value>
+		<value condition="Skin.HasSetting(custom_wxicons.multi) + Skin.HasSetting(weathericons_external)">$INFO[Skin.String(CustomAnimatedIconFolder)]</value>
 	</variable>
 
 	<variable name="value_videofanart">
@@ -2474,6 +2474,7 @@
 		<value condition="Control.HasFocus(9100) + Container(9100).HasFocus(31)">$LOCALIZE[31278]</value>
 		<value condition="Control.HasFocus(9100) + Container(9100).HasFocus(32)">$LOCALIZE[31451]</value>
 		<value condition="Control.HasFocus(9100) + Container(9100).HasFocus(34) | ControlGroup(9009).HasFocus">$LOCALIZE[31977]</value>
+		<value condition="Control.HasFocus(9100) + Container(9100).HasFocus(35) | ControlGroup(9011).HasFocus">$LOCALIZE[536]</value>
 		<value condition="Container(9100).HasFocus(32) + Control.HasFocus(1160)">$LOCALIZE[31452]</value>
 		<value condition="Container(9100).HasFocus(32) + Control.HasFocus(1161)">$LOCALIZE[31453]</value>
 		<value condition="Container(9100).HasFocus(32) + Control.HasFocus(1162)">$LOCALIZE[31597]</value>
@@ -2546,6 +2547,7 @@
 		<value condition="ControlGroup(165).HasFocus | Control.Hasfocus(200)">$LOCALIZE[31593][CR]$LOCALIZE[31624]</value>
 		<value condition="Control.Hasfocus(270)">$LOCALIZE[31593][CR]$LOCALIZE[31624]</value>
 		<value condition="Container(9100).HasFocus(24) | ControlGroup(9008).HasFocus">$LOCALIZE[31139][CR]$LOCALIZE[31624]</value>
+		<value condition="Container(9100).HasFocus(35) | ControlGroup(9011).HasFocus">$LOCALIZE[536] $LOCALIZE[21866]:   $LOCALIZE[31843] $LOCALIZE[31011]</value>
 	</variable>
 	<variable name="value_pvrnumitems">
 		<value condition="Control.IsVisible(11)">$INFO[Container(11).NumItems] $LOCALIZE[19019] - $LOCALIZE[31757] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages]</value>
