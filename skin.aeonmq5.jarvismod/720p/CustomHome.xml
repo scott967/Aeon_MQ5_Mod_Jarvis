@@ -94,24 +94,24 @@
 				<itemgap>0</itemgap>
 				<scrolltime>-</scrolltime>
 				<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
-				<visible>!Skin.HasSetting(weathericons) + [Control.HasFocus(129) | Control.HasFocus(130) | Control.HasFocus(131)]</visible>
+				<visible>!Skin.HasSetting(custom_wxicons.multi) + [Control.HasFocus(129) | Control.HasFocus(130) | Control.HasFocus(131)]</visible>
 				<control type="image"><!-- Icone do clima 1 -->
 					<width>180</width>
 					<height>90</height>
 					<aspectratio aligny="top">keep</aspectratio>
-					<texture background="true">resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
+					<texture background="true">$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
 				</control>
 				<control type="image"><!-- Icone do clima 2 -->
 					<width>180</width>
 					<height>90</height>
 					<aspectratio aligny="top">keep</aspectratio>
-					<texture background="true">resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
+					<texture background="true">$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
 				</control>
 				<control type="image"><!-- Icone do clima 3 -->
 					<width>180</width>
 					<height>90</height>
 					<aspectratio aligny="top">keep</aspectratio>
-					<texture background="true">resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
+					<texture background="true">$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
 				</control>
 			</control>
 			<control type="grouplist">
@@ -123,12 +123,12 @@
 				<itemgap>0</itemgap>
 				<scrolltime>-</scrolltime>
 				<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
-				<visible>Skin.HasSetting(weathericons) + [Control.HasFocus(129) | Control.HasFocus(130) | Control.HasFocus(131)]</visible>
+				<visible>Skin.HasSetting(custom_wxicons.multi) + [Control.HasFocus(129) | Control.HasFocus(130) | Control.HasFocus(131)]</visible>
 				<control type="multiimage"><!-- Icone animado 1 -->
 					<width>180</width>
 					<height>90</height>
 					<aspectratio aligny="top">keep</aspectratio>
-					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.1.FanartCode)]/</imagepath>
 					<timeperimage>175</timeperimage>
 					<randomize>false</randomize>
 					<fadetime>0</fadetime>
@@ -137,7 +137,7 @@
 					<width>180</width>
 					<height>90</height>
 					<aspectratio aligny="top">keep</aspectratio>
-					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
+					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.4.FanartCode)]/</imagepath>
 					<timeperimage>175</timeperimage>
 					<randomize>false</randomize>
 					<fadetime>0</fadetime>
@@ -146,7 +146,7 @@
 					<width>180</width>
 					<height>90</height>
 					<aspectratio aligny="top">keep</aspectratio>
-					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
+					<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.7.FanartCode)]/</imagepath>
 					<timeperimage>175</timeperimage>
 					<randomize>false</randomize>
 					<fadetime>0</fadetime>

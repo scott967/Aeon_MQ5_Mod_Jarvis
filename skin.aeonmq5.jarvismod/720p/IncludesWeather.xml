@@ -352,7 +352,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -398,8 +405,15 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
-						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
 						<aspectratio>keep</aspectratio>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -445,7 +459,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -491,7 +512,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -537,7 +565,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -583,7 +618,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -629,7 +671,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -677,7 +726,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -717,7 +773,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -757,7 +820,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -797,7 +867,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -837,7 +914,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -877,7 +961,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -917,7 +1008,14 @@
 					<control type="image">
 						<description>Weather image</description>
 						<include>TWC.Current.DailyIconCommon</include>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Current.DailyIconCommon</include>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>High Temp label</description>
@@ -1207,8 +1305,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1265,8 +1370,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1323,8 +1435,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1381,8 +1500,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1439,8 +1565,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1509,8 +1642,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1567,8 +1707,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1625,8 +1772,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.8.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.8.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.8.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1683,8 +1837,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.9.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.9.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.9.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1742,8 +1903,15 @@
 						<control type="image">
 							<description>Weather image</description>
 							<include>TWC.Daily.DailyIconCommon</include>
-							<texture>$INFO[Window.Property(Daily.10.OutlookIcon)]</texture>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.10.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.DailyIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.10.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<description>Outlook</description>
 							<include>TWC.Daily.DailyOutlook</include>
@@ -1853,8 +2021,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.1.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.1.Outlook)]</label>
@@ -1930,8 +2105,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.2.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.2.Outlook)]</label>
@@ -2007,8 +2189,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.3.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.3.Outlook)]</label>
@@ -2084,8 +2273,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.4.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.4.Outlook)]</label>
@@ -2161,8 +2357,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.5.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.5.Outlook)]</label>
@@ -2238,8 +2441,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.6.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.6.Outlook)]</label>
@@ -2315,8 +2525,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.7.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.7.Outlook)]</label>
@@ -2392,8 +2609,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.8.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.8.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.8.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.8.Outlook)]</label>
@@ -2469,8 +2693,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.9.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.9.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.9.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.9.Outlook)]</label>
@@ -2546,8 +2777,15 @@
 						</control>
 						<control type="image">
 							<include>TWC.Daily.ListOutlookIcon</include>
-							<info>Window.Property(Daily.10.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Daily.10.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Daily.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Daily.10.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Daily.ListOutlook</include>
 							<label>$INFO[Window.Property(Daily.10.Outlook)]</label>
@@ -2815,8 +3053,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.1.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.1.Outlook)]$INFO[Window.Property(Hourly.1.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.1.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -2859,8 +3104,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.2.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.2.Outlook)]$INFO[Window.Property(Hourly.2.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.2.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -2903,8 +3155,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.3.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.3.Outlook)]$INFO[Window.Property(Hourly.3.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.3.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -2947,8 +3206,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.4.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.4.Outlook)]$INFO[Window.Property(Hourly.4.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.4.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -2991,8 +3257,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.5.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.5.Outlook)]$INFO[Window.Property(Hourly.5.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.5.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -3035,8 +3308,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.6.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.6.Outlook)]$INFO[Window.Property(Hourly.6.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.6.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -3079,8 +3359,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.7.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.7.Outlook)]$INFO[Window.Property(Hourly.7.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.7.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -3123,8 +3410,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.8.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.8.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.8.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.8.Outlook)]$INFO[Window.Property(Hourly.8.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.8.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -3167,8 +3461,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.9.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.9.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.9.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.9.Outlook)]$INFO[Window.Property(Hourly.9.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.9.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -3211,8 +3512,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.10.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.10.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.10.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.10.Outlook)]$INFO[Window.Property(Hourly.10.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.10.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -3255,8 +3563,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.11.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.11.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.11.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.11.Outlook)]$INFO[Window.Property(Hourly.11.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.11.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -3299,8 +3614,15 @@
 						<include>TWC.Hourly.ListConditionTexture</include>
 						<control type="image">
 							<include>TWC.Hourly.ListOutlookIcon</include>
-							<info>Window.Property(Hourly.12.OutlookIcon)</info>
+							<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Hourly.12.OutlookIcon)]</texture>
+							<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
 						</control>
+						<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Hourly.ListOutlookIcon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Hourly.12.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
 						<control type="label">
 							<include>TWC.Hourly.ListOutlook</include>
 							<label>$INFO[Window.Property(Hourly.12.Outlook)]$INFO[Window.Property(Hourly.12.Sunrise),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33027]: ,[/COLOR]]$INFO[Window.Property(Hourly.12.Sunset),[CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[33028]: ,[/COLOR]]</label>
@@ -3470,7 +3792,14 @@
 					<control type="image">
 						<description>outlook icon</description>
 						<include>TWC.36Hour.PeriodIconCommon</include>
-						<info>Window.Property(36Hour.1.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(36Hour.1.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.36Hour.PeriodIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(36Hour.1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -3528,7 +3857,14 @@
 					<control type="image">
 						<description>outlook icon</description>
 						<include>TWC.36Hour.PeriodIconCommon</include>
-						<info>Window.Property(36Hour.2.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(36Hour.2.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.36Hour.PeriodIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(36Hour.2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -3585,7 +3921,14 @@
 					<control type="image">
 						<description>outlook icon</description>
 						<include>TWC.36Hour.PeriodIconCommon</include>
-						<info>Window.Property(36Hour.3.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(36Hour.3.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.36Hour.PeriodIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(36Hour.3.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -3655,7 +3998,14 @@
 					<control type="image">
 						<description>outlook icon</description>
 						<include>TWC.36Hour.PeriodIconCommon</include>
-						<info>Window.Property(Day0.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Day0.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.36Hour.PeriodIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Day0.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -3687,7 +4037,14 @@
 					<control type="image">
 						<description>outlook icon</description>
 						<include>TWC.36Hour.PeriodIconCommon</include>
-						<info>Window.Property(Day1.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Day1.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.36Hour.PeriodIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Day1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -3718,7 +4075,14 @@
 					<control type="image">
 						<description>outlook icon</description>
 						<include>TWC.36Hour.PeriodIconCommon</include>
-						<info>Window.Property(Day2.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Day2.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.36Hour.PeriodIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Day2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -3976,7 +4340,14 @@
 					<control type="image">
 						<description>forecast icon</description>
 						<include>TWC.Weekend.DayIconCommon</include>
-						<info>Window.Property(Weekend.1.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Weekend.DayIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -4167,7 +4538,14 @@
 					<control type="image">
 						<description>forecast icon</description>
 						<include>TWC.Weekend.DayIconCommon</include>
-						<info>Window.Property(Weekend.2.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Weekend.DayIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -4358,7 +4736,14 @@
 					<control type="image">
 						<description>forecast icon</description>
 						<include>TWC.Weekend.DayIconCommon</include>
-						<info>Window.Property(Weekend.3.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Weekend.3.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Weekend.DayIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Weekend.3.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -4568,7 +4953,14 @@
 					<control type="image">
 						<description>forecast icon</description>
 						<include>TWC.Weekend.DayIconCommon</include>
-						<info>Window.Property(Weekend.1.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Weekend.DayIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>
@@ -4751,7 +5143,14 @@
 					<control type="image">
 						<description>forecast icon</description>
 						<include>TWC.Weekend.DayIconCommon</include>
-						<info>Window.Property(Weekend.2.OutlookIcon)</info>
+						<texture>$INFO[Window(0).Property(current_wxicon_path)]$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
+						<visible>!Skin.HasSetting(custom_wxicons.multi)</visible>
+					</control>
+					<control type="image">
+						<description>Weather image</description>
+						<include>TWC.Weekend.DayIconCommon</include>
+						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
+						<visible>Skin.HasSetting(custom_wxicons.multi)</visible>
 					</control>
 					<control type="label">
 						<description>outlook label</description>

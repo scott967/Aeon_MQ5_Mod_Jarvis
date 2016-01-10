@@ -4673,19 +4673,20 @@
 				<onclick condition="!System.HasAddon(script.aeonmq5.extrapack)">ActivateWindow(AddonBrowser)</onclick>
 				<onclick condition="System.HasAddon(script.aeonmq5.extrapack)">RunScript(script.aeonmq5.extrapack,mode=default)</onclick>
 				<visible>StringCompare(Container(9000).ListItem.Property(id),weather)</visible>
-				<enable>Skin.HasSetting(weathericons) | SubString(skin.string(weatherconditionbg),weathercondition)</enable>
+				<enable>Skin.HasSetting(custom_wxicons.multi) | SubString(skin.string(weatherconditionbg),weathercondition)</enable>
 			</control>
 			<control type="button" id="128"><!-- Pacote extra forcado -->
 				<label>31923</label>
 				<onclick>RunScript(script.aeonmq5.extrapack,mode=forcerefresh)</onclick>
 				<visible>StringCompare(Container(9000).ListItem.Property(id),weather) + System.HasAddon(script.aeonmq5.extrapack)</visible>
-				<enable>Skin.HasSetting(weathericons) | SubString(skin.string(weatherconditionbg),weathercondition)</enable>
+				<enable>Skin.HasSetting(custom_wxicons.multi) | SubString(skin.string(weatherconditionbg),weathercondition)</enable>
 			</control>
 			<control type="radiobutton" id="129"><!-- Icones Clima Animados --><!-- nao trocar id -->
 				<include>CustomMenuRadioButton</include>
-				<label>$VAR[value_animatedicons]</label>
-				<onclick>Skin.ToggleSetting(weathericons)</onclick>
-				<selected>Skin.HasSetting(weathericons)</selected>
+				<!-- <label>$VAR[value_animatedicons]</label> -->
+				<label>$LOCALIZE[31543]</label>
+				<onclick>ActivateWindowAndFocus(skinsettings,9100,35)</onclick>
+				<selected>Skin.HasSetting(custom_wxicons.multi)</selected>
 				<visible>StringCompare(Container(9000).ListItem.Property(id),weather)</visible>
 			</control>
 			<control type="radiobutton" id="130"><!-- Icones Clima Externo --><!-- nao trocar id -->
@@ -4693,13 +4694,13 @@
 				<label>31903</label>
 				<onclick>Skin.ToggleSetting(weathericons_external)</onclick>
 				<selected>Skin.HasSetting(weathericons_external)</selected>
-				<visible>StringCompare(Container(9000).ListItem.Property(id),weather) + Skin.HasSetting(weathericons)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(id),weather) + Skin.HasSetting(custom_wxicons.multi)</visible>
 			</control>
 			<control type="button" id="131"><!-- Icones Clima/Pasta --><!-- nao trocar id -->
 				<include>CustomMenuButton</include>
 				<label>$VAR[value_weathericonsfolder]</label>
 				<onclick>Skin.ToggleSetting(weathericons_folder)</onclick>
-				<visible>StringCompare(Container(9000).ListItem.Property(id),weather) + Skin.HasSetting(weathericons) + Skin.HasSetting(weathericons_external)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(id),weather) + Skin.HasSetting(custom_wxicons.multi) + Skin.HasSetting(weathericons_external)</visible>
 			</control>
 			<control type="button" id="132"><!-- Fundo Clima/Condicional -->
 				<include>CustomMenuButton</include>
