@@ -1,4 +1,4 @@
-[B][COLOR=FFFF8C00]BUILD 8.1.14 - RELEASE DATE 12/31/2015[/COLOR][/B]
+[B][COLOR=FFFF8C00]BUILD 8.1.14 - RELEASE DATE 01/11/2016[/COLOR][/B]
 Improved:  Adjust text postion for Massive font
 Fixed:  OSD audio settings now allow dialog select
 New:  Support for Audio DSP add-ons
