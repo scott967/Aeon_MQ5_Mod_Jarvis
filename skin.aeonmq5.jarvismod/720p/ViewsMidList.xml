@@ -765,6 +765,16 @@
 					</control>
 
 					<control type="image">
+						<posx>480</posx>
+						<posy>7</posy>
+						<width>65</width>
+						<height>13</height>
+						<texture>$VAR[User_Rating_Stars]</texture>
+						<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons) | StringCompare(ListItem.Label,..)]</visible>
+					</control>
+
+					<control type="image">
 						<description>LIST ITEM "WATCHED" INDICATOR</description>
 						<posx>550</posx>
 						<posy>3</posy>
@@ -799,6 +809,15 @@
 						<aligny>center</aligny>
 						<include>listcolor</include>
 						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>10</posy>
+						<width>65</width>
+						<height>13</height>
+						<texture>$VAR[User_Rating_Stars]</texture>
+						<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons) | StringCompare(ListItem.Label,..)]</visible>
 					</control>
 
 					<control type="image">
@@ -837,6 +856,15 @@
 						<include>listcolorfocus</include>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>10</posy>
+						<width>65</width>
+						<height>13</height>
+						<texture>$VAR[User_Rating_Stars]</texture>
+						<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons) | StringCompare(ListItem.Label,..)]</visible>
+					</control>
 
 					<control type="image">
 						<description>LIST ITEM "WATCHED" INDICATOR</description>
@@ -867,7 +895,7 @@
 						<description>LIST ITEM MAIN TEXT</description>
 						<posx>20</posx>
 						<posy>0</posy>
-						<width>480</width>
+						<width>450</width>
 						<height>30</height>
 						<font>Font_22</font>
 						<aligny>center</aligny>
@@ -887,6 +915,15 @@
 						<include>subcolorfocus</include>
 						<label>$VAR[value_listinfofocus]</label>
 						<visible>!StringCompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>7</posy>
+						<width>65</width>
+						<height>13</height>
+						<texture>$VAR[User_Rating_Stars]</texture>
+						<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons) | StringCompare(ListItem.Label,..)]</visible>
 					</control>
 
 					<control type="image">

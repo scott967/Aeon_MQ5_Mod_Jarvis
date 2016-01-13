@@ -2053,9 +2053,10 @@
 		<value condition="!IsEmpty(Container(510).ListItem.Property(EpisodeNumber))">$INFO[Container(510).ListItem.Label2]$INFO[Container(510).ListItem.Property(EpisodeNumber),[COLOR=80FFFFFF] | [/COLOR]]</value>
 	</variable>
 	<variable name="value_mfvideostarrating">
-		<value condition="!IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),2)">rating1.png</value>
-		<value condition="IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),2) + !IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),4)">rating2.png</value>
-		<value condition="IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),4) + !IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),7)">rating3.png</value>
+		<value condition="!IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),1)">rating0.png</value>
+		<value condition="IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),1) + !IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),3)">rating1.png</value>
+		<value condition="IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),3) + !IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),5)">rating2.png</value>
+		<value condition="IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),5) + !IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),7)">rating3.png</value>
 		<value condition="IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),7) + !IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),9)">rating4.png</value>
 		<value condition="IntegerGreaterThan(Container(510).ListItem.Property(VideoRating),9)">rating5.png</value>
 	</variable>
@@ -4010,5 +4011,13 @@
 		<value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[31997][COLOR=$VAR[value_headercolor]] $INFO[Player.SeekStepSize][/COLOR]</value>
 		<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[31997][COLOR=$VAR[value_headercolor]] $INFO[Player.SeekOffset][/COLOR]</value>
 		<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[31997]</value>
+	</variable>
+	<variable name="User_Rating_Stars">
+		<value condition="[StringCompare(ListItem.UserRating,0) | StringCompare(ListItem.UserRating,1)]">rating0.png</value>
+		<value condition="[StringCompare(ListItem.UserRating,2) | StringCompare(ListItem.UserRating,3)]">rating1.png</value>
+		<value condition="[StringCompare(ListItem.UserRating,4) | StringCompare(ListItem.UserRating,5)]">rating2.png</value>
+		<value condition="[StringCompare(ListItem.UserRating,6) | StringCompare(ListItem.UserRating,7)]">rating3.png</value>
+		<value condition="[StringCompare(ListItem.UserRating,8) | StringCompare(ListItem.UserRating,9)]">rating4.png</value>
+		<value condition="StringCompare(ListItem.UserRating,10)">rating5.png</value>
 	</variable>
 </includes>

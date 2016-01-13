@@ -40,6 +40,29 @@
 				<scrollout>false</scrollout>
 			</control>
 			<control type="image"><!-- Star -->
+				<posx>1100</posx>
+				<posy>5</posy>
+				<width>73</width>
+				<height>73</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texture>star.png</texture>
+				<colordiffuse>FFFFFF40</colordiffuse>
+				<visible>!IsEmpty(VideoPlayer.UserRating) + !VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="label">
+				<posx>1106</posx>
+				<posy>15</posy>
+				<width>60</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>Font_18A</font>
+				<label>[B]$INFO[VideoPlayer.UserRating][/B]</label>
+				<textcolor>FF101010</textcolor>
+				<visible>!IsEmpty(VideoPlayer.UserRating) + !VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="image"><!-- Star -->
 				<posx>1179</posx>
 				<posy>10</posy>
 				<width>73</width>
