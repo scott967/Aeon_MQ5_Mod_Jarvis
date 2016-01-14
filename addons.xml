@@ -12,9 +12,9 @@
   </extension>
 </addon>
 
-	<addon id="skin.aeonmq5" version="8.1.12" name="Aeon MQ 5 Jarvis" provider-name="MarcosQui">
+	<addon id="skin.aeonmq5" version="8.1.14" name="Aeon MQ 5 Jarvis" provider-name="MarcosQui">
 	<requires>
-	<import addon="xbmc.gui" version="5.9.0"/>
+	<import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.aeonmq5.extrapack" version="1.0.1"/>
 	<import addon="script.favourites" version="4.0.4"/>
 	<import addon="script.artwork.downloader" version="12.0.11"/>
@@ -26,9 +26,8 @@
 	<import addon="script.cu.lrclyrics" version="1.0.1"/>
 	<import addon="script.videolanguage" version="0.0.6"/>
 	<import addon="script.globalsearch" version="1.1.1"/>
-	<import addon="service.subtitles.opensubtitles" version="5.0.1"/>
-	<import addon="script.cinema.experience" version="3.0.6"/>
 	<import addon="script.toolbox" version="1.0.1"/>
+	<import addon="script.image.resource.select" version="0.0.5"/>
 	</requires>
 	<extension point="xbmc.gui.skin"  effectslowdown="0.75" debugging="false">
 	<res width="1280" height="720" aspect="16:9" default="true" folder="720p"/>
