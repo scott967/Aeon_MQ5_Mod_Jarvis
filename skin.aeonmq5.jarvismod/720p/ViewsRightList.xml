@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.1/6.1.2 by lizard/6.1.6 -->
 <!-- Isengard 7.1.12 -->
-<!-- Jarvis 8.1.13/8.1.14 -->
+<!-- Jarvis 8.1.13/8.1.14/8.1.15 -->
 
 <includes>
 	<!--##################################################################################   VISTA RIGHT LIST - ID 59   ##################################################################################-->
@@ -249,9 +249,9 @@
 					</itemlayout>
 					<focusedlayout condition="IsEmpty(Control.GetLabel(5902)) | [[Window.IsActive(25)  | Window.IsActive(28)]+ Skin.HasSetting(slimrightlistvideo) | [Window.IsActive(500) | Window.IsActive(502)] + Skin.HasSetting(slimrightlistmusic)]" height="30">
 						<control type="image">
-							<posx>50</posx>
+							<posx>20</posx>
 							<posy>0</posy>
-							<width>630</width>
+							<width>530</width>
 							<height>30</height>
 							<texture>settings_button_focus.png</texture>
 						</control>
