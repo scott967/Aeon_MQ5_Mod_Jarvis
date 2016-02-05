@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!-- Aeon MQ 5 Helix 6.1.0 -->
 <!-- Isengard 7.1.10 -->
-<!-- Jarvis 8.1.13/8.1.14 -->
+<!-- Jarvis 8.1.13/8.1.14/8.1.15 -->
 
 <window>
 	<defaultcontrol always="true">9100</defaultcontrol>
@@ -2632,6 +2632,28 @@
 					<label2>$INFO[Skin.String(custom_wxicons.name)]</label2>
 					<onclick>RunScript(script.image.resource.select,type=resource.images.weathericons&amp;property=custom_wxicons)</onclick>
 				</control>
+				<control type="button" id="3502">
+					<label>$LOCALIZE[20338] ($LOCALIZE[157]) $LOCALIZE[515] $LOCALIZE[536]</label>
+					<label2>$INFO[Skin.String(custom_moviegenreicons.name)]</label2>
+					<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons&amp;property=custom_moviegenreicons)</onclick>
+				</control>
+				<control type="button" id="3503">
+					<label>$LOCALIZE[20338] ($LOCALIZE[157]) $LOCALIZE[515] $LOCALIZE[20445]</label>
+					<label2>$INFO[Skin.String(custom_moviegenrefanart.name)]</label2>
+					<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenrefanart&amp;property=custom_moviegenrefanart)</onclick>
+				</control>
+				<control type="button" id="3504">
+					<label>$LOCALIZE[2] $LOCALIZE[515] $LOCALIZE[536]</label>
+					<label2>$INFO[Skin.String(custom_musicgenreicons.name)]</label2>
+					<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons&amp;property=custom_musicgenreicons)</onclick>
+				</control>
+				<control type="button" id="3505">
+					<label>$LOCALIZE[2] $LOCALIZE[515] $LOCALIZE[20445]</label>
+					<label2>$INFO[Skin.String(custom_musicgenrefanart.name)]</label2>
+					<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenrefanart&amp;property=custom_musicgenrefanart)</onclick>
+				</control>
+				
+				
 			</control>
 
 			<control type="group"><!-- Estilos -->
