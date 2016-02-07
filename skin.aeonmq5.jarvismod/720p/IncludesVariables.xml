@@ -1173,6 +1173,15 @@
 		<value condition="SubString(Container(510).ListItem.Property(Mpaa),HU-18)">flags/mpaa/HU_18.png</value>
 	</variable>
 
+	<variable name="value_studiosicon">
+		<value condition="!IsEmpty(ListItem.Studio) + [Window.IsVisible(videolibrary) | Window.IsVisible(movieinformation)]">$INFO[Skin.String(custom_studios.path)]$INFO[ListItem.Studio]$INFO[Skin.String(custom_studios.ext)]</value>
+		<value condition="Player.HasVideo + !IsEmpty(VideoPlayer.Studio) + Window.IsVisible(fullscreeninfo)">$INFO[Skin.String(custom_studios.path)]$INFO[VideoPlayer.Studio]$INFO[Skin.String(custom_studios.ext)]</value>
+	</variable>
+	<variable name="value_recordlabelsicon">
+		<value condition="!IsEmpty(ListItem.Property(Album_Label)) + [Window.IsVisible(musiclibrary) | Window.IsVisible(musicinformation)]">$INFO[Skin.String(custom_recordlabels.path)]$INFO[ListItem.Property(Album_Label)]$INFO[Skin.String(custom_recordlabels.ext)]</value>
+		<value condition="Player.HasAudio + !IsEmpty(MusicPlayer.Property(Album_Label)) + Window.IsVisible(visualisation)">$INFO[Skin.String(custom_redordlabels.path)]$INFO[MusicPlayer.Property(Album_Label)]$INFO[Skin.String(custom_recordlabels.ext)]</value>
+	</variable>
+
 	<variable name="value_musiccodec">
 		<value condition="SubString(ListItem.Filename,.aac)">flags/musiccodec/aac.png</value>
 		<value condition="SubString(ListItem.Filename,.ac3)">flags/musiccodec/ac3.png</value>

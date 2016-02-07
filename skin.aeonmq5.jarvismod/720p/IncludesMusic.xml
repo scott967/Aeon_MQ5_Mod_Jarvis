@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.7 -->
 <!-- Isengard 7.1.11 Mid List -->
-<!-- Jarvis 8.1.13/8.1.14 -->
+<!-- Jarvis 8.1.13/8.1.14/8.1.15 -->
 
 <includes>
 	<!-- ######################################################################### Music Window #########################################################################-->
@@ -36,6 +36,10 @@
 				<include>WindowBG</include>
 				<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
 				<visible>[Container.Content(songs) | Container.Content(playlists)] + SubString(skin.string(musicfanart),extra)</visible>
+			</control>
+			<control type="image" id="9924"><!-- record label control -->
+				<include>InvisibleButton</include>
+				<texture>$VAR[value_recordlabelsicon]</texture>
 			</control>
 			<control type="group"><!-- default group -->
 				<include>Animation_Window</include>
@@ -135,6 +139,15 @@
 							<posy>645</posy>
 							<orientation>horizontal</orientation>
 							<itemgap>25</itemgap>
+							<control type="image"><!-- recordlabel -->
+								<include>FlagImage</include>
+								<texture>$VAR[value_recordlabelsicon]</texture>
+								<visible>!IsEmpty(Control.GetLabel(9924))</visible>
+							</control>
+							<control type="image">
+								<include>FlagSeparator</include>
+								<visible>!IsEmpty(Control.GetLabel(9924))</visible>
+							</control>
 							<control type="label"><!-- Rating -->
 								<include>FlagLabel</include>
 								<label>$INFO[ListItem.Rating]</label>

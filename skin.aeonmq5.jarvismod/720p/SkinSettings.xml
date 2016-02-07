@@ -2652,6 +2652,16 @@
 					<label2>$INFO[Skin.String(custom_musicgenrefanart.name)]</label2>
 					<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenrefanart&amp;property=custom_musicgenrefanart)</onclick>
 				</control>
+				<control type="button" id="3506">
+					<label>$LOCALIZE[572] $LOCALIZE[536]</label>
+					<label2>$INFO[Skin.String(custom_studios.name)]</label2>
+					<onclick>RunScript(script.image.resource.select,type=resource.images.studios&amp;property=custom_studios)</onclick>
+				</control>
+				<control type="button" id="3507">
+					<label>$LOCALIZE[264] $LOCALIZE[21899] $LOCALIZE[536]</label>
+					<label2>$INFO[Skin.String(custom_recordlabels.name)]</label2>
+					<onclick>RunScript(script.image.resource.select,type=resource.images.recordlabels&amp;property=custom_recordlabels)</onclick>
+				</control>
 				
 				
 			</control>

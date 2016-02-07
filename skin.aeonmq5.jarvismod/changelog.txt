@@ -1,3 +1,7 @@
+[B][COLOR=FFFF8C00]BUILD 8.1.15 - RELEASE DATE 02/15/2016[/COLOR][/B]
+New:  Support for music and video genre icons / fanart from resource add-ons
+New:  Support for studio and record label icons from resource add-ons
+
 [B][COLOR=FFFF8C00]BUILD 8.1.14 - RELEASE DATE 01/11/2016[/COLOR][/B]
 Improved:  Adjust text postion for Massive font
 Fixed:  OSD audio settings now allow dialog select
