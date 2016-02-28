@@ -415,18 +415,18 @@
 			<control type="image"><!-- ClearArt -->
 				<posx>755</posx>
 				<posy>174</posy>
-				<height>165</height>
+				<height>141</height>
 				<width>190</width>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Art(clearart)]</texture>
 				<visible>!Container.Content(episodes)</visible>
 			</control>
 			<control type="image"><!-- Thumb -->
-				<posx>987</posx>
+				<posx>757</posx>
 				<posy>82</posy>
 				<width>523</width>
 				<height>382</height>
-				<aspectratio align="left">keep</aspectratio>
+				<aspectratio align="right">keep</aspectratio>
 				<texture background="true">$VAR[value_poster]</texture>
 				<bordertexture border="-2">black.png</bordertexture>
 				<animation effect="slide" end="-266,0" time="0" condition="Container.Content(episodes)">Conditional</animation>
