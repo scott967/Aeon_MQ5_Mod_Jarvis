@@ -171,7 +171,7 @@
 					<texture>pvr_isrecording.png</texture>
 					<visible>PVR.IsRecording</visible>
 				</control>
-				<control type="label">
+				<!-- <control type="label">
 					<posx>95</posx>
 					<posy>631</posy>
 					<width>370</width>
@@ -182,6 +182,20 @@
 					<textcolor>FFFFFAF0</textcolor>
 					<label>$VAR[value_pvrstatushome]</label>
 					<scroll>true</scroll>
+				</control> -->
+				<control type="textbox">
+					<posx>95</posx>
+					<posy>631</posy>
+					<width>370</width>
+					<height>90</height>
+					<align>left</align>
+					<aligny>top</aligny>
+					<font>Font_18A</font>
+					<textcolor>FFFFFAF0</textcolor>
+					<label>$VAR[value_pvrstatushome]</label>
+					<autoscroll  time="1000" repeat="5000">true</autoscroll>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
 				</control>
 				<control type="image">
 					<posx>6</posx>
