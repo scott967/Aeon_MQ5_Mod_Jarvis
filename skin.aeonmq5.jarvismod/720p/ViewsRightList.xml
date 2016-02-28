@@ -370,7 +370,7 @@
 					<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					<include>Animation_Fade</include>
 					<animation effect="slide" start="0,0" end="9,0" time="200" condition="Control.HasFocus(80)">Conditional</animation>
-					<visible>!Control.HasFocus(9915)</visible>
+					<visible>Control.HasFocus(9915)</visible>
 				</control>
 				<control type="label" id="5901"><!-- Plot -->
 					<include>InvisibleButton</include>
