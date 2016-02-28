@@ -1333,7 +1333,7 @@
 					<selected>System.HasAddon(script.tvtunes) + Skin.HasSetting(ontvtunes)</selected>
 					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 				</control>
-				<include contition="Window.IsActive(28)">TopMenu_Playlist</include>
+				<include condition="Window.IsActive(28)">TopMenu_Playlist</include>
 			</control>
 
 			<control type="grouplist" id="9401"><!-- Artwork -->
