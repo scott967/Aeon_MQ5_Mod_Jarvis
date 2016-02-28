@@ -361,7 +361,7 @@
 				<height>2</height>
 				<width>987</width>
 				<texture>separator.png</texture>
-				<visible>!Container.Content(episodes)</visible>
+				<visible>![Container.Content(episodes) | Container.Content(musicvideos) + !IsEmpty(ListItem.Art(poster))]</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -369,7 +369,7 @@
 				<height>2</height>
 				<width>719</width>
 				<texture>separator.png</texture>
-				<visible>Container.Content(episodes)</visible>
+				<visible>Container.Content(episodes) | Container.Content(musicvideos) + IsEmpty(ListItem.Art(poster))</visible>
 			</control>
 			<control type="textbox"><!-- Plot -->
 				<posx>30</posx>
@@ -381,7 +381,7 @@
 				<label>$INFO[ListItem.Plot]</label>
 				<textcolor>FFFFFAF0</textcolor>
 				<autoscroll delay="15000" time="5000" repeat="15000">!Skin.HasSetting(noinfoplotscroll)</autoscroll>
-				<visible>!Container.Content(episodes)</visible>
+				<visible>![Container.Content(episodes) | Container.Content(musicvideos) + !IsEmpty(ListItem.Art(poster))]</visible>
 			</control>
 			<control type="textbox"><!-- Plot -->
 				<posx>30</posx>
@@ -393,7 +393,7 @@
 				<label>$INFO[ListItem.Plot]</label>
 				<textcolor>FFFFFAF0</textcolor>
 				<autoscroll delay="15000" time="5000" repeat="15000">!Skin.HasSetting(noinfoplotscroll)</autoscroll>
-				<visible>Container.Content(episodes)</visible>
+				<visible>Container.Content(episodes) | Container.Content(musicvideos) + IsEmpty(ListItem.Art(poster))</visible>
 			</control>
 			<control type="image">
 				<posx>720</posx>
@@ -401,7 +401,7 @@
 				<width>2</width>
 				<height>230</height>
 				<texture>separator_v.png</texture>
-				<visible>!Container.Content(episodes)</visible>
+				<visible>![Container.Content(episodes) | Container.Content(musicvideos) + !IsEmpty(ListItem.Art(poster))]</visible>
 			</control>
 			<control type="image"><!-- Logo -->
 				<posx>755</posx>
@@ -415,21 +415,21 @@
 			<control type="image"><!-- ClearArt -->
 				<posx>755</posx>
 				<posy>174</posy>
-				<height>141</height>
+				<height>136</height>
 				<width>190</width>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Art(clearart)]</texture>
 				<visible>!Container.Content(episodes)</visible>
 			</control>
 			<control type="image"><!-- Thumb -->
-				<posx>757</posx>
+				<posx>987</posx>
 				<posy>82</posy>
 				<width>523</width>
 				<height>382</height>
-				<aspectratio align="right">keep</aspectratio>
+				<aspectratio align="left">keep</aspectratio>
 				<texture background="true">$VAR[value_poster]</texture>
 				<bordertexture border="-2">black.png</bordertexture>
-				<animation effect="slide" end="-266,0" time="0" condition="Container.Content(episodes)">Conditional</animation>
+				<animation effect="slide" end="-266,0" time="0" condition="Container.Content(episodes) | Container.Content(musicvideos) + IsEmpty(ListItem.Art(poster))">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>986</posx>
@@ -437,7 +437,7 @@
 				<width>2</width>
 				<height>384</height>
 				<texture>separator_v.png</texture>
-				<animation effect="slide" end="-266,0" time="0" condition="Container.Content(episodes)">Conditional</animation>
+				<animation effect="slide" end="-266,0" time="0" condition="Container.Content(episodes) | Container.Content(musicvideos) + IsEmpty(ListItem.Art(poster))">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>0</posx>
