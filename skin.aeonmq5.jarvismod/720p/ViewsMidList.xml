@@ -977,7 +977,17 @@
 				<height>106</height>
 				<texture>banner_glass.png</texture>
 				<aspectratio>stretch</aspectratio>
-				<visible>Window.IsActive(25) + !IsEmpty(ListItem.Art(banner))</visible>
+				<visible>Window.IsActive(25) + !IsEmpty(ListItem.Art(banner)) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+			</control>
+			<control type="image">
+				<description>BANNER BORDER</description>
+				<posx>310</posx>
+				<posy>11</posy>
+				<width>600</width>
+				<height>106</height>
+				<texture>banner_glass.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<visible>Window.IsActive(25) + !IsEmpty(ListItem.Art(tvshow.banner)) + [Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="image">
 				<description>BANNER IMAGE</description>
@@ -989,7 +999,19 @@
 				<texture background="true">$INFO[ListItem.Art(banner)]</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>FanartCrossFadeTime</fadetime>
-				<visible>Window.IsActive(25) + !IsEmpty(ListItem.Art(banner))</visible>
+				<visible>Window.IsActive(25) + !IsEmpty(ListItem.Art(banner)) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+			</control>
+			<control type="image">
+				<description>BANNER IMAGE</description>
+				<posx>310</posx>
+				<posy>11</posy>
+				<width>600</width>
+				<height>106</height>
+				<bordersize>3,2,3,2</bordersize>
+				<texture background="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>FanartCrossFadeTime</fadetime>
+				<visible>Window.IsActive(25) + !IsEmpty(ListItem.Art(tvshow.banner)) + [Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="label">
 				<description>IF NO BANNER IMAGE THEN SHOW TEXT TITLE</description>
@@ -1003,7 +1025,21 @@
 				<wrapmultiline>true</wrapmultiline>
 				<shadowcolor>ff000000</shadowcolor>
 				<label>$INFO[ListItem.Label]</label>
-				<visible>Window.IsActive(25) + IsEmpty(ListItem.Art(banner))</visible>
+				<visible>Window.IsActive(25) + IsEmpty(ListItem.Art(banner)) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+			</control>
+			<control type="label">
+				<description>IF NO BANNER IMAGE THEN SHOW TEXT TITLE</description>
+				<posx>310</posx>
+				<posy>11</posy>
+				<width>600</width>
+				<height>106</height>
+				<font>Font_50</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<wrapmultiline>true</wrapmultiline>
+				<shadowcolor>ff000000</shadowcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Window.IsActive(25) + IsEmpty(ListItem.Art(tvshow.banner)) + [Container.Content(series) | Container.Content(episodes)]</visible>
 			</control>
 			<!-- ##########          END BANNER DISPLAY          ########## -->
 
@@ -1239,7 +1275,7 @@
 						<height>380</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
-						<texture flipy="true" diffuse="thumb_reflect.png" background="true">$VAR[value_poster]</texture>
+						<texture flipy="true" diffuse="thumb_reflect.png" background="true">$VAR[value_poster_midlist]</texture>
 						<bordertexture flipy="true" diffuse="thumb_reflect.png" border="-2">black.png</bordertexture>
 					</control>
 					<control type="image">
@@ -1250,7 +1286,7 @@
 						<height>380</height>
 						<fadetime>FanartCrossFadeTime</fadetime>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
-						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
+						<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster_midlist]</texture>
 						<bordertexture border="-2">black.png</bordertexture>
 					</control>
 				</control>
