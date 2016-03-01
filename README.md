@@ -5,4 +5,5 @@ A project to update the Kodi skin Aeon MQ5 for use in Kodi Jarvis versions from 
 The intent is to provide all functionality of MQ5 on Gotham (ver 2.02) with extensions to incorporate
 new Helix and Isengard capabilities.  In some cases improvements from MQ5 Gotham will be included.  Versions
 of Aeon MQ5 Mod Jarvis are numbered from 8.1.12.  Master is at version
-8.1.12.  Stand alone download zip is in "Downloads" folder.
+8.2.0 and is a stable release for Kodi 16.0.   A Kodi repo is available, as well as individual
+releases (see the release tab).

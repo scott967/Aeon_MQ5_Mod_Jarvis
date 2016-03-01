@@ -12,7 +12,7 @@
   </extension>
 </addon>
 
-	<addon id="skin.aeonmq5" version="8.1.14" name="Aeon MQ 5 Jarvis" provider-name="MarcosQui">
+	<addon id="skin.aeonmq5" version="8.2.0" name="Aeon MQ 5 Jarvis" provider-name="MarcosQui">
 	<requires>
 	<import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.aeonmq5.extrapack" version="1.0.1"/>
