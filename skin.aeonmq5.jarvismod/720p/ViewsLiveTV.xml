@@ -184,8 +184,9 @@
 				<height>430</height>
 				<onleft>9900</onleft>
 				<onright>9900</onright>
-				<onup condition="!Skin.HasSetting(epggridwrap)">9900</onup>
-				<onup condition="Skin.HasSetting(epggridwrap)">10</onup>
+<!-- 				<onup condition="!Skin.HasSetting(epggridwrap)">9900</onup>
+				<onup condition="Skin.HasSetting(epggridwrap)">10</onup> -->
+				<onup>10</onup>
 				<ondown>10</ondown>
 				<pagecontrol>10</pagecontrol>
 				<scrolltime>350</scrolltime>
