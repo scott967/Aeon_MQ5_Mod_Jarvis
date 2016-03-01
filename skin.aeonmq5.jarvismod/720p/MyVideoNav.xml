@@ -49,6 +49,11 @@
 			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 			<visible>Container.Content(episodes) + SubString(skin.string(episodesfanart),extra)</visible>
 		</control>
+		<!-- <control type="multiimage" id="5025"> Extra Fanart Episodes - no season folders 
+			<include>InvisibleButton</include>
+			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<visible>Container.Content(episodes) + SubString(skin.string(episodesfanart),extra)</visible>
+		</control> -->
 		<control type="image" id="5023"><!-- Season Fanart -->
 			<include>InvisibleButton</include>
 			<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
