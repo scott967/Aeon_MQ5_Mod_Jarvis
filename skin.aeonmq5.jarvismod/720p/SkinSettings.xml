@@ -607,6 +607,10 @@
 				<onright>80</onright>
 				<itemgap>0</itemgap>
 				<pagecontrol>-</pagecontrol>
+				<control type="button" id="1165"><!-- reload skin (writes skin settings to file) -->
+					<label>31335</label>
+					<onclick>ReloadSkin()</onclick>
+				</control>
 				<control type="button" id="1160"><!-- Exportar ajustes -->
 					<label>31622</label>
 					<onclick>RunScript(script.toolbox,info=exportskinsettings)</onclick>

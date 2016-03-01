@@ -2296,6 +2296,7 @@
 		<value condition="Control.HasFocus(1162)">$LOCALIZE[31598]</value>
 		<value condition="Control.HasFocus(1163)">$LOCALIZE[31600]</value>
 		<value condition="Control.HasFocus(1164)">$LOCALIZE[31258]</value>
+		<value condition="Control.HasFocus(1165)">Use to force Kodi to write current skin settings[CR]to settings.xml file.  Use this prior to exporting settings.</value>
 	</variable>
 	<variable name="value_settingsstep">
 		<value condition="Control.HasFocus(900)">$VAR[SkinVersion][CR][CR]$LOCALIZE[31656][CR][COLOR=FFFF0000]$LOCALIZE[31830][/COLOR][CR]10%</value>
@@ -2332,8 +2333,8 @@
 		<value condition="Container.Content(seasons) + SubString(skin.string(seasonsfanart),seasons)">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</value>
 		<value condition="Container.Content(episodes) + SubString(skin.string(episodesfanart),fallback)">$INFO[Skin.String(CustomFallbackEpisodesBG)]</value>
 		<value condition="Container.Content(episodes) + SubString(skin.string(episodesfanart),curtains)">special://skin/backgrounds/extras/curtains.jpg</value>
-		<value condition="Container.Content(episodes) + SubString(skin.string(episodesfanart),extra) +!SubString(Listitem.Path,youtubelibrary)">$INFO[ListItem.Path,,../extrafanart/]</value>
-		<value condition="Container.Content(episodes) + SubString(skin.string(episodesfanart),extra) +SubString(Listitem.Path,youtubelibrary)">$INFO[ListItem.Path,,extrafanart/]</value>
+		<value condition="Container.Content(episodes) + SubString(skin.string(episodesfanart),extra)">$INFO[ListItem.Path,,../extrafanart/]</value>
+<!-- 		<value condition="Container.Content(episodes) + SubString(skin.string(episodesfanart),extra) +SubString(Listitem.Path,youtubelibrary)">$INFO[ListItem.Path,,extrafanart/]</value> -->
 		<value condition="Container.Content(episodes) + SubString(skin.string(episodesfanart),seasons)">$INFO[ListItem.Path,,fanart.jpg]</value>
 		<value condition="Container.Content(sets) + SubString(skin.string(setsfanart),fallback)">$INFO[Skin.String(CustomFallbackSetsBG)]</value>
 		<value condition="Container.Content(sets) + SubString(skin.string(setsfanart),curtains)">special://skin/backgrounds/extras/curtains.jpg</value>
@@ -2349,7 +2350,8 @@
 		<value condition="Container.Content(tvshows) + [SubString(skin.string(tvshowsfanart),fanart) | SubString(skin.string(tvshowsfanart),extra) + IsEmpty(Control.GetLabel(5020))]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(seasons) + [SubString(skin.string(seasonsfanart),fanart) | SubString(skin.string(seasonsfanart),extra) + IsEmpty(Control.GetLabel(5021))]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(seasons) + [SubString(skin.string(seasonsfanart),seasons) + IsEmpty(Control.GetLabel(5023))]">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(episodes) + [SubString(skin.string(episodesfanart),fanart) | SubString(skin.string(episodesfanart),extra) + IsEmpty(Control.GetLabel(5022))+ IsEmpty(Control.GetLabel(5025))]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Container.Content(episodes) + [SubString(skin.string(episodesfanart),fanart) | SubString(skin.string(episodesfanart),extra) + IsEmpty(Control.GetLabel(5022))]">$INFO[ListItem.Art(fanart)]</value>
+		<!-- <value condition="Container.Content(episodes) + [SubString(skin.string(episodesfanart),fanart) | SubString(skin.string(episodesfanart),extra) + IsEmpty(Control.GetLabel(5022))+ IsEmpty(Control.GetLabel(5025))]">$INFO[ListItem.Art(fanart)]</value> -->
 		<value condition="Container.Content(episodes) + [SubString(skin.string(episodesfanart),seasons) + IsEmpty(Control.GetLabel(5024))]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(sets) + [SubString(skin.string(setsfanart),fanart) | SubString(skin.string(setsfanart),extra) + IsEmpty(Control.GetLabel(5020))]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Container.Content(genres) + SubString(skin.string(videogenrefanart),genre) + !Skin.HasSetting(externalvideogenrefanart)">special://userdata/addon_data/skin.aeonmq5.extrapack/backgrounds_videogenre/$INFO[ListItem.Label,,.jpg]</value>
@@ -2532,10 +2534,11 @@
 		<value condition="Control.HasFocus(1162)">FFFF4500</value>
 		<value condition="Control.HasFocus(1163)">FFB20000</value>
 		<value condition="Control.HasFocus(1164)">FF228B22</value>
+		<value condition="Control.HasFocus(1165)">FF228B22</value>
 	</variable>
 	<variable name="value_restoreimage">
 		<value condition="Control.HasFocus(9100) + Container(9100).HasFocus(32)">special://skin/backgrounds/extras/settings_skin.jpg</value>
-		<value condition="Control.HasFocus(1160) | Control.HasFocus(1161) | Control.HasFocus(1162) | Control.HasFocus(1163) | Control.HasFocus(1164)">resetalert.png</value>
+		<value condition="Control.HasFocus(1160) | Control.HasFocus(1161) | Control.HasFocus(1162) | Control.HasFocus(1163) | Control.HasFocus(1164) | Control.HasFocus(1165)">resetalert.png</value>
 	</variable>	
 	<variable name="value_virtualsublabel">
 		<value condition="Control.HasFocus(403) + Container(403).HasFocus(1)">$LOCALIZE[31280][CR]$LOCALIZE[31281]</value>
