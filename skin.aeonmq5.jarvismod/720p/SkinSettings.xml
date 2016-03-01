@@ -10,7 +10,7 @@
 	<onunload>Skin.Reset(resetmode)</onunload>
 	<onunload>Skin.Reset(fonte)</onunload>
 	<onunload>SetProperty(current_wxicon_path,$INFO[Skin.String(custom_wxicons.path)],0)</onunload>
-	<onunload condition="Skin.HasSetting(custom_wxicons.multi">SetProperty(current_wxicon_multi,"true",0)</onunload>
+	<onunload condition="Skin.HasSetting(custom_wxicons.multi)">SetProperty(current_wxicon_multi,"true",0)</onunload>
 	<controls>
 		<control type="multiimage">
 			<include>HomeBG</include>
