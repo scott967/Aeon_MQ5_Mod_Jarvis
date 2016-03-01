@@ -1064,18 +1064,20 @@
 				<channellayout height="40" width="240">
 					<control type="label" id="1">
 						<include>SettingsLabel</include>
+						<width>150</width>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="image">
-						<left>100</left>
-						<top>2</top>
+						<posx>155</posx>
+						<posy>2</posy>
 						<height>35</height>
-						<aspectratio>keep</aspectratio>
+						<width>84</width>
+						<aspectratio align="left">keep</aspectratio>
 						<texture border="3">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>240</width>
 						<height>3</height>
 						<texture>divider.png</texture>
@@ -1084,8 +1086,8 @@
 				</channellayout>
 				<focusedchannellayout height="40" width="240">
 					<control type="image" id="1">
-						<left>0</left>
-						<top>0</top>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>238</width>
 						<height>40</height>
 						<texture>settings_button.png</texture>
@@ -1093,13 +1095,15 @@
 					</control>
 					<control type="label" id="1">
 						<include>SettingsLabelFocus</include>
+						<width>150</width>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>    
 					<control type="image">
-						<left>100</left>
-						<top>2</top>
+						<posx>155</posx>
+						<posy>2</posy>
 						<height>35</height>
-						<aspectratio>keep</aspectratio>
+						<width>84</width>
+						<aspectratio align="left" >keep</aspectratio>
 						<texture border="3">$INFO[ListItem.Icon]</texture>
 					</control>
 				</focusedchannellayout>
