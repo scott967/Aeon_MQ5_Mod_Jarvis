@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!-- Aeon MQ 5 Helix 6.1.0/6.1.2 /6.1.3/6.1.8 -->
 <!-- Isengard 7.1.11 -->
-<!-- Jarvis 8.1.13/8.1.14 -->
+<!-- Jarvis 8.1.13/8.1.14/8.2.1 -->
 
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
@@ -9,7 +9,7 @@
 	<include condition="!Skin.HasSetting(fix3)">Quickfix</include>
 	<onload condition="!StringCompare(skin.string(defaultsettings),2)">SetFocus(900)</onload>
 	<onload>SetProperty(current_wxicon_path,$INFO[Skin.String(custom_wxicons.path)],0)</onload>
-	<onload condition="Skin.HasSetting(custom_wxicons.multi)">SetProperty(current_wxicon_multi,"true",0)</onload>
+	<onload condition="Skin.HasSetting(custom_wxicons.multi)">SetProperty(current_wxicon_multi,true,0)</onload>
 	<onload condition="Player.HasAudio + System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<onload condition="System.HasAddon(script.favourites) + ![IsEmpty(skin.string(favouriteswidget)) | Skin.HasSetting(nofavouriteswidget)]">RunScript(script.favourites)</onload>
 	<onload condition="Skin.HasSetting(rcbgames)">RunScript(script.games.rom.collection.browser,limit=12)</onload>
