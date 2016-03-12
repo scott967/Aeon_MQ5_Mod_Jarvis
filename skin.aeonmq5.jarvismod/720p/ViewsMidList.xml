@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.0  -->
 <!-- Isengard 7.1.11/7.1.12 -->
-<!-- Jarvis 8.1.13/8.1.14 -->
+<!-- Jarvis 8.1.13/8.1.14/8.2.1 -->
 
 <includes>
 	<!--##################################################################################   VISTA LOW LIST - ID 70   ##################################################################################-->
@@ -356,7 +356,7 @@
 					<width>314</width>
 					<height>176</height>
 					<aspectratio>stretch</aspectratio>
-					<imagepath background="true">$INFO[ListItem.Path,,/extrafanart/]</imagepath>
+					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 					<timeperimage>5000</timeperimage>
 					<fadetime>2000</fadetime>
 					<randomize>true</randomize>
