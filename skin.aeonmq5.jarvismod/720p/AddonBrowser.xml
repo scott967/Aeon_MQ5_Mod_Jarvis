@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!-- Aeon MQ 5 Helix 6.1.0/6.1.4/6.1.6 -->
 <!-- Aeon MQ 5 Isengard 7.1.8 -->
-<!-- Jarvis 8.1.13 -->
+<!-- Jarvis 8.1.13/8.2.1 -->
 <window id="40">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<!-- <allowoverlay>no</allowoverlay> -->
@@ -72,7 +72,6 @@
 							<width>290</width>
 							<height>40</height>
 							<align>left</align>
-							<aligny>center</aligny>
 							<font>Font_20</font>
 							<textcolor>FFFFFAF0</textcolor>
 							<aligny>center</aligny>
@@ -108,7 +107,6 @@
 							<width>290</width>
 							<height>40</height>
 							<align>left</align>
-							<aligny>center</aligny>
 							<font>Font_20</font>
 							<textcolor>FF101010</textcolor>
 							<aligny>center</aligny>
@@ -138,7 +136,6 @@
 							<aligny>center</aligny>
 							<font>Font_20</font>
 							<textcolor>FFFFFAF0</textcolor>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>!Control.HasFocus(55)</visible>
 						</control>

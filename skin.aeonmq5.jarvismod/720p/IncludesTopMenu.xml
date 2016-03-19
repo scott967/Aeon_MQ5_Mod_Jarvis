@@ -73,7 +73,7 @@
 		<focusedcolor>FFFFFAF0</focusedcolor>
 		<disabledcolor>FF505050</disabledcolor>
 		<textoffsetx>10</textoffsetx>
-		<textwidth>200</textwidth>
+		<!-- <textwidth>200</textwidth> -->
 		<texturenofocus>topmenu_button_nofocus.png</texturenofocus>
 		<texturefocus>topmenu_button_focus.png</texturefocus>
 		<alttexturenofocus>topmenu_button_nofocus.png</alttexturenofocus>

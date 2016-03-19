@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 -->
-<!-- Jarvis 8.1.13/8.1.14/8.1.15 -->
+<!-- Jarvis 8.1.13/8.1.14/8.1.15/8.2.1 -->
 
 <window type="dialog" id="2000">
 	<defaultcontrol>3</defaultcontrol>
@@ -332,7 +332,8 @@
 					<texturefocus>-</texturefocus>
 					<textcolor>FF505050</textcolor>
 					<focusedcolor>FFFFFFFF</focusedcolor>
-					<font>Font_OSDOptions</font>
+					<!-- <font>Font_OSDOptions</font> -->
+					<font>Font_18</font>
 					<align>right</align>
 					<aligny>center</aligny>
 					<onleft>3</onleft>

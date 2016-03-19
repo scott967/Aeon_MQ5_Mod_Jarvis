@@ -1,4 +1,4 @@
-[B][COLOR=FFFF8C00]BUILD 8.2.1 - RELEASE DATE 03/15/2016[/COLOR][/B]
+[B][COLOR=FFFF8C00]BUILD 8.2.1 - RELEASE DATE 03/18/2016[/COLOR][/B]
 Fixed:  extrafanart error in midlist view
 Fixed:  EPGlowlist now displays genre color shading
 Improved:  EPGlowlist is now selectable on PVR top menu
