@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 -->
-<!-- Jarvis 8.1.13/8.1.14 -->
+<!-- Jarvis 8.1.13/8.1.14/8.2.1 -->
 
 <window id="627" type="dialog">
 	<defaultcontrol always="true">9030</defaultcontrol>
-	<onunload>ReplaceWindow(2006)</onunload>
+	<onunload>ReplaceWindow(2006)</onunload> <!-- music vis -->
 	<controls>
 		<control type="group">
 			<include>Animation_DialogPopup</include>
@@ -106,7 +106,7 @@
 					<label>31725</label>
 					<onclick>Dialog.Close(all,true)</onclick>
 					<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
-					<enable>![Skin.HasSetting(nolyrics_on) | Skin.HasSetting(novisfurniture)]</enable>
+					<!-- <enable>![Skin.HasSetting(nolyrics_on) | Skin.HasSetting(novisfurniture)]</enable> -->
 				</control>
 				<control type="radiobutton" id="7"><!-- next tracks -->
 					<radioposx>894</radioposx>
