@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Aeon MQ 5 Helix 6.1.1/6.1.2 by lizard/6.1.6 -->
 <!-- Isengard 7.1.12 -->
-<!-- Jarvis 8.1.13/8.1.14/8.1.15 -->
+<!-- Jarvis 8.1.13/8.1.14/8.1.15/8.2.1 -->
 
 <includes>
 	<!--##################################################################################   VISTA RIGHT LIST - ID 59   ##################################################################################-->
@@ -27,7 +27,7 @@
 		<control type="group"><!-- default group -->
 			<animation effect="fade" time="400">VisibleChange</animation>
 			<visible>Control.IsVisible(59)</visible>
-			<control type="button" id="9915">
+			<control type="button" id="9915"> <!-- right click plot view active -->
 				<include>InvisibleButton</include>
 				<onup>59</onup>
 				<ondown>59</ondown>
@@ -178,7 +178,7 @@
 					<height>1</height>
 					<texture>line.png</texture>
 				</control>
-				<control type="textbox">
+				<control type="textbox">  <!-- textbox for right click 9915 view -->
 					<posx>920</posx>
 					<posy>20</posy>
 					<width>340</width>
@@ -360,7 +360,7 @@
 						</control>
 					</focusedlayout>
 				</control>
-				<control type="textbox">
+				<control type="textbox">  <!-- bottom textbox when not 9915 text box right click view --> 
 					<posx>740</posx>
 					<posy>555</posy>
 					<width>520</width>
@@ -370,7 +370,7 @@
 					<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
 					<include>Animation_Fade</include>
 					<animation effect="slide" start="0,0" end="9,0" time="200" condition="Control.HasFocus(80)">Conditional</animation>
-					<visible>Control.HasFocus(9915)</visible>
+					<visible>!Control.HasFocus(9915) + ![Window.IsVisible(videoplaylist) + Player.HasVideo]</visible>
 				</control>
 				<control type="label" id="5901"><!-- Plot -->
 					<include>InvisibleButton</include>
@@ -532,7 +532,7 @@
 						<textcolor>FFFFFAF0</textcolor>
 						<textoffsetx>0</textoffsetx>
 						<left>-5</left>
-						<top>447</top>
+						<top>457</top>
 						<label>($INFO[Player.Time] / $INFO[Player.Duration,])</label>
 						<align>left</align>
 						<aligny>center</aligny>
