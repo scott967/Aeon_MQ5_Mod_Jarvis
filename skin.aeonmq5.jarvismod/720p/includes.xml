@@ -1544,6 +1544,7 @@
 			<width>370</width>
 			<height>25</height>
 			<font>Font_18A</font>
+			<aligny>center</aligny>
 			<label>$INFO[Window(2003).Property(AudioLanguage.1)]$INFO[Window(2003).Property(AudioLanguage.2), / ]$INFO[Window(2003).Property(AudioLanguage.3), / ]$INFO[Window(2003).Property(AudioLanguage.4), / ]$INFO[Window(2003).Property(AudioLanguage.5), / ]$INFO[Window(2003).Property(AudioLanguage.6), / ]$INFO[Window(2003).Property(AudioLanguage.7), / ]$INFO[Window(2003).Property(AudioLanguage.8), / ]$INFO[Window(2003).Property(AudioLanguage.9), / ]$INFO[Window(2003).Property(AudioLanguage.10), / ]</label>
 			<textcolor>FFFFFAF0</textcolor>
 			<scroll>true</scroll>
@@ -1568,6 +1569,7 @@
 			<width>370</width>
 			<height>25</height>
 			<font>Font_18A</font>
+			<aligny>center</aligny>
 			<label>$INFO[Window(2003).Property(SubtitleLanguage.1)]$INFO[Window(2003).Property(SubtitleLanguage.2), / ]$INFO[Window(2003).Property(SubtitleLanguage.3), / ]$INFO[Window(2003).Property(SubtitleLanguage.4), / ]$INFO[Window(2003).Property(SubtitleLanguage.5), / ]$INFO[Window(2003).Property(SubtitleLanguage.6), / ]$INFO[Window(2003).Property(SubtitleLanguage.7), / ]$INFO[Window(2003).Property(SubtitleLanguage.8), / ]$INFO[Window(2003).Property(SubtitleLanguage.9), / ]$INFO[Window(2003).Property(SubtitleLanguage.10), / ]</label>
 			<textcolor>FFFFFAF0</textcolor>
 			<scroll>true</scroll>
