@@ -117,9 +117,22 @@
 				<animation effect="slide" end="-780,0" time="0" condition="Control.IsVisible(55)">Conditional</animation>
 				<animation effect="slide" end="-450,0" time="0" condition="Control.IsVisible(57)">Conditional</animation>
 				<animation effect="slide" end="-780,0" time="0" condition="Control.IsVisible(59)">Conditional</animation>
-				<visible>![Skin.HasSetting(nolanguageflags) | StringCompare(ListItem.Label,..) | IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1)) | Control.IsVisible(51) | Control.HasFocus(9920) | Window.IsActive(2003)]</visible>
+				<visible>![Skin.HasSetting(nolanguageflags) | StringCompare(ListItem.Label,..) | IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1)) | Control.IsVisible(51) | Control.HasFocus(9920) | Window.IsActive(2003)] + !Skin.HasSetting(vplaylistinfobar)</visible>
 				<posx>810</posx>
 				<posy>15</posy>
+				<include>AudioandSub</include>
+			</control>
+			<control type="group"><!-- Linguagem de audio e legendas -->
+				<animation effect="slide" time="400" start="0,-250" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
+				<animation effect="slide" time="400" start="0,-250" end="0,0" easing="inout" tween="cubic">Visible</animation>
+				<animation effect="slide" time="400" start="0,0" end="0,-250" easing="inout" tween="cubic">WindowClose</animation>
+				<animation effect="slide" time="400" start="0,0" end="0,-250" easing="inout" tween="cubic">Hidden</animation>
+				<animation effect="slide" end="-780,0" time="0" condition="Control.IsVisible(55)">Conditional</animation>
+				<animation effect="slide" end="-450,0" time="0" condition="Control.IsVisible(57)">Conditional</animation>
+				<animation effect="slide" end="-780,0" time="0" condition="Control.IsVisible(59)">Conditional</animation>
+				<visible>![Skin.HasSetting(nolanguageflags) | StringCompare(ListItem.Label,..) | IsEmpty(Window(2003).Property(AudioLanguage.1)) + IsEmpty(Window(2003).Property(SubtitleLanguage.1)) | Control.IsVisible(51) | Control.HasFocus(9920) | Window.IsActive(2003)] + Skin.HasSetting(vplaylistinfobar)</visible>
+				<posx>810</posx>
+				<posy>35</posy>
 				<include>AudioandSub</include>
 			</control>
 			<control type="group"><!-- Grupo ocultar flags ou fanart views -->
