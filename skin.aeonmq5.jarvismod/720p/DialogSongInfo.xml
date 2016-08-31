@@ -273,7 +273,7 @@
 				<fadetime>FanartCrossFadeTime</fadetime>
 				<aspectratio align="left">keep</aspectratio>
 				<imagepath fallback="DefaultAudioCover.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>!IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + !SubStringWindow(Visualisation).Property(ArtistSlideshow),transparent)</visible>
+				<visible>!IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + !SubString(Window(Visualisation).Property(ArtistSlideshow),transparent)</visible>
 			</control>
 			<control type="image">
 				<posx>686</posx>

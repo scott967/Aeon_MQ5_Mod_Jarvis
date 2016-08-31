@@ -5,7 +5,7 @@
 <includes>
 	<!-- ################################################ Value/General ################################################ -->
 	<variable name="SkinVersion">
-		<value>8.2.1 Jarvis[COLOR=80FFFFFF] | [/COLOR]02/29/2016</value>
+		<value>8.2.2 Jarvis[COLOR=80FFFFFF] | [/COLOR]08/31/2016</value>
 	</variable>
 	<variable name="Sub_GoTo">
 		<value condition="StringCompare(Container(9000).ListItem.Property(subid),movies)">6001</value>
@@ -4092,4 +4092,8 @@
 		<value condition="[StringCompare(ListItem.UserRating,8) | StringCompare(ListItem.UserRating,9)]">rating4.png</value>
 		<value condition="StringCompare(ListItem.UserRating,10)">rating5.png</value>
 	</variable>
+<!-- 	<variable name="screenshot_dir">
+		<value condition="VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)">$INFO[Player.FolderPath,,extrafanart]</value>
+		<value condition="VideoPlayer.Content(episodes)">$INFO[Player.Folderpath,,../extrafanart]</value>
+	</variable> -->
 </includes>
